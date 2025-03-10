@@ -1,26 +1,47 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: var(--color-primary-indigo);
+  --foreground: var(--color-primary-white);
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --font-sans: 'field-gothic-xxxcondensed', sans-serif;
+  --color-neutral-charcoal: rgba(56, 56, 56, 1);
+  --color-neutral-dove: rgba(216, 215, 214, 1);
+  --color-neutral-pearl: rgba(247, 244, 235, 1);
+  --color-neutral-pewter: rgba(118, 119, 122, 1);
+  --color-neutral-slate: rgba(104, 129, 151, 1);
+  --color-primary-cuny-blue: rgba(0, 51, 161, 1);
+  --color-primary-indigo: rgba(1, 29, 73, 1);
+  --color-primary-midtown-blue: rgba(40, 105, 175, 1);
+  --color-primary-navy: rgba(31, 55, 105, 1);
+  --color-primary-sky: rgba(163, 201, 255, 1);
+  --color-primary-white: rgba(255, 255, 255, 1);
+  --color-secondary-chartreuse: rgba(194, 213, 0, 1);
+  --color-secondary-grape: rgba(81, 12, 118, 1);
+  --color-secondary-lemonade: rgba(255, 238, 29, 1);
+  --color-secondary-ochre: rgba(197, 146, 44, 1);
+  --color-secondary-tangerine: rgba(230, 95, 36, 1);
+  --color-secondary-taxi: rgba(255, 255, 187, 1);
+  --color-secondary-thistle: rgba(222, 194, 235, 1);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
+color-
 body {
-  background: var(--background);
-  color: var(--foreground);
+  background: var(--color-background);
+  color: var(--color-foreground);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+.text-trim {
+  text-box: trim-both cap alphabetic;
+}
+
+.echo.duplicate {
+  color: transparent;
+  -webkit-text-stroke: var(--color-secondary-chartreuse) 2px;
+  transform-origin: center;
 }
