@@ -29,6 +29,14 @@
   --color-secondary-tangerine: rgba(230, 95, 36, 1);
   --color-secondary-taxi: rgba(255, 255, 187, 1);
   --color-secondary-thistle: rgba(222, 194, 235, 1);
+
+  --animate-marquee-infinite: marquee 30s linear infinite;
+
+  @keyframes marquee {
+    to {
+      transform: translateX(-50%);
+    }
+  }
 }
 
 @utility prose {

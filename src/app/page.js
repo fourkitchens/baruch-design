@@ -5,18 +5,23 @@ import ImageSide from "@/sections/imageSide";
 import Bento from "@/sections/bento";
 import Stats from "@/sections/stats";
 import News from "@/sections/news";
-export default function Home() {
-  const echoes = 6;
+import Marquee from "@/sections/marquee";
+import BaruchLogo from "@/assets/logos/BaruchLogo";
 
+export default function Home() {
 
   return (
     <div>
+      <div className="flex justify-center items-center min-h-screen">
+        <BaruchLogo className="w-3/4 min-h-[200px]" />
+      </div>
       <CenterEcho/>
       <UnderEcho/>
       <ImageSide/>
       <Bento/>
       <Stats/>
       <News/>
+      <Marquee/>
     </div>
   );
 }
