@@ -1,4 +1,5 @@
 @import "tailwindcss";
+@plugin "@tailwindcss/typography";
 
 :root {
   --background: var(--color-primary-indigo);
@@ -8,7 +9,8 @@
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: 'field-gothic-xxxcondensed', sans-serif;
+  --font-sans: "fort", sans-serif;
+  --font-field-gothic: 'field-gothic-xxxcondensed', sans-serif;
   --color-neutral-charcoal: rgba(56, 56, 56, 1);
   --color-neutral-dove: rgba(216, 215, 214, 1);
   --color-neutral-pearl: rgba(247, 244, 235, 1);
@@ -27,6 +29,10 @@
   --color-secondary-tangerine: rgba(230, 95, 36, 1);
   --color-secondary-taxi: rgba(255, 255, 187, 1);
   --color-secondary-thistle: rgba(222, 194, 235, 1);
+}
+
+@utility prose {
+  --tw-prose-headings: var(--color-primary-cuny-blue);
 }
 
 color-
