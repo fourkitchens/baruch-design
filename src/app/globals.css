@@ -1,5 +1,6 @@
 @import "tailwindcss";
 @plugin "@tailwindcss/typography";
+@config "../../tailwind.config.js";
 
 :root {
   --background: var(--color-primary-indigo);
@@ -14,6 +15,7 @@
   --color-neutral-charcoal: rgba(56, 56, 56, 1);
   --color-neutral-dove: rgba(216, 215, 214, 1);
   --color-neutral-pearl: rgba(247, 244, 235, 1);
+  --color-neutral-pearl-dark: #F0EBDB;
   --color-neutral-pewter: rgba(118, 119, 122, 1);
   --color-neutral-slate: rgba(104, 129, 151, 1);
   --color-primary-cuny-blue: rgba(0, 51, 161, 1);
