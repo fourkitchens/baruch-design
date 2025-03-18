@@ -10,7 +10,7 @@ import Marquee from "@/sections/marquee";
 import BaruchLogo from "@/assets/logos/BaruchLogo";
 import Link from "next/link";
 import Program from "@/sections/program";
-
+import Slider from "@/sections/statsSlider";
 export default function Home() {
 
   return (
@@ -26,8 +26,9 @@ export default function Home() {
       <UnderEcho/>
       <ImageSide/>
       <Bento/>
-      <Stats2/>
       <Stats3/>
+      <Stats2/>
+      <Slider/>
       <Program/>
       <News/>
       <Marquee/>

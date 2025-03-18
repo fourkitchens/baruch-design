@@ -7,13 +7,18 @@ import Stats from "@/sections/stats";
 import News from "@/sections/news";
 import Marquee from "@/sections/marquee";
 import BaruchLogo from "@/assets/logos/BaruchLogo";
+import Link from "next/link";
 
 export default function Home() {
 
   return (
     <div>
-      <div className="flex justify-center items-center min-h-screen">
+      <div className="flex flex-col gap-8 justify-center items-center min-h-screen">
         <BaruchLogo className="w-3/4 min-h-[200px]" />
+        <p className="text-lg flex flex-row gap-4">
+          <Link href="/" className="hover:underline rounded-full px-4 py-2 ">Round 2</Link>
+          <Link href="/round-1" className="hover:underline rounded-full px-4 py-2 bg-white/10 ring-1 ring-white/30">Round 1</Link>
+        </p>
       </div>
       <CenterEcho/>
       <UnderEcho/>

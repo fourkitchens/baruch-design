@@ -8,7 +8,7 @@ export default function ImageSide() {
         <div className="px-6 pb-24 pt-10 sm:pb-32 lg:col-span-7 lg:px-0 lg:pb-48 lg:pt-40 xl:col-span-6">
           <div className="mx-auto max-w-lg lg:mx-0">
             <div className="hidden sm:mt-32 sm:flex lg:mt-16">
-              <div className="relative rounded-full px-3 py-1 text-sm/6 text-white ring-1 ring-primary-sky/40">
+              <div className="relative rounded-full px-3 py-1 text-base/6 text-white ring-1 ring-primary-sky/40">
               Academic Excellence at Baruch{' '}
                 <a href="#" className="whitespace-nowrap font-semibold text-primary-sky">
                   <span aria-hidden="true" className="absolute inset-0" />
@@ -26,11 +26,11 @@ export default function ImageSide() {
             <div className="mt-10 flex items-center gap-x-6">
               <a
                 href="#"
-                className="rounded-md bg-secondary-tangerine px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-secondary-tangerine"
+                className="rounded-md bg-secondary-tangerine px-3.5 py-2.5 text-base font-semibold text-white shadow-sm hover:bg-secondary-tangerine"
               >
                 Apply now
               </a>
-              <a href="#" className="text-sm/6 font-semibold text-neutral-pearl">
+              <a href="#" className="text-base/6 font-semibold text-neutral-pearl">
                 Take a tour <span aria-hidden="true">→</span>
               </a>
             </div>

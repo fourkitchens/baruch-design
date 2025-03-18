@@ -20,7 +20,7 @@ export default function Bento() {
                 <h3 className="mt-2 text-xl font-semibold tracking-tight text-neutral-charcoal">
                   <a href="#" className="hover:text-primary-midtown-blue decoration-primary-sky underline">Explore Academics</a>
                 </h3>
-                <p className="mt-2 max-w-2xl text-sm/6 text-neutral-charcoal">
+                <p className="mt-2 max-w-2xl text-base/6 text-neutral-charcoal">
                   At Baruch College, students engage in a rich academic life, developing a capacity for professional achievement, intellectual exploration, and personal growth. Throughout their education, Baruch students expand their perspective while exploring the vibrant College community.
                 </p>
               </div>
@@ -33,7 +33,7 @@ export default function Bento() {
                 <h3 className="mt-2 text-xl font-semibold tracking-tight text-neutral-charcoal">
                   <a href="#" className="hover:text-primary-midtown-blue decoration-primary-sky underline">Meet President Wu</a>
                 </h3>
-                <p className="mt-2 max-w-2xl text-sm/6 text-neutral-charcoal">
+                <p className="mt-2 max-w-2xl text-base/6 text-neutral-charcoal">
                   With a track record of visionary higher education leadership, President S. David Wu is dedicated to ensuring Baruch College serves as a national model for access and excellence.
                 </p>
               </div>
@@ -46,7 +46,7 @@ export default function Bento() {
                 <h3 className="mt-2 text-xl font-semibold tracking-tight text-neutral-charcoal">
                   <a href="#" className="hover:text-primary-midtown-blue decoration-primary-sky underline">Baruch Connects</a>
                 </h3>
-                <p className="mt-2 max-w-lg text-sm/6 text-neutral-charcoal">
+                <p className="mt-2 max-w-lg text-base/6 text-neutral-charcoal">
                   Baruch’s exciting year-long initiative designed around our core values of collaboration and connection.
                 </p>
               </div>
@@ -59,7 +59,7 @@ export default function Bento() {
                 <h3 className="mt-2 text-xl font-semibold tracking-tight text-neutral-charcoal">
                   <a href="#" className="hover:text-primary-midtown-blue decoration-primary-sky underline">New York City</a>
                 </h3>
-                <p className="mt-2 max-w-2xl text-sm/6 text-neutral-charcoal">
+                <p className="mt-2 max-w-2xl text-base/6 text-neutral-charcoal">
                   Situated on Lexington Avenue near the Flatiron and Gramercy Park districts of Manhattan, Baruch College is in the heart of one of the world’s most dynamic financial and cultural centers. The College is within easy reach of Wall Street, Midtown, the United Nations, and the global headquarters of major companies and organizations.
                 </p>
               </div>
