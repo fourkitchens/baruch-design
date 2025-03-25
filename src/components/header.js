@@ -153,7 +153,7 @@ export default function Header() {
           <p className="text-primary-sky font-field-gothic uppercase font-bold text-8xl tracking-wide leading-[70px]">Accelerate your ambition.</p>
         </div>
         
-        <nav className="mx-auto max-w-2xl px-6 lg:max-w-7xl lg:px-8">
+        <nav className="mx-auto max-w-2xl px-6 lg:max-w-7xl lg:px-8 pb-2">
           <ul className="flex items-center justify-start gap-8">
             {mainNavLinks.map((item) => (
               <li key={item.title}>
