@@ -112,11 +112,11 @@ export default function PrimaryNav() {
   return (
     <PopoverGroup className="flex items-center justify-start gap-2">
       {mainNavLinks.map((item) => (
-        <Popover className="relative isolate z-50 shadow-sm" key={item.title}>
+        <Popover className="relative isolate z-50 shadow-sm first:-ms-4" key={item.title}>
           <PopoverButton className={clsx("text-xl font-bold text-white/90 hover:text-white",
             "after:content-[''] after:block after:max-w-0 hover:after:max-w-full after:transition-all hover:after:duration-300 after:h-0.5 hover:after:bg-primary-sky",
             "flex items-center gap-x-1",
-            "py-2 px-4"
+            "py-2 ps-4 pe-2"
           )}>
             {item.title}
             <ChevronDownIcon aria-hidden="true" className="size-5" />
