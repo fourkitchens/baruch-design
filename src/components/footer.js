@@ -2,6 +2,7 @@ import BaruchLogoHorizontal from "@/assets/logos/BaruchLogoHorizontal";
 import clsx from "clsx";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faYoutube, faFacebook, faInstagram, faLinkedin } from '@fortawesome/free-brands-svg-icons'
+import CunyLogoLong from "@/assets/logos/CunyLogoLong";
 
 const navigation = {
   solutions: [
@@ -92,6 +93,7 @@ export default function Footer() {
                 </li>
               ))}
             </ul>
+            <CunyLogoLong className="w-[100px] h-auto text-white mt-8" />
           </div>
           <div className="mt-16 xl:mt-0 ms-auto xl:col-span-3">
             <div className="md:grid md:grid-cols-3 md:gap-8 md:divide-x md:divide-white/10 pt-2">
