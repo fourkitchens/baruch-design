@@ -141,7 +141,7 @@ export default function Header() {
             {utilityNavItems.map((item) => (
               <li key={item.title}>
                 <a href={item.url} className={clsx("text-sm text-white/90 hover:text-white leading-none",
-                  "after:content-[''] after:block after:max-w-0 hover:after:max-w-full after:transition-all hover:after:duration-300 after:h-0.5 hover:after:bg-primary-sky"
+                  "after:content-[''] after:block after:max-w-0 after:-top-1 after:relative hover:after:max-w-full after:transition-all hover:after:duration-300 after:h-0.25 hover:after:bg-primary-sky"
                 )}>{item.title}</a>
               </li>
             ))}
