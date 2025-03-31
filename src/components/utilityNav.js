@@ -34,7 +34,7 @@ const utilityNavItems = [
 export default function UtilityNav() {
   return (
     <nav className="bg-primary-indigo py-1">
-      <ul className="flex items-center justify-end gap-4 mx-auto max-w-2xl px-6 lg:max-w-7xl lg:px-8">
+      <ul className="flex items-center justify-end gap-4 max-width-wrapper">
         {utilityNavItems.map((item) => (
           <li key={item.title}>
             <a href={item.url} className={clsx("text-sm text-white/90 hover:text-white leading-none",

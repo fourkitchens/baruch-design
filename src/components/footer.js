@@ -76,7 +76,7 @@ const navigation = {
 export default function Footer() {
   return (
     <footer className="bg-primary-indigo">
-      <div className="mx-auto max-w-7xl px-6 pt-16 pb-8 sm:pt-24 lg:px-8 lg:pt-12 lg:pb-32">
+      <div className="pt-16 pb-8 sm:pt-24 lg:pt-12 lg:pb-32 max-width-wrapper">
         <div className="xl:grid xl:grid-cols-5 xl:gap-8">
           <div className="xl:col-span-2">
             <BaruchLogoHorizontal className="w-[250px] text-white" />
