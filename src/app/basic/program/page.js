@@ -6,10 +6,7 @@ export default function Basic() {
 
   return (
     <div>
-      <Header/>
       <Program/>
-      <Banner/>
-      <Footer/>
     </div>
   );
 }

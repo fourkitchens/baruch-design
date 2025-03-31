@@ -32,6 +32,9 @@
   --color-secondary-taxi: rgba(255, 255, 187, 1);
   --color-secondary-thistle: rgba(222, 194, 235, 1);
 
+  --color-body: var(--color-neutral-charcoal);
+  --color-heading: var(--color-primary-cuny-blue);
+
   --animate-marquee-infinite: marquee 30s linear infinite;
 
   @keyframes marquee {
@@ -42,7 +45,22 @@
 }
 
 @utility prose {
-  --tw-prose-headings: var(--color-primary-cuny-blue);
+  --tw-prose-headings: var(--color-heading);
+  --tw-prose-lead: var(--color-body);
+  --tw-prose-body: var(--color-body);
+  --tw-prose-links: var(--color-body);
+  --tw-prose-bold: var(--color-body);
+  --tw-prose-counters: var(--color-body);
+  --tw-prose-bullets: var(--color-body);
+  --tw-prose-hr: var(--color-body);
+  --tw-prose-quotes: var(--color-heading);
+  --tw-prose-quote-borders: var(--color-heading);
+  --tw-prose-captions: var(--color-heading);
+  --tw-prose-code: var(--color-heading);
+  --tw-prose-pre-code: var(--color-heading);
+  --tw-prose-pre-bg: var(--color-heading);
+  --tw-prose-th-borders: var(--color-heading);
+  --tw-prose-td-borders: var(--color-heading);
 }
 
 color-

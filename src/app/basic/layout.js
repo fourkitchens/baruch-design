@@ -17,10 +17,8 @@ export default function Layout({ children }) {
         className={`antialiased bg-white`}
       >
         <Header/>
-        <div className="bg-neutral-pearl text-neutral-charcoal min-h-1/2">
-          {children}
-        </div>
-        <Banner/>
+        {children}
+        {/* <Banner/> */}
         <Footer/>
       </body>
     </html>

@@ -110,7 +110,7 @@ export default function Program() {
       <div className="mx-auto max-w-2xl px-6 lg:max-w-7xl lg:px-8">
         <div className="max-w-4xl">
           <p className="text-lg/7 font-semibold text-neutral-charcoal">Academics</p>
-          <h1 className="mt-2 text-4xl font-semibold tracking-tight text-pretty text-primary-cuny-blue sm:text-5xl">
+          <h1 className="mt-2 text-4xl font-semibold tracking-tight text-pretty text-heading sm:text-5xl">
             The Bachelor of Science in Public Affairs (BSPA)
           </h1>
           <p className="mt-6 text-xl/8 text-balance text-neutral-charcoal">
@@ -119,7 +119,7 @@ export default function Program() {
         </div>
         <section className="mt-20 grid grid-cols-1 lg:grid-cols-2 lg:gap-x-8 lg:gap-y-16">
           <div className="lg:pr-8">
-            <h2 className="text-2xl font-semibold tracking-tight text-pretty text-primary-cuny-blue">Academic Advisement</h2>
+            <h2 className="text-2xl font-semibold tracking-tight text-pretty text-heading">Academic Advisement</h2>
             <p className="mt-6 text-base/7 text-gray-600">
               Faucibus commodo massa rhoncus, volutpat. Dignissim sed eget risus enim. Mattis mauris semper sed amet
               vitae sed turpis id. Id dolor praesent donec est. Odio penatibus risus viverra tellus varius sit neque
@@ -165,7 +165,7 @@ export default function Program() {
             </div>
           </div>
           <div className="lg:pr-8">
-            <h2 className="text-2xl font-semibold tracking-tight text-pretty text-primary-cuny-blue">Bachelor of Science in Public Affairs Degree Details
+            <h2 className="text-2xl font-semibold tracking-tight text-pretty text-heading">Bachelor of Science in Public Affairs Degree Details
             </h2>
             <dl className="mt-16 divide-y divide-gray-900/10 !space-y-0">
               {faqs.map((faq) => (
