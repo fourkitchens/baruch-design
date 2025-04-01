@@ -11,7 +11,7 @@ export default function Header() {
         <div className="flex flex-row items-end justify-start py-8 max-width-wrapper">
           <div>
             <BaruchLogoHorizontal className="w-[300px] text-white" />
-            <p className="text-primary-sky font-field-gothic uppercase font-bold text-8xl tracking-wide leading-[70px]">Accelerate your ambition.</p>
+            <p className="text-primary-sky font-field-gothic uppercase font-bold text-6xl tracking-wide leading-[50px]">Accelerate your ambition.</p>
           </div>
           <CunyLogoLong className="w-[150px] h-auto text-white ms-auto" />
         </div>

@@ -1,30 +1,29 @@
 import { ChevronRightIcon, HomeIcon } from '@heroicons/react/20/solid'
 
-const pages = [
+const defaultPages = [
   { name: 'Projects', href: '#', current: false },
   { name: 'Project Nero', href: '#', current: true },
 ]
 
-export default function Breadcrumbs() {
+export default function Breadcrumbs({ pages = defaultPages }) {
   return (
-    <nav aria-label="Breadcrumb" className="flex">
-      <ol role="list" className="flex items-center space-x-4">
+    <nav aria-label="Breadcrumb" className="flex text-neutral-pewter text-sm font-medium">
+      <ol role="list" className="flex items-center space-x-1">
         <li>
           <div>
-            <a href="#" className="text-gray-400 hover:text-gray-500">
-              <HomeIcon aria-hidden="true" className="size-5 shrink-0" />
-              <span className="sr-only">Home</span>
+            <a href="#" className="link-neutral-dove link-hover-neutral-charcoal hover:text-neutral-charcoal">
+              <span>Home</span>
             </a>
           </div>
         </li>
         {pages.map((page) => (
           <li key={page.name}>
-            <div className="flex items-center">
-              <ChevronRightIcon aria-hidden="true" className="size-5 shrink-0 text-gray-400" />
+            <div className="flex items-center gap-1">
+              <span className="text-neutral-pewter/60">/</span>
               <a
                 href={page.href}
                 aria-current={page.current ? 'page' : undefined}
-                className="ml-4 text-sm font-medium text-gray-500 hover:text-gray-700"
+                className="link-neutral-dove link-hover-neutral-charcoal hover:text-neutral-charcoal"
               >
                 {page.name}
               </a>
