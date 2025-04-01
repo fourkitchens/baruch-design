@@ -2,6 +2,7 @@ import { Popover, PopoverButton, PopoverPanel, PopoverGroup } from '@headlessui/
 import { ChevronDownIcon } from '@heroicons/react/20/solid'
 import clsx from 'clsx';
 import PrimaryNavAbout from '@/components/primaryNavAbout';
+
 const mainNavLinks = [
   {
     title: "About",

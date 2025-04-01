@@ -34,6 +34,8 @@
 
   --color-body: var(--color-neutral-charcoal);
   --color-heading: var(--color-primary-cuny-blue);
+  --color-link: var(--color-primary-cuny-blue);
+  --color-link-hover: var(--color-primary-navy);
 
   --animate-marquee-infinite: marquee 30s linear infinite;
 
@@ -48,7 +50,7 @@
   --tw-prose-headings: var(--color-heading);
   --tw-prose-lead: var(--color-body);
   --tw-prose-body: var(--color-body);
-  --tw-prose-links: var(--color-body);
+  --tw-prose-links: var(--color-primary-cuny-blue);
   --tw-prose-bold: var(--color-body);
   --tw-prose-counters: var(--color-body);
   --tw-prose-bullets: var(--color-body);
@@ -63,11 +65,41 @@
   --tw-prose-td-borders: var(--color-heading);
 }
 
-color-
+@utility link-* {
+  & {
+    @apply relative no-underline;
+  }
+  
+  &::before {
+    @apply absolute w-full h-[1px] -bottom-[1.5px] left-0;
+    background-color: --value(--color-*);
+    content: "";
+  }
+}
+
+@utility link-hover-* {
+  & {
+    @apply relative no-underline;
+  }
+
+  &::after {
+    @apply absolute w-full h-[1px] -bottom-[1.5px] left-0;
+    background-color: currentColor;
+    content: "";
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.3s ease;
+  }
+
+  &:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+  }
+}
+
 body {
   background: var(--color-background);
   color: var(--color-foreground);
-  font-family: Arial, Helvetica, sans-serif;
 }
 
 .text-trim {
@@ -83,4 +115,8 @@ body {
 /* Utility classes */
 .max-width-wrapper {
   @apply mx-auto max-w-2xl px-6 lg:max-w-7xl lg:px-8;
+}
+
+.prose a {
+  @apply link-primary-sky link-hover-primary-cuny-blue;
 }
