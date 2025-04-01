@@ -3,17 +3,14 @@ import Image from "next/image";
 import Breadcrumbs from "@/components/breadcrumbs";
 import LayoutPage from "@/components/layoutPage";
 import PageTitle from "@/components/pageTitle";
-
-const sidebar = (
-  <div>
-    <h2>Sidebar</h2>
-  </div>
-)
+import SidebarNav from "@/components/sidebarNav";
 
 const breadcrumbData = [
   { name: 'Academic Affairs', href: '#', current: false },
   { name: 'Assessment, Accreditation, and Institutional Effectiveness', href: '#', current: false },
 ]
+
+const sidebar = <SidebarNav/>
 
 export default function Basic() {
   return (
