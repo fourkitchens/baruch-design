@@ -84,7 +84,7 @@
 
   &::after {
     @apply absolute w-full h-[1px] -bottom-[1.5px] left-0;
-    background-color: currentColor;
+    background-color: --value(--color-*);
     content: "";
     transform: scaleX(0);
     transform-origin: right;

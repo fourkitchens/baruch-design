@@ -15,23 +15,32 @@ export default function Home() {
 
   return (
     <div>
-      <div className="flex flex-col gap-8 justify-center items-center min-h-screen">
-        <BaruchLogo className="w-3/4 min-h-[200px]" />
-        <p className="text-lg flex flex-row gap-4">
-          <Link href="/" className="hover:underline rounded-full px-4 py-2 bg-white/10 ring-1 ring-white/30">Round 2</Link>
-          <Link href="/round-1" className="hover:underline rounded-full px-4 py-2 ">Round 1</Link>
-        </p>
+      <div className="flex flex-row gap-32 justify-center items-center min-h-screen">
+        <div className="flex flex-row gap-32">
+          <div>
+            <BaruchLogo className="w-[260px] h-auto" />
+            <h2 className="text-2xl font-bold font-field-gothic text-[220px] leading-[170px] uppercase text-secondary-chartreuse">Designs</h2>
+          </div>
+
+          <div className="flex flex-col gap-6">
+            <h2 className="text-2xl font-bold">Basic page</h2>
+            <ul className="text-lg flex flex-col gap-4">
+              <li><Link href="/basic" className="text-white/90 link-transparent link-hover-primary-sky hover:text-white">One</Link></li>
+              <li><Link href="/basic/program" className="text-white/90 link-transparent link-hover-primary-sky hover:text-white">Two</Link></li>
+              <li><Link href="/basic/provost" className="text-white/90 link-transparent link-hover-primary-sky hover:text-white">Three</Link></li>
+            </ul>
+          </div>
+
+          <div className="flex flex-col gap-6">
+            <h2 className="text-2xl font-bold">Style Tiles</h2>
+            <ul className="text-lg flex flex-col gap-4">
+              <li><Link href="/style-tiles/round-2" className="text-white/90 link-transparent link-hover-primary-sky hover:text-white">Round 2</Link></li>
+              <li><Link href="/style-tiles/round-1" className="text-white/90 link-transparent link-hover-primary-sky hover:text-white">Round 1</Link></li>
+            </ul>
+          </div>
+
+        </div>
       </div>
-      <CenterEcho/>
-      <UnderEcho/>
-      <ImageSide/>
-      <Bento/>
-      <Stats3/>
-      <Stats2/>
-      <Slider/>
-      <Program/>
-      <News/>
-      <Marquee/>
     </div>
   );
 }
