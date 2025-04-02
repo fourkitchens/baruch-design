@@ -4,6 +4,9 @@ import Breadcrumbs from "@/components/breadcrumbs";
 import LayoutPage from "@/components/layoutPage";
 import PageTitle from "@/components/pageTitle";
 import SidebarNav from "@/components/sidebarNav";
+import students from '@/assets/images/230621-Mario-Morgado-255.png';
+import students2 from '@/assets/images/Baruch-students_NVC.jpg';
+import athletics from '@/assets/images/2017CUNYACSeniors.webp';
 
 const breadcrumbData = [
   { name: 'Academic Affairs', href: '#', current: false },
@@ -29,32 +32,31 @@ export default function Basic() {
           <PageTitle>Accreditation</PageTitle>
         </div>
         <article className="prose lg:prose-lg max-w-none mx-auto">
-          <p className="lead">Baruch College student Adriana Maria Lopez-Tavares (’25) is set to fulfill her dream of advancing human rights by joining the United Nations Secretariat, Office for Disarmament in the spring.</p>
-          <p>Lopez-Tavares won a coveted United Nations Association-USA Fellowship (UNA-USA) which provides financial assistance to those from underrepresented communities who receive internships with the United Nations. This Fellowship, a &ldquo;first-of-its-kind&rdquo; scholarship, comes with numerous benefits such as stipends of up to $13,000, mentorships, networking opportunities, and access to expert-led conferences and meetings on international peace and security.</p>
-          <figure className="not-prose">
-            <Image 
-              src={photo} 
-              alt="Photo" 
-              className="w-full h-100 object-cover object-left" 
-            />
-            <figcaption className="mt-2 text-sm text-neutral-charcoal italic">
-              Adriana Lopez-Tavares secured a fellowship with the United Nations Office for Disarmament Affairs that supports her goal of advancing human rights through international economic development.
-            </figcaption>
-          </figure>
-          <p>&ldquo;This experience will broaden my horizons, helping me see what the world has to offer and encouraging me to think bigger for my career,&rdquo; said Lopez-Tavares, who is majoring in business administration with Honors in Economics and a minor in Latin America and Caribbean Studies.</p>
-          <p>She added, &ldquo;As a first-generation low-income student, unpaid internships can present financial challenges, but this fellowship has provided the necessary support to overcome them. This internship will be instrumental in shaping my understanding of global security issues and human rights efforts.&rdquo;</p>
-          <h2>Career Focus on Human Rights</h2>
-          <p>For Lopez-Tavares, the mission of the United Nations Office for Disarmament Affairs—which provides support to disarmament issues, preventive measures, and regional disarmament efforts—align with her deep interest in human rights.</p>
-          <p>&ldquo;Disarmament is a critical aspect of human rights that helps end violence and allows communities to grow and thrive,&rdquo; Lopez-Tavares explained. &ldquo;I am so grateful for the opportunity to explore this field through the initiatives my office pursues.&rdquo;</p>
-          <blockquote>&ldquo;The field of human rights attracts me because I want to serve others and contribute to community development.&rdquo;</blockquote>
-          <p>Lopez-Tavares credits her background for inspiring her to pursue solutions to economic disparities and supporting marginalized communities.</p>
-          <p>&ldquo;My family is from a small village in the Dominican Republic, and we immigrated to Brooklyn, New York when I was a child,&rdquo; she stated. &ldquo;My background has fueled my interest in addressing poverty, empowering low-income communities, and advancing human rights through international economic development.&rdquo;</p>
-          <p>&ldquo;The field of human rights attracts me because I want to serve others and contribute to community development.&rdquo;</p>
-          <h2>About the UNA-USA Fellowship</h2>
-          <p>Announced in 2022 by Ambassador Linda Thomas-Greenfield, the <a href="https://unausa.org/programs/fellowship/" target="_blank" rel="noopener">UNA-USA Fellowship</a> engages students, faculty, and staff at Historically Black Colleges and Universities, Tribal Colleges, Hispanic Serving Institutions, Schools for the Blind and Deaf, and the LGBTQ community to build student success, expand networks, and develop the next generation of global leaders that reflects the diversity of the audiences they serve.</p>
-          <h2>Fellowship Advising Support for Baruch Students&nbsp;</h2>
-          <p>Baruch College&rsquo;s Fellowship Advising Office supports students interested in applying for nationally competitive scholarships to study abroad, get professional development, and receive graduate study assistance.</p>
-          <p><a href="https://blogs.baruch.cuny.edu/fellowships/" target="_blank" rel="noopener">Learn more</a> about how the office mentors and advises all Baruch students through the application process for various fellowships and scholarships such as Fulbright awards, Schwarzman Scholarships, Jeannette K. Watson Fellowships, Gilman International Scholarships, Freeman-ASIA scholarships, and more.</p>
+          <h2>Institutional accreditation</h2>
+          <Image src={students2} alt="Students" className="w-1/2 float-right ml-8 mb-8" />
+          <h3>Middle States Commission on Higher Education</h3>
+          <p>Baruch College has been accredited by the <a href="https://www.msche.org/">Middle States Commission on Higher Education</a> (MSCHE) since 1968.</p>
+          <p>MSCHE is an institutional accrediting agency recognized by the U.S. Secretary of Education and the Council for Higher Education Accreditation.</p>
+          <p>Contact: Middle States Commission on Higher Education, 3624 Market Street, Philadelphia, PA 19104, or by phone, 267-284-5000.</p>
+          <p>Please read the <a href="https://msche.box.com/shared/static/sb2xi07n7cd9v90wksurky2sh4p7twwj.pdf">Middle States Commission policy on Complaints Involving Member and Candidate Institutions</a> for a complete explanation of how to communicate with the Commission regarding a complaint. The Commission’s complaint procedures are created to address non-compliance with the Commission’s standards for accreditation, requirements of affiliation, policies or procedures, or the institution’s own policies or procedures.</p>
+          <h3>Baruch College Self-Study 2020</h3>
+          <p>The Baruch College community most recently engaged in a comprehensive Self-Study process between Fall 2017 and Spring 2020, culminating in the production of a <a href="https://provost.baruch.cuny.edu/wp-content/uploads/sites/5/2021/03/Baruch-College-Self-Study_2020-01-17-FINAL-MSCHE-submission-with-endnotes.pdf">Baruch College Self Study 2020 Report</a>, a site visit in March 2020, and subsequently, receiving an extremely positive and encouraging <a href="https://provost.baruch.cuny.edu/wp-content/uploads/sites/5/2021/03/Baruch-College-Self-Study-2020-Evaluation-Team-Visit-Report-2020-April-08.pdf">Evaluation Team Visit Report 2020</a> in April, culminating in a Commission vote approving reaccreditation, as noted in the Statement of Accreditation Status.</p>
+          <h4>Statement of Accreditation Status</h4>
+          <p>To view Baruch’s current MSCHE accreditation status, please see the <a href="https://www.msche.org/institution/0275/">Middle States Statement of Accreditation Status for Baruch College</a>.</p>
+          <Image src={students} alt="Students" className="w-full" />
+          <h2>Specialized accreditation</h2>
+          <p>Within Baruch College, we also have school- and program-specific accreditation, a category which is known as specialized accreditation. To learn more about Baruch’s specialized accreditations, please read about:</p>
+          <ul>
+            <li><a href="https://www.aacsb.edu/accreditation/">Association to Advance Collegiate Schools of Business (AACSB) accreditation</a> of the Zicklin School of Business for both Accounting and Business. For further information about accreditation in the Zicklin School, please contact Lisa Vaia, Director of Accreditation and Curriculum Management, at lisa.vaia@baruch.cuny.edu.</li>
+            <li><a href="https://www.naspaa.org/accreditation">Network of Schools of Public Policy, Affairs, and Administration (NASPAA) accreditation</a><span> of the Marxe School of Public and International Affairs. For additional information about accreditation of the <a href="https://marxe.baruch.cuny.edu/academics/master-of-public-administration/">Master of Public Administration (M.P.A.) program</a> in the Marxe School, please contact Professor John Casey, director of the M.P.A. program, at john.casey@baruch.cuny.edu.</span></li>
+          </ul>
+          <h2>Academic Program Registration</h2>
+          <p>All degree programs offered at Baruch College are registered with the <a href="http://www.nysed.gov/college-university-evaluation">New York State Education Department</a>, and are listed in the <a href="http://www.nysed.gov/heds/IRPSL1.html">NYSED Inventory of Registered Programs</a>.</p>
+          <h2>Athletics</h2>
+          <Image src={athletics} alt="Athletics" />
+          <p>Baruch College is a <a href="https://web3.ncaa.org/directory/orgDetail?id=58">member of Division III</a> of the <a href="https://www.ncaa.org/">National Collegiate Athletic Association (NCAA)</a>, a member-led organization dedicated to the well-being and lifelong success of college athletes. Baruch College complies with all <a href="http://www.ncaapublications.com/productdownloads/D321.pdf">articles and principles of the NCAA Division III Manual</a>.</p>
+          <p>Baruch is also a member of the <a href="https://ecacsports.com/sports/2019/3/7/about.aspx">Eastern College Athletic Conference</a>.</p>
+          <p>For more information about the Athletics program at Baruch College, please contact Heather MacCulloch, Director of Athletics and Recreation, at heather.macculoch@baruch.cuny.edu.</p>
         </article>
       </LayoutPage>
     </div>

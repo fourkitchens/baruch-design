@@ -27,7 +27,7 @@ const navigation = [
   },
   {
     name: 'Academic Affairs',
-    current: false,
+    current: true,
     children: [
       {
         name: 'Teaching, Learning, and Student Success',
@@ -63,6 +63,7 @@ const navigation = [
       {
         name: 'Assessment, Accreditation & Institutional Effectiveness',
         href: 'https://provost.baruch.cuny.edu/academic-affairs/assessment-accreditation-institutional-effectiveness/',
+        current: true,
         children: [
           { name: 'Institutional Effectiveness', href: 'https://provost.baruch.cuny.edu/academic-affairs/assessment-accreditation-institutional-effectiveness/institutional-effectiveness/' },
           { name: 'Data-driven Decision Making', href: 'https://provost.baruch.cuny.edu/academic-affairs/assessment-accreditation-institutional-effectiveness/test-data-driven-decision-making/' },
@@ -81,7 +82,7 @@ const navigation = [
               { name: 'Interview with MSCHE Liaison, Dr. Tiffany Lee', href: 'https://provost.baruch.cuny.edu/msche-institutional-accreditation/interview-with-msches-vice-president-for-institutional-field-relations-and-commission-liaison-dr-tiffany-lee/' }
             ]
           },
-          { name: 'Specialized Accreditation', href: 'https://provost.baruch.cuny.edu/academic-affairs/assessment-accreditation-institutional-effectiveness/accreditation/specialized-accreditation/' },
+          { name: 'Accreditation', href: 'https://provost.baruch.cuny.edu/academic-affairs/assessment-accreditation-institutional-effectiveness/accreditation/specialized-accreditation/', current: true, },
           { name: 'NYSED – Academic Program Registration', href: 'https://provost.baruch.cuny.edu/nysed-academic-program-registration/' },
           { name: 'National Collegiate Athletic Association (NCAA)', href: 'https://provost.baruch.cuny.edu/academic-affairs/assessment-accreditation-institutional-effectiveness/accreditation/national-collegiate-athletic-association-ncaa/' }
         ]
@@ -116,8 +117,8 @@ function NavItem({ item, level = 0 }) {
         target={item.target}
         rel={item.rel}
         className={clsx(
-          item.current ? 'bg-transparent' : 'hover:bg-primary-sky/10',
-          'block py-3 pr-2 pl-10 leading-tight font-medium text-body hover:text-primary-cuny-blue',
+          item.current ? 'bg-primary-sky/10 text-primary-cuny-blue' : '',
+          'block py-3 pr-2 pl-10 leading-tight font-medium text-body hover:text-primary-cuny-blue hover:bg-primary-sky/10',
           level === 0 && 'text-lg',
           level === 1 && 'text-base',
           level >= 2 && 'text-sm'
@@ -132,8 +133,8 @@ function NavItem({ item, level = 0 }) {
     <Disclosure as="div">
       <DisclosureButton
         className={clsx(
-          item.current ? 'bg-transparent' : 'hover:bg-primary-sky/10',
-          'group flex w-full items-center gap-x-3 py-3 pl-2 text-left leading-tight font-medium text-body hover:text-primary-cuny-blue',
+          item.current ? 'bg-primary-sky/10 text-primary-cuny-blue' : '',
+          'group flex w-full items-center gap-x-3 py-3 pl-2 text-left leading-tight font-medium text-body hover:text-primary-cuny-blue hover:bg-primary-sky/10',
           level === 0 && 'text-lg',
           level === 1 && 'text-base',
           level >= 2 && 'text-sm'
