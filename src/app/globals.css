@@ -117,6 +117,23 @@ body {
   @apply mx-auto max-w-2xl px-6 lg:max-w-7xl lg:px-8;
 }
 
-.prose a {
+/* .prose a {
   @apply link-primary-sky link-hover-primary-cuny-blue;
+  @apply inline-block;
+} */
+
+.prose a {
+  @apply no-underline;
+  background: 
+    linear-gradient(to right, var(--color-primary-sky), var(--color-primary-sky)),
+    linear-gradient(to right, var(--color-primary-cuny-blue), var(--color-primary-cuny-blue), var(--color-primary-cuny-blue));
+  background-size: 100% 1px, 0 1px;
+  background-position: 100% 100%, 0 100%;
+  background-repeat: no-repeat;
+  transition: background-size 400ms;
+}
+  
+.prose a:hover,
+.prose a:focus {
+  background-size: 0 1px, 100% 1px;
 }

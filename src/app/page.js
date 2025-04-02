@@ -25,9 +25,9 @@ export default function Home() {
           <div className="flex flex-col gap-6">
             <h2 className="text-2xl font-bold">Basic page</h2>
             <ul className="text-lg flex flex-col gap-4">
-              <li><Link href="/basic" className="text-white/90 link-transparent link-hover-primary-sky hover:text-white">One</Link></li>
-              <li><Link href="/basic/program" className="text-white/90 link-transparent link-hover-primary-sky hover:text-white">Two</Link></li>
-              <li><Link href="/basic/provost" className="text-white/90 link-transparent link-hover-primary-sky hover:text-white">Three</Link></li>
+              <li><Link href="/basic" className="text-white/90 link-transparent link-hover-primary-sky hover:text-white">News</Link></li>
+              {/* <li><Link href="/basic/program" className="text-white/90 link-transparent link-hover-primary-sky hover:text-white">Two</Link></li> */}
+              <li><Link href="/basic/provost" className="text-white/90 link-transparent link-hover-primary-sky hover:text-white">Accreditation</Link></li>
             </ul>
           </div>
 
