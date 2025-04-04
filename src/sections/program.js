@@ -88,7 +88,7 @@ const Table = () => {
           </th>
         </tr>
       </thead>
-      <tbody className="bg-neutral-pearl">
+      <tbody className="bg-bg-light">
         {courses.map((course) => (
           <tr key={course.code} className="even:bg-neutral-pearl-dark">
             <td className="py-4 pr-3 pl-4 text-base font-medium text-gray-900 sm:pl-3">

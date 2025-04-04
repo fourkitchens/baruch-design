@@ -1,5 +1,6 @@
 import clsx from "clsx";
 import Image from "next/image";
+
 const NavSection = ({ header, items, className, maxItems = 5, image }) => {
   const displayedItems = items.slice(0, maxItems);
 
@@ -18,11 +19,10 @@ const NavSection = ({ header, items, className, maxItems = 5, image }) => {
       <div className="mt-6 flow-root">
         <ul className="-my-2">
           {displayedItems.map((item) => (
-            <li key={item.title}>
+            <li key={item.title} className="py-1">
               <a
                 href={item.url}
-                className={clsx("inline-block py-1 text-base font-medium text-primary-cuny-blue",
-                  "after:content-[''] after:block after:max-w-0 hover:after:max-w-full after:transition-all hover:after:duration-300 after:h-0.5 hover:after:bg-primary-sky"
+                className={clsx("text-base font-medium text-primary-cuny-blue link link-mega-menu",
                 )}
               >
                 {item.title}

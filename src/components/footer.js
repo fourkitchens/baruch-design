@@ -95,30 +95,27 @@ export default function Footer() {
             </ul>
             <CunyLogoLong className="w-[100px] h-auto text-white mt-8" />
           </div>
+          
           <div className="mt-16 xl:mt-0 ms-auto xl:col-span-3">
-            <div className="md:grid md:grid-cols-3 md:gap-8 md:divide-x md:divide-white/10 pt-2">
+            <div className="md:grid md:grid-cols-3 md:gap-8 md:divide-x md:divide-white/10 pt-2 space-y-8 md:space-y-0">
               <div className="pe-8">
                 <h3 className="text-base font-semibold text-white leading-tight">Explore Baruch</h3>
                 <ul role="list" className="mt-6 space-y-4">
                   {navigation.explore.map((item) => (
                     <li key={item.name}>
-                      <a href={item.href} className={clsx("text-base text-primary-sky hover:text-white leading-tight inline-block",
-                        "after:content-[''] after:block after:max-w-0 after:top-1 after:relative hover:after:max-w-full after:transition-all hover:after:duration-300 after:h-0.25 hover:after:bg-primary-sky"
-                      )}>
+                      <a href={item.href} className="text-base text-primary-sky hover:text-white leading-tight link link-indigo-bg">
                         {item.name}
                       </a>
                     </li>
                   ))}
                 </ul>
               </div>
-              <div className="mt-10 md:mt-0 pe-8">
+              <div className="md:mt-0 pe-8">
                 <h3 className="text-base font-semibold text-white leading-tight">Support and Advocacy</h3>
                 <ul role="list" className="mt-6 space-y-4">
                   {navigation.support.map((item) => (
                     <li key={item.name}>
-                      <a href={item.href} className={clsx("text-base text-primary-sky hover:text-white leading-tight inline-block",
-                        "after:content-[''] after:block after:max-w-0 after:top-1 after:relative hover:after:max-w-full after:transition-all hover:after:duration-300 after:h-0.25 hover:after:bg-primary-sky"
-                      )}>
+                      <a href={item.href} className="text-base text-primary-sky hover:text-white leading-tight link link-indigo-bg">
                         {item.name}
                       </a>
                     </li>
@@ -130,9 +127,7 @@ export default function Footer() {
                 <ul role="list" className="mt-6 space-y-4">
                   {navigation.resources.map((item) => (
                     <li key={item.name}>
-                      <a href={item.href} className={clsx("text-base text-primary-sky hover:text-white leading-none inline-block",
-                        "after:content-[''] after:block after:max-w-0 after:top-1 after:relative hover:after:max-w-full after:transition-all hover:after:duration-300 after:h-0.25 hover:after:bg-primary-sky"
-                      )}>
+                      <a href={item.href} className="text-base text-primary-sky hover:text-white leading-tight link link-indigo-bg">
                         {item.name}
                       </a>
                     </li>
