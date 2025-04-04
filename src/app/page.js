@@ -15,8 +15,8 @@ export default function Home() {
 
   return (
     <div>
-      <div className="flex flex-row gap-32 justify-center items-center min-h-screen">
-        <div className="flex flex-row gap-32">
+      <div className="flex flex-row gap-8 md:gap-32 justify-center items-center min-h-screen py-32">
+        <div className="flex flex-col gap-8 md:gap-32 md:flex-row">
           <div>
             <BaruchLogo className="w-[260px] h-auto" />
             <h2 className="text-2xl font-bold font-field-gothic text-[220px] leading-[170px] uppercase text-secondary-chartreuse">Designs</h2>
@@ -26,7 +26,6 @@ export default function Home() {
             <h2 className="text-2xl font-bold">Basic page</h2>
             <ul className="text-lg flex flex-col gap-4">
               <li><Link href="/basic" className="text-white/90 link link-indigo-bg hover:text-white">News</Link></li>
-              {/* <li><Link href="/basic/program" className="text-white/90 link hover:text-white">Two</Link></li> */}
               <li><Link href="/basic/provost" className="text-white/90 link link-indigo-bg hover:text-white">Accreditation</Link></li>
               <li><Link href="/basic/everything" className="text-white/90 link link-indigo-bg hover:text-white">Everything</Link></li>
             </ul>
