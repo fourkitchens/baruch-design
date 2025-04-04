@@ -1,8 +1,7 @@
 import BaruchLogoHorizontal from "@/assets/logos/BaruchLogoHorizontal";
 import PrimaryNav from "@/components/primaryNav";
-import UtilityNav from "@/components/utilityNav";
 import CunyLogoLong from "@/assets/logos/CunyLogoLong";
-
+import Search from "@/components/search";
 export default function Header() {
   return (
     <header className="bg-gradient-to-r from-primary-indigo via-primary-cuny-blue to-secondary-grape">
@@ -15,8 +14,9 @@ export default function Header() {
         </div>
         
         <div className="border-t border-neutral-dove/20">
-          <div className="max-width-wrapper py-1">
+          <div className="max-width-wrapper py-1 flex flex-row items-center justify-between">
             <PrimaryNav />
+            <Search />
           </div>
         </div>
     </header>
