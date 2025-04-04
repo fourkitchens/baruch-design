@@ -6,9 +6,7 @@ import CunyLogoLong from "@/assets/logos/CunyLogoLong";
 export default function Header() {
   return (
     <header className="bg-gradient-to-r from-primary-indigo via-primary-cuny-blue to-secondary-grape">
-        <UtilityNav />
-
-        <div className="flex flex-row items-end justify-start py-8 max-width-wrapper">
+        <div className="flex flex-row items-end justify-start pt-10 pb-8 max-width-wrapper">
           <div>
             <BaruchLogoHorizontal className="w-[300px] text-white" />
             <p className="text-primary-sky font-field-gothic uppercase font-bold text-6xl tracking-wide leading-[50px]">Accelerate your ambition.</p>

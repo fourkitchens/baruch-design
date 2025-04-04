@@ -7,7 +7,7 @@ export default function HeroBigSideBySide({ image, title, content }) {
         
         <div className="px-6 pb-24 pt-10 sm:pb-32 lg:col-span-7 lg:px-0 xl:col-span-6">
           <div className="mx-auto max-w-lg lg:mx-0">
-            <h1 className="mt-24 text-pretty text-[130px] leading-[100px] uppercase font-semibold font-field-gothic text-white sm:mt-10 ">
+            <h1 className="mt-24 text-pretty text-[86px] leading-none uppercase font-normal tracking-tight font-league-gothic text-white sm:mt-10 ">
               {title}
             </h1>
             <p className="mt-8 text-pretty text-lg font-medium text-white sm:text-xl/8">

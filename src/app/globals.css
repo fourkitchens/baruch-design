@@ -12,6 +12,7 @@
   --color-foreground: var(--foreground);
   --font-sans: "fort", sans-serif;
   --font-field-gothic: 'field-gothic-xxxcondensed', sans-serif;
+  --font-league-gothic: 'League Gothic', sans-serif;
   --color-neutral-charcoal: rgba(56, 56, 56, 1);
   --color-neutral-dove: rgba(216, 215, 214, 1);
   --color-neutral-pearl: rgba(247, 244, 235, 1);
@@ -31,11 +32,13 @@
   --color-secondary-tangerine: rgba(230, 95, 36, 1);
   --color-secondary-taxi: rgba(255, 255, 187, 1);
   --color-secondary-thistle: rgba(222, 194, 235, 1);
+  --color-white: rgba(255, 255, 255, 1);
 
   --color-body: var(--color-neutral-charcoal);
   --color-heading: var(--color-primary-cuny-blue);
   --color-link: var(--color-primary-cuny-blue);
   --color-link-hover: var(--color-primary-navy);
+  --color-bg-light: var(--color-neutral-pearl);
 
   --animate-marquee-infinite: marquee 30s linear infinite;
 
@@ -47,7 +50,7 @@
 }
 
 @utility prose {
-  --tw-prose-headings: var(--color-heading);
+  --tw-prose-headings: var(--color-body);
   --tw-prose-lead: var(--color-body);
   --tw-prose-body: var(--color-body);
   --tw-prose-links: var(--color-primary-cuny-blue);
@@ -63,6 +66,16 @@
   --tw-prose-pre-bg: var(--color-heading);
   --tw-prose-th-borders: var(--color-heading);
   --tw-prose-td-borders: var(--color-heading);
+}
+
+.prose {
+  :where(h1):not(:where([class~="not-prose"],[class~="not-prose"] *)) {
+    @apply text-heading;
+  }
+  
+  :where(h2):not(:where([class~="not-prose"],[class~="not-prose"] *)) {
+    @apply text-heading;
+  }
 }
 
 @utility link-* {
@@ -117,12 +130,36 @@ body {
   @apply mx-auto max-w-2xl px-6 lg:max-w-7xl lg:px-8;
 }
 
-/* .prose a {
-  @apply link-primary-sky link-hover-primary-cuny-blue;
-  @apply inline-block;
-} */
+.link {
+  --default-color: var(--color-primary-sky);
+  --hover-color: var(--color-primary-cuny-blue);
 
-.prose a {
+  @apply no-underline;
+  background: 
+    linear-gradient(to right, var(--default-color), var(--default-color)),
+    linear-gradient(to right, var(--hover-color), var(--hover-color), var(--hover-color));
+  background-size: 100% 1px, 0 1px;
+  background-position: 100% 100%, 0 100%;
+  background-repeat: no-repeat;
+  transition: background-size 400ms;
+}
+  
+.link:hover,
+.link:focus {
+  background-size: 0 1px, 100% 1px;
+}
+
+.link-indigo-bg {
+  --default-color: var(--color-primary-indigo);
+  --hover-color: var(--color-primary-sky);
+}
+
+.link-mega-menu {
+  --default-color: var(--color-white);
+  --hover-color: var(--color-primary-sky);
+}
+
+.prose a:not(.not-prose a) {
   @apply no-underline;
   background: 
     linear-gradient(to right, var(--color-primary-sky), var(--color-primary-sky)),
@@ -133,7 +170,7 @@ body {
   transition: background-size 400ms;
 }
   
-.prose a:hover,
-.prose a:focus {
+.prose a:not(.not-prose a):hover,
+.prose a:not(.not-prose a):focus {
   background-size: 0 1px, 100% 1px;
 }
