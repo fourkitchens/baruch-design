@@ -95,8 +95,9 @@ export default function Footer() {
             </ul>
             <CunyLogoLong className="w-[100px] h-auto text-white mt-8" />
           </div>
+          
           <div className="mt-16 xl:mt-0 ms-auto xl:col-span-3">
-            <div className="md:grid md:grid-cols-3 md:gap-8 md:divide-x md:divide-white/10 pt-2">
+            <div className="md:grid md:grid-cols-3 md:gap-8 md:divide-x md:divide-white/10 pt-2 space-y-8 md:space-y-0">
               <div className="pe-8">
                 <h3 className="text-base font-semibold text-white leading-tight">Explore Baruch</h3>
                 <ul role="list" className="mt-6 space-y-4">
@@ -109,7 +110,7 @@ export default function Footer() {
                   ))}
                 </ul>
               </div>
-              <div className="mt-10 md:mt-0 pe-8">
+              <div className="md:mt-0 pe-8">
                 <h3 className="text-base font-semibold text-white leading-tight">Support and Advocacy</h3>
                 <ul role="list" className="mt-6 space-y-4">
                   {navigation.support.map((item) => (
