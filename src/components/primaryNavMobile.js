@@ -3,13 +3,9 @@
 import { Dialog, DialogPanel } from "@headlessui/react";
 import { XMarkIcon, Bars3Icon } from "@heroicons/react/24/outline";
 import { useState } from "react";
-
-const navigation = [
-  { name: 'Product', href: '#' },
-  { name: 'Features', href: '#' },
-  { name: 'Marketplace', href: '#' },
-  { name: 'Company', href: '#' },
-]
+import BaruchLogoHorizontal from "@/assets/logos/BaruchLogoHorizontal";
+import AccelerateAmbition from "@/assets/AccelerateAmbition";
+import mainNavLinks from '@/data/primaryNav';
 
 export default function PrimaryNavMobile({className}) {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
@@ -27,46 +23,33 @@ export default function PrimaryNavMobile({className}) {
     
       <Dialog open={mobileMenuOpen} onClose={setMobileMenuOpen} className="lg:hidden">
         <div className="fixed inset-0 z-10" />
-        <DialogPanel className="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
-          <div className="flex items-center justify-between">
-            <a href="#" className="-m-1.5 p-1.5">
-              <span className="sr-only">Your Company</span>
-              <img
-                alt=""
-                src="https://tailwindcss.com/plus-assets/img/logos/mark.svg?color=indigo&shade=600"
-                className="h-8 w-auto"
-              />
-            </a>
+        <DialogPanel className="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-gradient-to-br from-primary-indigo to-primary-cuny-blue text-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+          <div className="flex items-start justify-between">
+            <div className="space-y-2">
+              <BaruchLogoHorizontal className="w-[200px] h-auto lg:w-[300px] text-white mt-1" />
+              <AccelerateAmbition className="text-primary-sky lg:w-[250px] h-auto" />
+            </div>
             <button
               type="button"
               onClick={() => setMobileMenuOpen(false)}
-              className="-m-2.5 rounded-md p-2.5 text-gray-700"
+              className="-m-2.5 rounded-md p-2.5 text-white"
             >
               <span className="sr-only">Close menu</span>
               <XMarkIcon aria-hidden="true" className="size-6" />
             </button>
           </div>
+          
           <div className="mt-6 flow-root">
-            <div className="-my-6 divide-y divide-gray-500/10">
-              <div className="space-y-2 py-6">
-                {navigation.map((item) => (
-                  <a
-                    key={item.name}
-                    href={item.href}
-                    className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50"
-                  >
-                    {item.name}
-                  </a>
-                ))}
-              </div>
-              <div className="py-6">
+            <div className="space-y-2 py-6">
+              {mainNavLinks.map((item) => (
                 <a
-                  href="#"
-                  className="-mx-3 block rounded-lg px-3 py-2.5 text-base/7 font-semibold text-gray-900 hover:bg-gray-50"
+                  key={item.name}
+                  href={item.href}
+                  className="-mx-3 block rounded-lg px-3 py-2 text-xl font-bold text-white/90 hover:text-white"
                 >
-                  Log in
+                  {item.title}
                 </a>
-              </div>
+              ))}
             </div>
           </div>
         </DialogPanel>
