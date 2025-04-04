@@ -102,9 +102,7 @@ export default function Footer() {
                 <ul role="list" className="mt-6 space-y-4">
                   {navigation.explore.map((item) => (
                     <li key={item.name}>
-                      <a href={item.href} className={clsx("text-base text-primary-sky hover:text-white leading-tight inline-block",
-                        "after:content-[''] after:block after:max-w-0 after:top-1 after:relative hover:after:max-w-full after:transition-all hover:after:duration-300 after:h-0.25 hover:after:bg-primary-sky"
-                      )}>
+                      <a href={item.href} className="text-base text-primary-sky hover:text-white leading-tight link link-indigo-bg">
                         {item.name}
                       </a>
                     </li>
@@ -116,9 +114,7 @@ export default function Footer() {
                 <ul role="list" className="mt-6 space-y-4">
                   {navigation.support.map((item) => (
                     <li key={item.name}>
-                      <a href={item.href} className={clsx("text-base text-primary-sky hover:text-white leading-tight inline-block",
-                        "after:content-[''] after:block after:max-w-0 after:top-1 after:relative hover:after:max-w-full after:transition-all hover:after:duration-300 after:h-0.25 hover:after:bg-primary-sky"
-                      )}>
+                      <a href={item.href} className="text-base text-primary-sky hover:text-white leading-tight link link-indigo-bg">
                         {item.name}
                       </a>
                     </li>
@@ -130,9 +126,7 @@ export default function Footer() {
                 <ul role="list" className="mt-6 space-y-4">
                   {navigation.resources.map((item) => (
                     <li key={item.name}>
-                      <a href={item.href} className={clsx("text-base text-primary-sky hover:text-white leading-none inline-block",
-                        "after:content-[''] after:block after:max-w-0 after:top-1 after:relative hover:after:max-w-full after:transition-all hover:after:duration-300 after:h-0.25 hover:after:bg-primary-sky"
-                      )}>
+                      <a href={item.href} className="text-base text-primary-sky hover:text-white leading-tight link link-indigo-bg">
                         {item.name}
                       </a>
                     </li>

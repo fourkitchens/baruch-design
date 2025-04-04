@@ -25,17 +25,18 @@ export default function Home() {
           <div className="flex flex-col gap-6">
             <h2 className="text-2xl font-bold">Basic page</h2>
             <ul className="text-lg flex flex-col gap-4">
-              <li><Link href="/basic" className="text-white/90 link-transparent link-hover-primary-sky hover:text-white">News</Link></li>
-              {/* <li><Link href="/basic/program" className="text-white/90 link-transparent link-hover-primary-sky hover:text-white">Two</Link></li> */}
-              <li><Link href="/basic/provost" className="text-white/90 link-transparent link-hover-primary-sky hover:text-white">Accreditation</Link></li>
+              <li><Link href="/basic" className="text-white/90 link link-indigo-bg hover:text-white">News</Link></li>
+              {/* <li><Link href="/basic/program" className="text-white/90 link hover:text-white">Two</Link></li> */}
+              <li><Link href="/basic/provost" className="text-white/90 link link-indigo-bg hover:text-white">Accreditation</Link></li>
+              <li><Link href="/basic/everything" className="text-white/90 link link-indigo-bg hover:text-white">Everything</Link></li>
             </ul>
           </div>
 
           <div className="flex flex-col gap-6">
             <h2 className="text-2xl font-bold">Style Tiles</h2>
             <ul className="text-lg flex flex-col gap-4">
-              <li><Link href="/style-tiles/round-2" className="text-white/90 link-transparent link-hover-primary-sky hover:text-white">Round 2</Link></li>
-              <li><Link href="/style-tiles/round-1" className="text-white/90 link-transparent link-hover-primary-sky hover:text-white">Round 1</Link></li>
+              <li><Link href="/style-tiles/round-2" className="text-white/90 link link-indigo-bg hover:text-white">Round 2</Link></li>
+              <li><Link href="/style-tiles/round-1" className="text-white/90 link link-indigo-bg hover:text-white">Round 1</Link></li>
             </ul>
           </div>
 
