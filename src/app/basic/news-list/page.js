@@ -156,9 +156,9 @@ export default function NewsList() {
                 Reset filters
               </button>
             </div>
-            <div className="mt-8 flex flex-row gap-x-8 items-center">
-              <Image src={marketplace} alt="Marketplace" className="w-full h-auto rounded" />
-              <div className="space-y-3">
+            <div className="mt-8 grid grid-cols-5 gap-8 items-center">
+              <Image src={marketplace} alt="Marketplace" className="w-full h-auto rounded col-span-3" />
+              <div className="space-y-3 col-span-2">
                 <p className="font-medium">April 7, 2025</p>
                 <h2 className="text-heading text-3xl font-semibold leading-normal">
                   <a href="#" className="link">Fostering Creative Ventures: Inside Baruch’s Entrepreneur Marketplace</a>
