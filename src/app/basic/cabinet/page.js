@@ -116,12 +116,12 @@ export default function Cabinet() {
           </div>
           <ul
             role="list"
-            className="mx-auto grid max-w-2xl grid-cols-1 gap-x-6 gap-y-20 sm:grid-cols-2 lg:grid-cols-3 lg:mx-0 lg:max-w-none lg:gap-x-8 xl:col-span-2"
+            className="mx-auto grid max-w-2xl grid-cols-2 gap-x-6 gap-y-20 lg:grid-cols-3 lg:mx-0 lg:max-w-none lg:gap-x-8 xl:col-span-2"
           >
             {people.map((person) => (
               <li key={person.name}>
                 <img alt="" src={person.imageUrl} className="aspect-square w-full rounded-2xl object-cover" />
-                <h3 className="mt-6 mb-2 text-xl/8 font-semibold text-heading">
+                <h3 className="mt-6 mb-2 text-xl leading-snug font-semibold text-heading">
                   <a className="link" href="#">{person.name}</a>
                 </h3>
                 <p className="text-base/7 text-body leading-snug">{person.title}</p>

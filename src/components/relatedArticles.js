@@ -12,7 +12,7 @@ const posts = [
       'A new 2+2 agreement guarantees SUNY Broome business students admission to Baruch’s Zicklin School of Business if they meet academic requirements.',
     imageUrl: news1,
     date: 'Mar 16, 2020',
-    datetime: '2020-03-16',
+    datetime: '2025-03-16',
   },
   {
     id: 2,
@@ -22,7 +22,7 @@ const posts = [
       'A standout team from Baruch’s Zicklin School of Business claimed second place in Deloitte’s national FanTAXtic competition—marking an impressive debut on the national stage.',
     imageUrl: news2,
     date: 'Mar 16, 2020',
-    datetime: '2020-03-16',
+    datetime: '2025-03-16',
   },
   {
     id: 3,
@@ -32,7 +32,7 @@ const posts = [
       'Baruch senior Adriana Lopez-Tavares was awarded the prestigious UNA-USA Fellowship, taking her passion for human rights and economic development to the United Nations Office for Disarmament Affairs.',
     imageUrl: news3,
     date: 'Mar 16, 2020',
-    datetime: '2020-03-16',
+    datetime: '2025-03-16',
   },
 ]
 
