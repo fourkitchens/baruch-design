@@ -48,7 +48,7 @@ export default function Search() {
 
       <Dialog
         transition
-        className="relative z-10"
+        className="relative z-90"
         open={open}
         onClose={() => {
           setOpen(false)
