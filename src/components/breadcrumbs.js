@@ -11,7 +11,7 @@ export default function Breadcrumbs({ pages = defaultPages }) {
       <ol role="list" className="flex items-center space-x-1">
         <li>
           <div>
-            <a href="#" className="link-neutral-dove link-hover-neutral-charcoal hover:text-neutral-charcoal">
+            <a href="#" className="link link-breadcrumbs hover:text-neutral-charcoal">
               <span>Home</span>
             </a>
           </div>
@@ -23,7 +23,7 @@ export default function Breadcrumbs({ pages = defaultPages }) {
               <a
                 href={page.href}
                 aria-current={page.current ? 'page' : undefined}
-                className="link-neutral-dove link-hover-neutral-charcoal hover:text-neutral-charcoal"
+                className="link link-breadcrumbs hover:text-neutral-charcoal"
               >
                 {page.name}
               </a>
