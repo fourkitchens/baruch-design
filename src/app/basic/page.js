@@ -1,8 +1,8 @@
 import photo from "@/assets/images/UNA-USA-Fellow_.gif";
 import Image from "next/image";
-import Breadcrumbs from "@/components/breadcrumbs";
 import HeroBigSideBySide from "@/components/heroBigSideBySide";
 import LayoutPage from "@/components/layoutPage";
+import RelatedArticles from "@/components/relatedArticles";
 
 const news = {
   title: "Baruch Senior Wins United Nations Association-USA Fellowship",
@@ -20,7 +20,7 @@ const sidebar = (
 export default function Basic() {
   return (
     <div>
-      <HeroBigSideBySide image={news.image} title={news.title} content={news.content} />
+      <HeroBigSideBySide image={news.image} title={news.title} content={news.content} date={news.date} />
       <LayoutPage>
         {/* <div className="flex flex-col gap-4">
           <Breadcrumbs />
@@ -66,6 +66,7 @@ export default function Basic() {
           <p><a href="https://blogs.baruch.cuny.edu/fellowships/" target="_blank" rel="noopener">Learn more</a> about how the office mentors and advises all Baruch students through the application process for various fellowships and scholarships such as Fulbright awards, Schwarzman Scholarships, Jeannette K. Watson Fellowships, Gilman International Scholarships, Freeman-ASIA scholarships, and more.</p>
         </article>
       </LayoutPage>
+      <RelatedArticles />
     </div>
   );
 }
