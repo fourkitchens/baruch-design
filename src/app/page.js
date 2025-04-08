@@ -27,6 +27,7 @@ export default function Home() {
             <ul className="text-lg flex flex-col gap-4">
               <li><Link href="/basic" className="text-white/90 link link-indigo-bg hover:text-white">News</Link></li>
               <li><Link href="/basic/provost" className="text-white/90 link link-indigo-bg hover:text-white">Accreditation</Link></li>
+              <li><Link href="/basic/cabinet" className="text-white/90 link link-indigo-bg hover:text-white">Cabinet</Link></li>
               <li><Link href="/basic/everything" className="text-white/90 link link-indigo-bg hover:text-white">Everything</Link></li>
             </ul>
           </div>
