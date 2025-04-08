@@ -78,38 +78,6 @@
   }
 }
 
-@utility link-* {
-  & {
-    @apply relative no-underline;
-  }
-  
-  &::before {
-    @apply absolute w-full h-[1px] -bottom-[1.5px] left-0;
-    background-color: --value(--color-*);
-    content: "";
-  }
-}
-
-@utility link-hover-* {
-  & {
-    @apply relative no-underline;
-  }
-
-  &::after {
-    @apply absolute w-full h-[1px] -bottom-[1.5px] left-0;
-    background-color: --value(--color-*);
-    content: "";
-    transform: scaleX(0);
-    transform-origin: right;
-    transition: transform 0.3s ease;
-  }
-
-  &:hover::after {
-    transform: scaleX(1);
-    transform-origin: left;
-  }
-}
-
 body {
   background: var(--color-background);
   color: var(--color-foreground);
@@ -152,6 +120,11 @@ body {
 .link-indigo-bg {
   --default-color: var(--color-primary-indigo);
   --hover-color: var(--color-primary-sky);
+}
+
+.link-breadcrumbs {
+  --default-color: var(--color-neutral-dove);
+  --hover-color: var(--color-neutral-charcoal);
 }
 
 .link-mega-menu {

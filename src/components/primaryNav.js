@@ -18,7 +18,7 @@ export default function PrimaryNav() {
           </PopoverButton>
           <PopoverPanel
             transition
-            className="absolute left-0 top-5 rounded-sm shadow-lg z-10 mt-5 flex w-screen max-w-max bg-white -translate-x-8 transition data-closed:translate-y-8 data-closed:opacity-0 data-enter:duration-150 data-enter:ease-out data-leave:duration-150 data-leave:ease-in"
+            className="absolute left-0 top-5 rounded-sm shadow-lg z-50 mt-5 flex w-screen max-w-max bg-white -translate-x-8 transition data-closed:translate-y-8 data-closed:opacity-0 data-enter:duration-150 data-enter:ease-out data-leave:duration-150 data-leave:ease-in"
           >{item.popover}</PopoverPanel>
         </Popover>
       ))}

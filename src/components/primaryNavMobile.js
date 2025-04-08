@@ -1,7 +1,7 @@
 'use client'
 
-import { Dialog, DialogPanel } from "@headlessui/react";
-import { XMarkIcon, Bars3Icon } from "@heroicons/react/24/outline";
+import { Dialog, DialogPanel, Disclosure, DisclosureButton, DisclosurePanel } from "@headlessui/react";
+import { XMarkIcon, Bars3Icon, ChevronDownIcon } from "@heroicons/react/24/outline";
 import { useState } from "react";
 import BaruchLogoHorizontal from "@/assets/logos/BaruchLogoHorizontal";
 import AccelerateAmbition from "@/assets/AccelerateAmbition";
@@ -39,16 +39,18 @@ export default function PrimaryNavMobile({className}) {
             </button>
           </div>
           
-          <div className="mt-6 flow-root">
+          <div className="mt-6 flex flex-col gap-y-2">
             <div className="space-y-2 py-6">
               {mainNavLinks.map((item) => (
-                <a
-                  key={item.name}
-                  href={item.href}
-                  className="-mx-3 block rounded-lg px-3 py-2 text-xl font-bold text-white/90 hover:text-white"
-                >
-                  {item.title}
-                </a>
+                <Disclosure key={item.name}>
+                  <DisclosureButton className="text-xl font-bold text-white/90 hover:text-white">
+                    {item.title}
+                    <ChevronDownIcon aria-hidden="true" className="size-5" />
+                  </DisclosureButton>
+                  <DisclosurePanel className="text-gray-500">
+                    Yes! You can purchase a license that you can share with your entire team.
+                  </DisclosurePanel>
+                </Disclosure>
               ))}
             </div>
           </div>

@@ -14,11 +14,11 @@ import { FaceFrownIcon, GlobeAmericasIcon } from '@heroicons/react/24/outline'
 import { useState } from 'react'
 
 const items = [
-  { id: 1, name: 'Workflow Inc.', category: 'Admissions', url: '#' },
-  { id: 2, name: 'Workflow Inc.', category: 'Admissions', url: '#' },
-  { id: 3, name: 'Workflow Inc.', category: 'Admissions', url: '#' },
-  { id: 4, name: 'Workflow Inc.', category: 'Current Students', url: '#' },
-  { id: 5, name: 'Workflow Inc.', category: 'Current Students', url: '#' },
+  { id: 1, name: 'Search result', category: 'Admissions', url: '#' },
+  { id: 2, name: 'Search result', category: 'Admissions', url: '#' },
+  { id: 3, name: 'Search result', category: 'Admissions', url: '#' },
+  { id: 4, name: 'Search result', category: 'Current Students', url: '#' },
+  { id: 5, name: 'Search result', category: 'Current Students', url: '#' },
 ]
 
 export default function Search() {
