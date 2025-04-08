@@ -1,6 +1,5 @@
 import photo from "@/assets/images/UNA-USA-Fellow_.gif";
 import Image from "next/image";
-import Breadcrumbs from "@/components/breadcrumbs";
 import HeroBigSideBySide from "@/components/heroBigSideBySide";
 import LayoutPage from "@/components/layoutPage";
 import AccordionGroup from "@/components/accordionGroup";
