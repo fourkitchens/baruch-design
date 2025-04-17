@@ -1,0 +1,16 @@
+[build]
+  command = "npm run build && npm run build-storybook"
+  publish = ".next"
+
+[build.environment]
+  NEXT_TELEMETRY_DISABLED = "1"
+
+[[redirects]]
+  from = "/storybook/*"
+  to = "/storybook-static/:splat"
+  status = 200
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200 

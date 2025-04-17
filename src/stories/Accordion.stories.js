@@ -1,6 +1,4 @@
-import { fn } from '@storybook/test';
-
-import Accordion from '../components/accordionGroup';
+import AccordionGroup from '../components/accordionGroup';
 const data = [
   {
     question: "Undergraduate Admissions Information and Major Declaration",
@@ -19,11 +17,9 @@ const data = [
   },
 ]
 
-// More on how to set up stories at: https://storybook.js.org/docs/writing-stories#default-export
 export default {
-  title: 'Components/Accordion',
-  component: Accordion,
-  // This component will have an automatically generated Autodocs entry: https://storybook.js.org/docs/writing-docs/autodocs
+  title: 'Components/Accordion Group',
+  component: AccordionGroup,
   tags: ['autodocs'],
   decorators: [
     (Story) => (
