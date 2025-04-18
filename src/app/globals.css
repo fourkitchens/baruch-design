@@ -3,8 +3,8 @@
 @config "../../tailwind.config.js";
 
 :root {
-  --background: var(--color-primary-indigo);
-  --foreground: var(--color-primary-white);
+  --background: var(--color-neutral-pearl);
+  --foreground: var(--color-neutral-charcoal);
 }
 
 @theme inline {

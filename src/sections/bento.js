@@ -6,7 +6,7 @@ import nyc from "@/assets/images/gettyimages-1475073978-2048x2048.jpg";
 
 export default function Bento() {
   return (
-    <div className="bg-background py-24 sm:py-32 min-h-screen">
+    <div className="bg-primary-indigo text-primary-white py-24 sm:py-32 min-h-screen">
       <div className="mx-auto max-w-2xl px-6 lg:max-w-7xl lg:px-8">
         <h2 className="text-base/7 font-semibold text-primary-sky">Explore academics at Baruch</h2>
         <p className="mt-2 text-[200px] leading-[150px] font-field-gothic font-semibold text-pretty text-white uppercase">

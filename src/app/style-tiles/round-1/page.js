@@ -12,7 +12,7 @@ import Link from "next/link";
 export default function Home() {
 
   return (
-    <div>
+    <div className="bg-primary-indigo text-primary-white">
       <div className="flex flex-col gap-8 justify-center items-center min-h-screen">
         <BaruchLogo className="w-3/4 min-h-[200px]" />
         <p className="text-lg flex flex-row gap-4">
