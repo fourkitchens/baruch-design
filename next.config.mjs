@@ -4,7 +4,7 @@ const nextConfig = {
     return [
       {
         source: '/storybook/:path*',
-        destination: '/storybook-static/:path*',
+        destination: '/storybook/:path*',
       },
     ];
   },
