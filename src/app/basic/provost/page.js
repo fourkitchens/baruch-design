@@ -7,6 +7,7 @@ import SidebarNav from "@/components/sidebarNav";
 import students from '@/assets/images/230621-Mario-Morgado-255.png';
 import students2 from '@/assets/images/Baruch-students_NVC.jpg';
 import athletics from '@/assets/images/2017CUNYACSeniors.webp';
+import SectionBanner from "@/components/sectionBanner";
 
 const breadcrumbData = [
   { name: 'Academic Affairs', href: '#', current: false },
@@ -18,14 +19,7 @@ const sidebar = <SidebarNav/>
 export default function Basic() {
   return (
     <div>
-      <div className="bg-white text-body py-3 border-b border-neutral-dove">
-        <div className="max-width-wrapper ">
-          <p className="text-[100px] leading-[100px] uppercase font-bold font-field-gothic flex flex-row gap-2">
-            <span className="text-body font-normal">Office of the</span>
-            <span className="text-heading">Provost</span>
-          </p>
-        </div>
-      </div>
+      <SectionBanner organizationalDescriptor="Office of the" title="Provost" />
       <LayoutPage sidebar={sidebar}>
         <div className="space-y-4">
           <Breadcrumbs pages={breadcrumbData} />

@@ -2,7 +2,7 @@ import Breadcrumbs from "@/components/breadcrumbs";
 import LayoutPage from "@/components/layoutPage";
 import PageTitle from "@/components/pageTitle";
 import { EnvelopeIcon } from '@heroicons/react/20/solid'
-
+import SectionBanner from "@/components/sectionBanner";
 const breadcrumbData = []
 
 const people = [
@@ -95,14 +95,7 @@ const people = [
 export default function Cabinet() {
   return (
     <div>
-      <div className="bg-white text-body py-3 border-b border-neutral-dove">
-        <div className="max-width-wrapper ">
-          <p className="text-[100px] leading-[100px] uppercase font-bold font-field-gothic flex flex-row gap-2">
-            <span className="text-body font-normal">Office of the</span>
-            <span className="text-heading">President</span>
-          </p>
-        </div>
-      </div>
+      <SectionBanner organizationalDescriptor="Office of the" title="President" />
       <LayoutPage wide={true}>
         <div className="space-y-4">
           <Breadcrumbs pages={breadcrumbData} />
