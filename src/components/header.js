@@ -3,6 +3,7 @@ import PrimaryNav from "@/components/primaryNav";
 import Search from "@/components/search";
 import PrimaryNavMobile from "@/components/primaryNavMobile";
 import AccelerateAmbition from "@/assets/AccelerateAmbition";
+import SocialNav from "@/components/socialNav";
 
 export default function Header() {
   return (
@@ -11,7 +12,7 @@ export default function Header() {
       <div className="flex flex-row items-center lg:items-end justify-start py-7 lg:pt-10 lg:pb-8 max-width-wrapper">
         <div className="space-y-2">
           <BaruchLogoHorizontal className="w-[200px] h-auto lg:w-[300px] text-white" />
-          <AccelerateAmbition className="text-primary-sky lg:w-[250px] h-auto" />
+          <AccelerateAmbition className="text-secondary-chartreuse lg:w-[250px] h-auto" />
         </div>
         
         <div className="ms-auto flex-row items-center gap-8 hidden lg:flex">
@@ -31,7 +32,10 @@ export default function Header() {
       <div className="border-t border-neutral-dove/20 hidden lg:block">
         <div className="max-width-wrapper py-1 flex flex-row items-center justify-between">
           <PrimaryNav />
-          <Search />
+          <div className="flex flex-row items-center gap-4">
+            
+            <SocialNav className="" location="header" />
+          </div>
         </div>
       </div>
     </header>
