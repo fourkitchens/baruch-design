@@ -1,6 +1,5 @@
 import BaruchLogoHorizontal from "@/assets/logos/BaruchLogoHorizontal";
 import PrimaryNav from "@/components/primaryNav";
-import CunyLogoLong from "@/assets/logos/CunyLogoLong";
 import Search from "@/components/search";
 import PrimaryNavMobile from "@/components/primaryNavMobile";
 import AccelerateAmbition from "@/assets/AccelerateAmbition";
@@ -24,7 +23,6 @@ export default function Header() {
               Plan a Visit
             </a>
           </div>
-          <CunyLogoLong className="w-[100px] h-auto text-white ms-auto" />
         </div>
 
         <PrimaryNavMobile className="ms-auto" />
