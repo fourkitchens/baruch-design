@@ -2,7 +2,7 @@ import PrimaryNavAbout from '@/components/primaryNavAbout';
 
 const mainNavLinks = [
   {
-    title: "About",
+    title: "Academics",
     url: "#",
     popover: <PrimaryNavAbout />,
     sections: [
@@ -75,27 +75,17 @@ const mainNavLinks = [
     ]
   },
   {
-    title: "Admissions",
+    title: "Admissions & Aid",
     url: "#",
     popover: <PrimaryNavAbout />
   },
   {
-    title: "Academics",
+    title: "Student Life",
     url: "#",
     popover: <PrimaryNavAbout />
   },
   {
-    title: "Arts",
-    url: "#",
-    popover: <PrimaryNavAbout />
-  },
-  {
-    title: "Athletics",
-    url: "#",
-    popover: <PrimaryNavAbout />
-  },
-  {
-    title: "Students",
+    title: "About",
     url: "#",
     popover: <PrimaryNavAbout />
   },
@@ -103,7 +93,7 @@ const mainNavLinks = [
     title: "Alumni",
     url: "#",
     popover: <PrimaryNavAbout />
-  }
+  },
 ];
 
 export default mainNavLinks;
