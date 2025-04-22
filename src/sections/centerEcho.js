@@ -37,7 +37,7 @@ export default function CenterEcho() {
                 className={clsx({
                   "duplicate absolute inset-0": i > 0,
                   "original relative ": i === 0
-                }, "echo block p-2 text-trim bg-background")}
+                }, "echo block p-2 text-trim bg-primary-indigo ")}
                 style={i > 0 ? {
                   scale: `${100 + (i * 50)}%`,
                   zIndex: echoes * 10 - (i * 10)

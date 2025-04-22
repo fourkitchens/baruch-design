@@ -14,7 +14,7 @@ import Slider from "@/sections/statsSlider";
 export default function Home() {
 
   return (
-    <div>
+    <div className="bg-primary-indigo text-primary-white">
       <div className="flex flex-row gap-8 md:gap-32 justify-center items-center min-h-screen py-32">
         <div className="flex flex-col gap-8 md:gap-32 md:flex-row">
           <div>
