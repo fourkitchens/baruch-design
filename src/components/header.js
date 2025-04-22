@@ -4,8 +4,8 @@ import CunyLogoLong from "@/assets/logos/CunyLogoLong";
 import Search from "@/components/search";
 import PrimaryNavMobile from "@/components/primaryNavMobile";
 import AccelerateAmbition from "@/assets/AccelerateAmbition";
-export default function Header() {
 
+export default function Header() {
   return (
     <header className="bg-gradient-to-r from-primary-indigo via-primary-cuny-blue to-secondary-grape relative z-50">
 
