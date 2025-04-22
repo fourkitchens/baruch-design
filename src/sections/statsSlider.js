@@ -12,6 +12,7 @@ const stats = [
 export function Slider() {
   return (
     <div className="h-56 sm:h-64 xl:h-80 2xl:h-[600px] relative">
+      <div className="absolute inset-0 bg-secondary-chartreuse" />
       <Carousel>
         {stats.map((stat) => (
           <div key={stat.id} className="flex flex-col gap-y-3 items-center justify-center text-primary-cuny-blue">
@@ -23,7 +24,7 @@ export function Slider() {
           </div>
         ))}
       </Carousel>
-      <div className="absolute inset-0 -z-10 bg-secondary-chartreuse " />
+      
     </div>
   );
 }
