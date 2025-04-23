@@ -33,7 +33,6 @@ export default function Header() {
         <div className="max-width-wrapper py-1 flex flex-row items-center justify-between">
           <PrimaryNav />
           <div className="flex flex-row items-center gap-4">
-            
             <SocialNav className="" location="header" />
           </div>
         </div>
