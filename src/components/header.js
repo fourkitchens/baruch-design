@@ -1,18 +1,18 @@
 import BaruchLogoHorizontal from "@/assets/logos/BaruchLogoHorizontal";
 import PrimaryNav from "@/components/primaryNav";
-import CunyLogoLong from "@/assets/logos/CunyLogoLong";
 import Search from "@/components/search";
 import PrimaryNavMobile from "@/components/primaryNavMobile";
 import AccelerateAmbition from "@/assets/AccelerateAmbition";
-export default function Header() {
+import SocialNav from "@/components/socialNav";
 
+export default function Header() {
   return (
     <header className="bg-gradient-to-r from-primary-indigo via-primary-cuny-blue to-secondary-grape relative z-50">
 
       <div className="flex flex-row items-center lg:items-end justify-start py-7 lg:pt-10 lg:pb-8 max-width-wrapper">
         <div className="space-y-2">
           <BaruchLogoHorizontal className="w-[200px] h-auto lg:w-[300px] text-white" />
-          <AccelerateAmbition className="text-primary-sky lg:w-[250px] h-auto" />
+          <AccelerateAmbition className="text-secondary-chartreuse lg:w-[250px] h-auto" />
         </div>
         
         <div className="ms-auto flex-row items-center gap-8 hidden lg:flex">
@@ -24,7 +24,6 @@ export default function Header() {
               Plan a Visit
             </a>
           </div>
-          <CunyLogoLong className="w-[100px] h-auto text-white ms-auto" />
         </div>
 
         <PrimaryNavMobile className="ms-auto" />
@@ -33,7 +32,9 @@ export default function Header() {
       <div className="border-t border-neutral-dove/20 hidden lg:block">
         <div className="max-width-wrapper py-1 flex flex-row items-center justify-between">
           <PrimaryNav />
-          <Search />
+          <div className="flex flex-row items-center gap-4">
+            <SocialNav className="" location="header" />
+          </div>
         </div>
       </div>
     </header>

@@ -1,4 +1,5 @@
-import AccordionGroup from '../components/accordionGroup';
+import AccordionGroup from '../components/accordionGroup.js';
+
 const data = [
   {
     question: "Undergraduate Admissions Information and Major Declaration",
@@ -18,16 +19,19 @@ const data = [
 ]
 
 export default {
-  title: 'Components/Accordion Group',
+  title: 'Components/Accordion',
   component: AccordionGroup,
-  tags: ['autodocs'],
   decorators: [
     (Story) => (
-      <div className="prose lg:prose-lg max-w-none mx-auto">
+      <div className="prose lg:prose-lg max-w-3xl mx-auto mt-10">
         <Story />
       </div>
     ),
   ],
+  args: {
+    data: data,
+    className: '-mx-2',
+  },
   argTypes: {
     data: {
       control: 'object',
@@ -40,9 +44,5 @@ export default {
   },
 };
 
-export const Primary = {
-  args: {
-    data: data,
-    className: '-mx-2',
-  },
+export const Accordion = {
 };
