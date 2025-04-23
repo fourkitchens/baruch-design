@@ -8,7 +8,7 @@ export default function PrimaryNav() {
     <div className="flex flex-row items-center gap-2">
       <PopoverGroup className="flex items-center justify-start gap-2">
         {mainNavLinks.map((item) => (
-          <Popover className="relative isolate first:-ms-4" key={item.title}>
+          <Popover className="relative isolate first:-ms-2" key={item.title}>
             <PopoverButton className={clsx("text-lg tracking-wide font-bold text-white/90 hover:text-white",
               "after:content-[''] after:block after:max-w-0 hover:after:max-w-full after:transition-all hover:after:duration-300 after:h-0.5 hover:after:bg-primary-sky",
               "flex items-center gap-x-1",
