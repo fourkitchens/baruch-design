@@ -1,8 +1,8 @@
 import BaruchLogoHorizontal from "@/assets/logos/BaruchLogoHorizontal";
 import clsx from "clsx";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faYoutube, faFacebook, faInstagram, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 import CunyLogoLong from "@/assets/logos/CunyLogoLong";
+import SocialNav from "@/components/socialNav";
 
 const navigation = {
   solutions: [
@@ -49,28 +49,6 @@ const navigation = {
     { name: 'Legal Affairs and Labor Relations', href: '#' },
     { name: 'A-Z Index', href: '#' },
   ],
-  social: [
-    {
-      name: 'Facebook',
-      href: '#',
-      icon: faFacebook,
-    },
-    {
-      name: 'YouTube',
-      href: '#',
-      icon: faYoutube,
-    },
-    {
-      name: 'Instagram',
-      href: '#',
-      icon: faInstagram,
-    },
-    {
-      name: 'LinkedIn',
-      href: '#',
-      icon: faLinkedin,
-    },
-  ],
 }
 
 export default function Footer() {
@@ -84,15 +62,7 @@ export default function Footer() {
             <p>55 Lexington Avenue (at 24th Street)</p>
             <p className="mb-2">New York, NY 10010</p>
             <p>646-312-1000</p>
-            <ul className="flex gap-4 mt-8">
-              {navigation.social.map((item) => (
-                <li key={item.name}>
-                  <a href={item.href} className={clsx("text-base text-primary-sky hover:text-white leading-none inline-block")}>
-                    <FontAwesomeIcon icon={item.icon} className="size-6" />
-                  </a>
-                </li>
-              ))}
-            </ul>
+            <SocialNav className="mt-8" location="footer" />
             <CunyLogoLong className="w-[100px] h-auto text-white mt-8" />
           </div>
           

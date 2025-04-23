@@ -38,9 +38,9 @@ export default function Search() {
 
   return (
     <div>
-      <button className="flex items-center gap-x-1 text-xl font-bold text-white/90 hover:text-white" onClick={() => setOpen(true)}>
+      <button className="flex items-center gap-x-1 text-lg font-bold text-white/90 hover:text-white" onClick={() => setOpen(true)}>
         <MagnifyingGlassIcon
-          className="pointer-events-none size-5 text-white"
+          className="pointer-events-none size-5 text-white/60"
           aria-hidden="true"
           />
         Search 
