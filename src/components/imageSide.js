@@ -4,7 +4,7 @@ export default function ImageSide({ image, alt='', bg='bg-primary-midtown-blue',
   return (
     <div className={`relative ${bg} text-white min-h-screen`}>
       <div className="mx-auto max-w-7xl lg:grid lg:grid-cols-12 lg:gap-x-8 lg:px-8">
-        <div className="px-6 pb-24 pt-10 sm:pb-32 lg:col-span-7 lg:px-0 lg:pb-48 lg:pt-40 xl:col-span-6">
+        <div className="px-6 pb-24 pt-10 sm:pb-32 lg:col-span-7 lg:px-0 xl:col-span-6">
           <div className="mx-auto max-w-lg lg:mx-0">
             {children}
           </div>
