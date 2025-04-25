@@ -7,7 +7,7 @@ import SocialNav from "@/components/socialNav";
 
 export default function Header() {
   return (
-    <header className="bg-gradient-to-r from-primary-indigo via-primary-cuny-blue to-secondary-grape relative z-50">
+    <header className="bg-gradient-to-r from-primary-indigo via-primary-cuny-blue to-primary-cuny-blue relative z-50">
 
       <div className="flex flex-row items-center lg:items-end justify-start py-7 lg:pt-10 lg:pb-8 max-width-wrapper">
         <div className="space-y-2">
