@@ -1,8 +1,8 @@
-import StatsPhotoBg from "@/components/statsPhotoBg";
+import Stats from "@/components/stats";
 import image from "@/assets/images/Baruch-students_NVC.jpg";
 
 const stats = [
-  { 
+  {   
     id: 1, 
     header: '#1 Public College', 
     subhead: 'in New York State', 
@@ -23,15 +23,22 @@ const stats = [
 ]
 
 export default {
-  title: 'Components/Stats/Photo Background',
-  component: StatsPhotoBg,
+  title: 'Components/Stats/Simple',
+  component: Stats,
   args: {
     image: image,
     alt: "",
     stats: stats,
   },
+  argTypes: {
+    bg: {
+      control: 'select',
+      options: ['bg-primary-midtown-blue', 'bg-primary-cuny-blue', 'bg-primary-indigo', 'bg-primary-sky', 'bg-secondary-chartreuse', 'bg-secondary-grape', 'bg-secondary-lemonade', 'bg-secondary-ochre', 'bg-secondary-tangerine', 'bg-secondary-taxi', 'bg-secondary-thistle'],
+      description: 'The image background color',
+    },
+  },
 };
 
-export const StatsPhotoBgTemplate = {
-  name: 'Photo Background',
+export const StatsTemplate = {
+  name: 'Simple',
 };

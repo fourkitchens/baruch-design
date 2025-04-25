@@ -8,20 +8,23 @@ import workingProfessionalsImage from "@/assets/images/gettyimages-2094337676-20
 const audienceData = [
   {
     image: undergraduateImage,
-    title: "Undergraduate Students",
-    description: "Begin your business journey with a BBA in accounting, finance, marketing, international business, and more.",
+    audience: "Undergraduate",
+    title: "Meet Jordan, Future Finance Leader",
+    description: "Jordan started their journey at Zicklin with a passion for numbers and curiosity about the global economy. Through our BBA program in finance, they're building the skills and network to shape the financial world.",
     cta: "Start Your Business Journey"
   },
   {
     image: graduateImage,
-    title: "Graduate Students",
-    description: "Advance your career with our MBA, Executive MBA, or MS programs in high-demand areas like business analytics, information systems, and healthcare administration.",
+    audience: "Graduate",
+    title: "Meet Priya, Career Changer Turned Analyst",
+    description: "After years in healthcare, Priya came to Zicklin to pivot her career. With our MS in Business Analytics, she’s turning data into decisions and stepping into a new professional chapter.",
     cta: "Advance Your Career with Zicklin"
   },
   {
     image: workingProfessionalsImage,
-    title: "Working Professionals",
-    description: "Elevate your expertise with flexible programs designed for professionals ready to take the next step in their careers.",
+    audience: "Working Professionals",
+    title: "Meet Luis, Rising Executive",
+    description: "Luis balances work, life, and ambition. With Zicklin’s Executive MBA, he’s gaining strategic insight and leadership skills to elevate his career—without putting it on pause.",
     cta: "Elevate Your Expertise"
   },
 ];
@@ -38,8 +41,9 @@ export default function SlidingCards({data = audienceData}) {
             "group-hover:bg-gradient-to-b group-hover:from-primary-sky group-hover:to-primary-indigo group-hover:mix-blend-multiply group-hover:opacity-100",
             "transition-all duration-300"
           )} />
-          <div className="relative p-8 z-10 space-y-6 overflow-hidden">
-            <h3 className="text-white w-min font-league-gothic text-7xl leading-[0.9] uppercase">{item.title}</h3>
+          <div className="relative p-8 z-10 space-y-4 overflow-hidden">
+            <h2 className="text-xl font-semibold text-secondary-lemonade uppercase text-shadow-lg/30">{item.audience}</h2>
+            <h3 className="text-white font-league-gothic text-7xl leading-[0.9] uppercase text-shadow-lg/30">{item.title}</h3>
             <div className="-translate-x-[150%] delay-50 group-hover:translate-x-0 transition-all duration-300 space-y-6">
               <p className="text-white text-2xl font-medium">{item.description}</p>
               <p className="">
