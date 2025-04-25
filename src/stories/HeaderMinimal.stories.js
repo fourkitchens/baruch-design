@@ -1,7 +1,7 @@
 import HeaderMinimal from "../components/headerMinimal";
 
 export default {
-  title: 'Layout/Header Options',
+  title: 'Deprecated/Header Options',
   component: HeaderMinimal,
   decorators: [
     (Story) => (
