@@ -12,7 +12,7 @@ const preview = {
     },
     options: {
       storySort: {
-        order: ['Home', 'Layout', 'Components'],
+        order: ['Home', 'Templates', 'Layout', 'Components', 'Deprecated'],
       },
     },
   },

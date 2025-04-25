@@ -1,3 +1,7 @@
+/**
+ * Deprecated
+ */
+
 import BaruchLogoHorizontal from "@/assets/logos/BaruchLogoHorizontal";
 import { Dialog, DialogPanel, DialogTitle, Description, Disclosure, DisclosureButton, DisclosurePanel } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";

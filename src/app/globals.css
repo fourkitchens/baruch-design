@@ -132,6 +132,11 @@ body {
   --hover-color: var(--color-primary-sky);
 }
 
+.link-midtown-blue-bg {
+  --default-color: var(--color-primary-midtown-blue);
+  --hover-color: var(--color-primary-sky);
+}
+
 .prose a:not(.not-prose a) {
   @apply no-underline;
   background: 

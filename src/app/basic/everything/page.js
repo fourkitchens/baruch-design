@@ -8,6 +8,7 @@ import cardListImage from '@/assets/images/admissions-trim.jpg';
 import cardListImage2 from '@/assets/images/students_2265_hor.jpg';
 import RelatedArticles from "@/components/relatedArticles";
 import Gallery from "@/components/gallery";
+
 const news = {
   title: "Baruch Senior Wins United Nations Association-USA Fellowship",
   date: "January 31, 2025",

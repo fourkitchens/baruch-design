@@ -1,0 +1,28 @@
+import heroImage from "@/assets/images/zicklin/photo-1570560259107-4391b020e73d.avif";
+import Image from "next/image";
+import clsx from "clsx";
+
+export default function Hero() {
+  return (
+    <div className={clsx(
+      "relative isolate overflow-hidden bg-secondary-taxi", 
+      "py-24 sm:pt-16 sm:pb-32 min-h-[calc(100vh-218.64px)]",
+      "flex flex-col items-center justify-center"
+    )}>
+      <Image src={heroImage} alt="Baruch Students" className="absolute inset-0 -z-10 size-full object-cover opacity-40 mix-blend-multiply" />
+      <div className="relative mx-auto max-w-7xl px-6 lg:px-8 text-white">
+        <h1 className="text-3xl font-bold text-shadow-lg/30 mb-2">Zicklin School of Business at Baruch College</h1>
+        <h2 className="text-[190px] text-balance leading-[150px] font-semibold uppercase font-field-gothic text-shadow-lg/40">New York Smart.<br/>World-Class Ready.&reg;</h2>
+        <div className="flex justify-start gap-4 py-2 mt-6">
+          <a href="/apply" className="bg-primary-cuny-blue ring-1 ring-primary-cuny-blue hover:bg-primary-indigo hover:ring-primary-indigo text-white px-6 py-2 font-bold rounded-sm transition-all">
+            Apply Now
+          </a>
+          <a href="/visit" className="bg-primary-cuny-blue ring-1 ring-primary-cuny-blue hover:bg-primary-indigo hover:ring-primary-indigo text-white px-6 py-2 font-bold rounded-sm transition-all">
+            Plan a Visit
+          </a>
+        </div>
+      </div>
+      <div className="absolute inset-0 -z-10 bg-gradient-to-r from-secondary-chartreuse via-secondary-lemonade to-secondary-tangerine mix-blend-multiply saturate-50" />
+    </div>
+  );
+}
