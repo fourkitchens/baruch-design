@@ -5,7 +5,7 @@ export default {
   component: Zicklin,
   decorators: [
     (Story) => (
-      <div className="min-h-[300vh]">
+      <div className="min-h-[700vh]">
         <Story />
       </div>
     ),
@@ -15,4 +15,3 @@ export default {
 export const LandingPageZicklin = {
   name: 'Zicklin',
 };
-// 218.64px
