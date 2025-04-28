@@ -1,7 +1,7 @@
 import HeaderMinimal from "../components/headerMinimal";
 
 export default {
-  title: 'Deprecated/Header Options',
+  title: 'Deprecated/Header Minimal',
   component: HeaderMinimal,
   decorators: [
     (Story) => (
@@ -12,6 +12,6 @@ export default {
   ],
 };
 
-export const Header2 = {
-  name: 'Option 2',
+export const HeaderMinimal1 = {
+  name: 'Header Minimal',
 };

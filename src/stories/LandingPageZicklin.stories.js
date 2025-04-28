@@ -1,7 +1,7 @@
 import Zicklin from "@/templates/zicklin";
 
 export default {
-  title: 'Templates/Landing Pages', 
+  title: 'Templates/Landing Pages/Zicklin', 
   component: Zicklin,
 };
 

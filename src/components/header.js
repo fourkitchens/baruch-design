@@ -1,6 +1,5 @@
 import BaruchLogoHorizontal from "@/assets/logos/BaruchLogoHorizontal";
 import PrimaryNav from "@/components/primaryNav";
-import Search from "@/components/search";
 import PrimaryNavMobile from "@/components/primaryNavMobile";
 import AccelerateAmbition from "@/assets/AccelerateAmbition";
 import SocialNav from "@/components/socialNav";

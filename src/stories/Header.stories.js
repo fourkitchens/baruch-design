@@ -1,10 +1,10 @@
 import Header from "../components/header";
 
 export default {
-  title: 'Layout/Header Options',
+  title: 'Layout/Header',
   component: Header,
 };
 
 export const Header1 = {
-  name: 'Option 1',
+  name: 'Header',
 };
