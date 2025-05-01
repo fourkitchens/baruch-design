@@ -26,6 +26,7 @@ export default function Home() {
             <h2 className="text-2xl font-bold">Landing pages</h2>
             <ul className="text-lg flex flex-col gap-4">
               <li><Link href="/zicklin" className="text-white/90 link link-indigo-bg hover:text-white">Zicklin</Link></li>
+              <li><Link href="/programs" className="text-white/90 link link-indigo-bg hover:text-white">Programs</Link></li>
             </ul>
             <h2 className="text-2xl font-bold">Basic page</h2>
             <ul className="text-lg flex flex-col gap-4">

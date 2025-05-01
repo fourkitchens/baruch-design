@@ -6,7 +6,7 @@ export default function Hero() {
   return (
     <div className={clsx(
       "relative isolate overflow-hidden bg-secondary-taxi", 
-      "py-24 sm:pt-16 sm:pb-32 min-h-[calc(100vh-218.64px)]",
+      "py-24 sm:pt-16 sm:pb-32 min-h-[calc(100vh-(218.64px-32px))]",
       "flex flex-col items-center justify-center"
     )}>
       <Image src={heroImage} alt="Baruch Students" className="absolute inset-0 -z-10 size-full object-cover opacity-40 mix-blend-multiply" />
