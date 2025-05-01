@@ -2,7 +2,7 @@ import { Popover, PopoverButton, PopoverPanel, PopoverGroup } from '@headlessui/
 import { ChevronDownIcon } from '@heroicons/react/20/solid'
 import clsx from 'clsx';
 import mainNavLinks from '@/data/primaryNav';
-import Search from '@/components/search';
+
 export default function PrimaryNav() {
   return (
     <div className="flex flex-row items-center gap-2">
@@ -24,7 +24,6 @@ export default function PrimaryNav() {
           </Popover>
         ))}
       </PopoverGroup>  
-      <Search />   
     </div>
   );
 };
