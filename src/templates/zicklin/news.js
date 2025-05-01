@@ -25,7 +25,7 @@ export default function News() {
         </div>
         
         <h2 className={clsx(
-          "text-pretty text-6xl font-league-gothic uppercase font-normal",
+          "text-pretty text-6xl font-sans-xcondensed font-semibold uppercase",
           "mt-16 mb-4"
         )}>
           <a href="#" className="link inline-flex items-center">
@@ -40,7 +40,7 @@ export default function News() {
         </div>
         
         <h2 className={clsx(
-          "text-pretty text-6xl font-league-gothic uppercase font-normal",
+          "text-pretty text-6xl font-sans-xcondensed font-semibold uppercase",
           "mt-16 mb-4"
         )}>
           <a href="#" className="link inline-flex items-center">

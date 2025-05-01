@@ -42,8 +42,8 @@ export default function SlidingCards({data = audienceData}) {
             "transition-all duration-300"
           )} />
           <div className="relative p-8 z-10 space-y-4 overflow-hidden">
-            <h2 className="text-xl font-semibold text-secondary-lemonade uppercase text-shadow-lg/30">{item.audience}</h2>
-            <h3 className="text-white font-league-gothic text-7xl leading-[0.9] uppercase text-shadow-lg/30">{item.title}</h3>
+            <h2 className="text-3xl font-sans-xcondensed font-semibold text-secondary-lemonade uppercase text-shadow-lg/30">{item.audience}</h2>
+            <h3 className="text-white font-sans-xcondensed font-semibold text-7xl leading-[0.9] uppercase text-shadow-lg/30">{item.title}</h3>
             <div className="-translate-x-[150%] delay-50 group-hover:translate-x-0 transition-all duration-300 space-y-6">
               <p className="text-white text-2xl font-medium">{item.description}</p>
               <p className="">

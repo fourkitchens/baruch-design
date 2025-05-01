@@ -11,6 +11,8 @@
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --font-sans: "fort", sans-serif;
+  --font-sans-condensed: "fort-condensed", sans-serif;
+  --font-sans-xcondensed: "fort-xcondensed", sans-serif;
   --font-field-gothic: 'field-gothic-xxxcondensed', sans-serif;
   --font-league-gothic: 'League Gothic', sans-serif;
   --color-neutral-charcoal: rgba(56, 56, 56, 1);
