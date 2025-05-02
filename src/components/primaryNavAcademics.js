@@ -4,7 +4,7 @@ import knowUs from "@/assets/images/UNA-USA-Fellow_.gif"
 import programsImage from "@/assets/images/admissions-trim.jpg"
 import clsx from "clsx";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faListTree, faBuildingColumns, faCompass } from '@fortawesome/pro-solid-svg-icons'
+import { faBuildingColumns, faCompass } from '@fortawesome/pro-solid-svg-icons'
 
 const sections = [
   {
@@ -13,7 +13,7 @@ const sections = [
     items: [
       {
         title: "Programs and Areas of Study",
-        url: "#"
+        url: "/programs"
       },
       {
         title: "Departments",
