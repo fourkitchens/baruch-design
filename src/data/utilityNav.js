@@ -12,14 +12,6 @@ const utilityNav = [
     url: "#",
   },
   {
-    title: "Give",
-    url: "#",
-  },
-  {
-    title: "Events",
-    url: "#",
-  },
-  {
     title: "Alumni and Friends",
     url: "#",
   },

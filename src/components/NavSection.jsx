@@ -19,7 +19,7 @@ const NavSection = ({ header, items, className, maxItems = 5, image }) => {
       <div className="mt-6 flow-root">
         <ul className="-my-2">
           {displayedItems.map((item) => (
-            <li key={item.title} className="py-1">
+            <li key={item.title} className="py-2 leading-tight">
               <a
                 href={item.url}
                 className={clsx("text-base font-medium text-primary-cuny-blue link link-mega-menu",

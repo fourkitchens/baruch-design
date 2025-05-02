@@ -6,7 +6,7 @@ import Logo from '@/components/logo';
 import gritImage from '@/assets/images/gritty-texture-sand-on-transparent-background-monochrome-noise-halftone-grit-pattern-isolated-illustration-vector.jpg'; 
 import Image from 'next/image';
 
-export default function Header({ tagline = false, grit = true }) {
+export default function Header() {
   return (
     <header className=" relative z-50">
       <div className="bg-gradient-to-r from-primary-indigo via-primary-cuny-blue to-primary-cuny-blue">
@@ -14,7 +14,7 @@ export default function Header({ tagline = false, grit = true }) {
           <UtilityNav/>
 
           <div className="flex flex-row items-center lg:items-end justify-start py-7 lg:pt-10 lg:pb-8 max-width-wrapper">
-            <Logo tagline={tagline} />
+            <Logo />
             
             <div className="ms-auto flex-row items-center gap-8 hidden lg:flex">
               <div className="flex justify-end gap-4 py-2">
@@ -38,7 +38,7 @@ export default function Header({ tagline = false, grit = true }) {
           </div>
         </div>
 
-        {grit && <Image src={gritImage} alt="grit" className="absolute top-0 left-0 w-full h-full object-cover mix-blend-multiply opacity-20" />}
+        <Image src={gritImage} alt="grit" className="absolute top-0 left-0 w-full h-full object-cover mix-blend-multiply opacity-20" />
       </div>
     </header>
   );

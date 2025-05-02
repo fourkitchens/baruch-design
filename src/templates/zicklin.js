@@ -34,6 +34,7 @@ export default function Zicklin() {
     <>
       <Header />
       <Hero />
+      <Stats stats={stats} />
       <SlidingCards />
 
       <ImageSide image={photo} alt="Photo" bg="bg-primary-cuny-blue">
@@ -55,7 +56,6 @@ export default function Zicklin() {
         </div>
       </ImageSide>
       
-      <Stats stats={stats} />
       <Testimonials />
       <News />
       <Footer />

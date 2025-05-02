@@ -36,10 +36,10 @@ export default function Testimonial({
         <figure className="grid grid-cols-5 gap-8 items-center">
           <div className={imageClasses}>
             <Image src={image} alt={name} className="rounded-lg bg-indigo-50 lg:rounded-xl" />
-            <FontAwesomeIcon 
+            {/* <FontAwesomeIcon 
               icon={faCirclePlay} 
               className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-white/50 text-6xl group-hover:text-white group-hover:scale-125 transition-all duration-300"
-            />
+            /> */}
           </div>
           
           <figcaption className={captionClasses}>
