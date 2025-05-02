@@ -128,9 +128,14 @@ export default function PrimaryNavAcademics() {
             <ul className="text-lg">
               <li className="py-2 leading-tight">
                 <a href="#" className={clsx("font-medium text-primary-cuny-blue link link-neutral-pearl-bg")}>
-                  Courses
+                  Programs
                 </a>
               </li>
+              {/* <li className="py-2 leading-tight">
+                <a href="#" className={clsx("font-medium text-primary-cuny-blue link link-neutral-pearl-bg")}>
+                  Courses
+                </a>
+              </li> */}
             </ul>
           </div>
         </div>
