@@ -98,11 +98,6 @@ export default function PrimaryNavAcademics() {
             </h3>
             <ul className="text-lg">
               <li className="py-2 leading-tight">
-                <a href="/zicklin" className={clsx("font-medium text-primary-cuny-blue link link-neutral-pearl-bg")}>
-                  Zicklin School of Business
-                </a>
-              </li>
-              <li className="py-2 leading-tight">
                 <a href="#" className={clsx("font-medium text-primary-cuny-blue link link-neutral-pearl-bg")}>
                   Marxe School of International Affairs
                 </a>
@@ -110,6 +105,11 @@ export default function PrimaryNavAcademics() {
               <li className="py-2 leading-tight">
                 <a href="#" className={clsx("font-medium text-primary-cuny-blue link link-neutral-pearl-bg")}>
                   Weissman School of Arts and Sciences
+                </a>
+              </li>
+              <li className="py-2 leading-tight">
+                <a href="/zicklin" className={clsx("font-medium text-primary-cuny-blue link link-neutral-pearl-bg")}>
+                  Zicklin School of Business
                 </a>
               </li>
               <li className="py-2 leading-tight">

@@ -31,14 +31,14 @@ export default function Hero() {
 
   return (
     <div className={clsx(
-      "relative isolate overflow-hidden bg-secondary-taxi", 
+      "relative isolate overflow-hidden bg-neutral-slate", 
       "py-24 sm:pt-16 sm:pb-32 min-h-[calc(100vh-(246.57px))]",
       "flex flex-col items-center justify-center"
     )}>
       <Video 
         ref={videoRef}
         src="/videos/Baruch-Homepage-Video.mp4"
-        className="absolute inset-0 -z-10 size-full object-cover opacity-40 mix-blend-multiply"
+        className="absolute inset-0 -z-10 size-full object-cover"
         autoPlay
         muted
         loop
@@ -70,7 +70,7 @@ export default function Hero() {
           </a>
         </div>
       </div>
-      <div className="absolute inset-0 -z-10 bg-gradient-to-r from-secondary-chartreuse via-secondary-lemonade to-secondary-tangerine mix-blend-multiply saturate-50" />
+      <div className="absolute inset-0 -z-10 bg-neutral-slate mix-blend-multiply saturate-50" />
     </div>
   );
 }

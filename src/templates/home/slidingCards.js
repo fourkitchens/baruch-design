@@ -2,7 +2,7 @@ import heroImage from "@/assets/images/zicklin/photo-1570560259107-4391b020e73d.
 import Image from "next/image";
 import clsx from "clsx";
 import undergraduateImage from "@/assets/images/home/245ED0EC-4EC3-4E54-B606-00FC6B443B07.png";
-import graduateImage from "@/assets/images/home/918E1E12-411B-4577-9DC5-4ACA07A7CEDA.png";
+import graduateImage from "@/assets/images/home/408_Baruch_2024May1 (2).jpg";
 import workingProfessionalsImage from "@/assets/images/home/A0065A16-7F34-4DD7-819C-7A2CB8ECD83A.png";
 
 const audienceData = [
@@ -15,7 +15,7 @@ const audienceData = [
   },
   {
     image: graduateImage,
-    audience: "Graduate Students",
+    audience: "Prospective Graduate Students",
     title: "Advance with Graduate Studies",
     description: "Advance your career with master’s and doctoral programs in business, public affairs, and the arts.",
     cta: "Explore Graduate Programs"
