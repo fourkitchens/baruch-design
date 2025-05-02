@@ -1,16 +1,16 @@
 import heroImage from "@/assets/images/zicklin/photo-1570560259107-4391b020e73d.avif";
 import Image from "next/image";
 import clsx from "clsx";
-import undergraduateImage from "@/assets/images/230621-Mario-Morgado-255.png";
-import graduateImage from "@/assets/images/gettyimages-1132123971-2048x2048.jpg";
-import workingProfessionalsImage from "@/assets/images/gettyimages-2094337676-2048x2048.jpg";
+import undergraduateImage from "@/assets/images/zicklin/Baruch-Zicklin-Spotlights-Student-Portrait/Baruch-Student-Portraits-5.png";
+import graduateImage from "@/assets/images/zicklin/Baruch-Zicklin-Spotlights-Student-Portrait/Baruch-Student-Portraits-4.png";
+import workingProfessionalsImage from "@/assets/images/zicklin/Baruch-Zicklin-Spotlights-Student-Portrait/Baruch-Student-Portraits-1.jpg";
 
 const audienceData = [
   {
     image: undergraduateImage,
     audience: "Undergraduate",
     title: "Meet Jordan, Future Finance Leader",
-    description: "Jordan started their journey at Zicklin with a passion for numbers and curiosity about the global economy. Through our BBA program in finance, they're building the skills and network to shape the financial world.",
+    description: "Jordan is building the skills and network to shape the financial world through Zicklin’s BBA in Finance.",
     cta: "Start Your Business Journey"
   },
   {
@@ -33,19 +33,18 @@ export default function SlidingCards({data = audienceData}) {
   return (
     <section className="relative z-10 flex h-[70vh] group/audiences">
       {data.map((item, index) => ( 
-        <div className="bg-secondary-chartreuse flex-1 hover:flex-1/2 transition-all duration-300 cursor-pointer bg-center bg-cover relative group delay-50">1
+        <div className="bg-secondary-chartreuse flex-1 transition-all duration-300 cursor-pointer bg-center bg-cover relative group delay-50 pt-32 flex flex-col justify-end">1
           <Image src={item.image} alt="Baruch Students" className="absolute inset-0 z-10 size-full object-cover" />
           <div className={clsx(
             "absolute inset-0 z-10",
-            "bg-gradient-to-b from-primary-sky to-primary-cuny-blue mix-blend-multiply opacity-70",
-            "group-hover:bg-gradient-to-b group-hover:from-primary-sky group-hover:to-primary-indigo group-hover:mix-blend-multiply group-hover:opacity-100",
-            "transition-all duration-300"
+            "bg-gradient-to-b from-primary-sky to-primary-indigo mix-blend-multiply opacity-100",
           )} />
-          <div className="relative p-8 z-10 space-y-4 overflow-hidden">
-            <h2 className="text-3xl font-sans-xcondensed font-semibold text-secondary-lemonade uppercase text-shadow-lg/30">{item.audience}</h2>
-            <h3 className="text-white font-sans-xcondensed font-semibold text-7xl leading-[0.9] uppercase text-shadow-lg/30">{item.title}</h3>
-            <div className="-translate-x-[150%] delay-50 group-hover:translate-x-0 transition-all duration-300 space-y-6">
-              <p className="text-white text-2xl font-medium">{item.description}</p>
+          <div className="relative p-8 z-10 space-y-2 overflow-hidden min-h-[340px] mt-auto">
+            <h2 className="text-2xl font-sans-xcondensed font-semibold text-secondary-lemonade uppercase text-shadow-lg/30 text-balance">{item.audience}</h2>
+            <h3 className="text-white font-sans-xcondensed font-semibold text-5xl leading-[0.9] uppercase text-shadow-lg/30 text-balance">{item.title}</h3>
+            {/* <div className="-translate-x-[150%] delay-50 group-hover:translate-x-0 transition-all duration-300 space-y-6 hidden group-hover:block"> */}
+            <div className="space-y-6">
+              <p className="text-white/86 text-lg font-medium text-shadow-lg/30 leading-tight">{item.description}</p>
               <p className="">
                 <a href="#" className="bg-secondary-tangerine text-white px-4 py-2 font-bold rounded-sm transition-colors">
                   {item.cta}
