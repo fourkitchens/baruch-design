@@ -25,9 +25,13 @@ export default function Home() {
           <div className="flex flex-col gap-6">
             <h2 className="text-2xl font-bold">Landing pages</h2>
             <ul className="text-lg flex flex-col gap-4">
+              <li><Link href="/home" className="text-white/90 link link-indigo-bg hover:text-white">Home</Link></li>
               <li><Link href="/zicklin" className="text-white/90 link link-indigo-bg hover:text-white">Zicklin</Link></li>
               <li><Link href="/programs" className="text-white/90 link link-indigo-bg hover:text-white">Programs</Link></li>
             </ul>
+          </div>
+
+          <div className="flex flex-col gap-6">
             <h2 className="text-2xl font-bold">Basic page</h2>
             <ul className="text-lg flex flex-col gap-4">
               <li><Link href="/basic/cabinet" className="text-white/90 link link-indigo-bg hover:text-white">Cabinet</Link></li>
@@ -36,9 +40,6 @@ export default function Home() {
               <li><Link href="/basic/provost" className="text-white/90 link link-indigo-bg hover:text-white">Accreditation</Link></li>
               <li><Link href="/basic/everything" className="text-white/90 link link-indigo-bg hover:text-white">Everything</Link></li>
             </ul>
-          </div>
-
-          <div className="flex flex-col gap-6">
             <h2 className="text-2xl font-bold">Style Tiles</h2>
             <ul className="text-lg flex flex-col gap-4">
               <li><Link href="/style-tiles/round-2" className="text-white/90 link link-indigo-bg hover:text-white">Round 2</Link></li>

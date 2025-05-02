@@ -6,7 +6,11 @@ export default function Stats({stats, bg="bg-primary-indigo"}) {
           {stats && stats.map((stat, index) => (
             <div key={stat.id} className={`flex flex-col gap-y-3 border-l border-white/10 pl-6 ${index < 3 ? '-ml-4' : '-mr-4'}`}>
               <dt className="font-sans-condensed text-balance font-semibold uppercase text-8xl">
-                {stat.header.includes('#') ? (<div className="flex items-center gap-1 leading-none"><span className="text-6xl">#</span>{stat.header.substring(1)}</div>) : stat.header}
+                {stat.headerSpecial ? (
+                  <div dangerouslySetInnerHTML={{ __html: stat.headerSpecial }} />
+                ) : stat.header.includes('#') ? (
+                  <div className="flex items-center gap-1 leading-none"><span className="text-6xl">#</span>{stat.header.substring(1)}</div>
+                ) : stat.header}
               </dt>
               <dd 
                 className="text-xl text-balance block text-white/80 font-semibold"

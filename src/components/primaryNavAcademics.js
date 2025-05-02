@@ -112,6 +112,11 @@ export default function PrimaryNavAcademics() {
                   Weissman School of Arts and Sciences
                 </a>
               </li>
+              <li className="py-2 leading-tight">
+                <a href="#" className={clsx("font-medium text-primary-cuny-blue link link-neutral-pearl-bg")}>
+                  Baruch Online
+                </a>
+              </li>
             </ul>
           </div>
 
