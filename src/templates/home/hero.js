@@ -59,13 +59,13 @@ export default function Hero() {
         <h1 className="mb-6 text-[190px] text-balance leading-[150px] font-semibold uppercase font-field-gothic text-shadow-lg/40">Ambition Meets Opportunity in the Heart of NYC</h1>
         <h2 className="text-3xl font-bold text-shadow-lg/30 mb-2 text-balance">Top-ranked, affordable, and diverse — discover what’s possible at Baruch College.</h2>
         <div className="flex justify-start gap-4 py-2 mt-6">
-          <a href="/apply" className="bg-primary-cuny-blue ring-1 ring-primary-cuny-blue hover:bg-primary-indigo hover:ring-primary-indigo text-white px-6 py-2 font-bold rounded-sm transition-all">
+          <a href="/apply" className="bg-secondary-tangerine ring-1 ring-secondary-tangerine text-white px-6 py-2 font-bold rounded-sm transition-all">
             Explore Majors
           </a>
-          <a href="/visit" className="bg-primary-cuny-blue ring-1 ring-primary-cuny-blue hover:bg-primary-indigo hover:ring-primary-indigo text-white px-6 py-2 font-bold rounded-sm transition-all">
+          <a href="/visit" className="bg-secondary-tangerine ring-1 ring-secondary-tangerine text-white px-6 py-2 font-bold rounded-sm transition-all">
             Visit Campus
           </a>
-          <a href="/visit" className="bg-primary-cuny-blue ring-1 ring-primary-cuny-blue hover:bg-primary-indigo hover:ring-primary-indigo text-white px-6 py-2 font-bold rounded-sm transition-all">
+          <a href="/visit" className="bg-secondary-tangerine ring-1 ring-secondary-tangerine text-white px-6 py-2 font-bold rounded-sm transition-all">
             Apply Now
           </a>
         </div>
