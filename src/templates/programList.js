@@ -20,7 +20,7 @@ const ProgramType = () => {
     <Menu as="div" className="relative z-10 inline-block text-left">
       <div>
         <MenuButton className="inline-flex w-full justify-center gap-x-1.5 rounded-md bg-white px-3 py-2 font-semibold text-body ring-1 shadow-xs ring-neutral-pewter/50 ring-inset hover:text-primary-cuny-blue">
-          Choose a Program Area
+          Choose Learning Format
           <ChevronDownIcon aria-hidden="true" className="-mr-1 size-5 text-neutral-pewter" />
         </MenuButton>
       </div>
@@ -30,8 +30,9 @@ const ProgramType = () => {
         className="absolute left-0 z-10 mt-2 w-56 origin-top-right rounded-md bg-white ring-1 shadow-lg ring-neutral-pewter/50 transition focus:outline-hidden data-closed:scale-95 data-closed:transform data-closed:opacity-0 data-enter:duration-100 data-enter:ease-out data-leave:duration-75 data-leave:ease-in"
       >
         <div className="py-1">
-          <MenuItem as="div" className="hover:bg-primary-sky/10 px-4 py-2">Major</MenuItem>
-          <MenuItem as="div" className="hover:bg-primary-sky/10 px-4 py-2">Minor</MenuItem>
+          <MenuItem as="div" className="hover:bg-primary-sky/10 px-4 py-2">On Campus</MenuItem>
+          <MenuItem as="div" className="hover:bg-primary-sky/10 px-4 py-2">Online</MenuItem>
+          <MenuItem as="div" className="hover:bg-primary-sky/10 px-4 py-2">Hybrid</MenuItem>
         </div>
       </MenuItems>
     </Menu>
