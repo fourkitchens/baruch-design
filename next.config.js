@@ -19,6 +19,14 @@ const nextConfig = {
     });
     return config;
   },
+  async rewrites() {
+    return [
+      {
+        source: '/storybook/:path*',
+        destination: '/storybook/:path*',
+      },
+    ];
+  },
 };
 
 module.exports = nextConfig; 
