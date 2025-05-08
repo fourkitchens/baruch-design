@@ -20,6 +20,9 @@ export default function Home() {
           <div>
             <BaruchLogo className="w-[260px] h-auto" />
             <h2 className="text-2xl font-bold font-field-gothic text-[220px] leading-[170px] uppercase text-secondary-chartreuse">Designs</h2>
+            <p className="text-sm text-white/80 mt-6">
+              <a href="/storybook" className="link link-indigo-bg hover:text-white">Storybook for Developers</a>
+            </p>
           </div>
 
           <div className="flex flex-col gap-6">
