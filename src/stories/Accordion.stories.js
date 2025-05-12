@@ -42,6 +42,12 @@ export default {
       description: 'Additional CSS classes',
     },
   },
+  parameters: {
+    clickup: {
+      url: 'https://app.clickup.com/t/123456',
+      ticket: 'CU-123'
+    }
+  }
 };
 
 export const Accordion = {
