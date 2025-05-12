@@ -8,12 +8,12 @@ import Image from 'next/image';
 
 export default function Header() {
   return (
-    <header className=" relative z-50">
+    <header className="relative z-50">
       <div className="bg-gradient-to-r from-primary-indigo via-primary-cuny-blue to-primary-cuny-blue">
         <div className="relative z-50">
-          <UtilityNav/>
-
-          <div className="flex flex-row items-center lg:items-end justify-start py-7 lg:pt-10 lg:pb-8 max-width-wrapper">
+          <UtilityNav className="hidden xl:block" />
+          {/* py-7 lg:pt-10 lg:pb-8 */}
+          <div className="flex flex-row items-center lg:items-end justify-start max-width-wrapper py-3 md:py-7">
             <Logo />
             
             <div className="ms-auto flex-row items-center gap-8 hidden lg:flex">

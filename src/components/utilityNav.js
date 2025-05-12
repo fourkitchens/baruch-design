@@ -1,9 +1,9 @@
 import clsx from 'clsx';
 import utilityNav from '@/data/utilityNav';
 
-export default function UtilityNav() {
+export default function UtilityNav({ className }) {
   return (
-    <nav className="bg-primary-indigo py-1">
+    <nav className={clsx("bg-primary-indigo py-1", className)}>
       <ul className="flex items-center justify-end gap-4 max-width-wrapper">
         {utilityNav.map((item) => (
           <li key={item.title}>
