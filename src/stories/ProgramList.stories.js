@@ -1,7 +1,7 @@
 import ProgramList from "@/templates/programList";
 
 export default {
-  title: 'Templates/Program List', 
+  title: 'Templates/Programs/Program List', 
   component: ProgramList,
 };
 

@@ -31,6 +31,11 @@ export default {
       description: 'The sidebar of the page',
     },
   },
+  parameters: {
+    clickup: {
+      url: 'https://app.clickup.com/t/36718269/BARUCH-79',
+    }
+  }
 };
 
 export const LayoutTemplate = {

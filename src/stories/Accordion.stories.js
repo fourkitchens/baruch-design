@@ -44,8 +44,7 @@ export default {
   },
   parameters: {
     clickup: {
-      url: 'https://app.clickup.com/t/123456',
-      ticket: 'CU-123'
+      url: 'https://app.clickup.com/t/36718269/BARUCH-72',
     }
   }
 };
