@@ -7,7 +7,7 @@ const NavSection = ({ header, items, className, maxItems = 5, image }) => {
   return (
     <div className={className}>
       {image && (
-        <div className="mb-6">
+        <div className="mb-6 hidden xl:block">
           <Image
             src={image}
             alt=""

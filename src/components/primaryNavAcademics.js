@@ -79,7 +79,7 @@ const sections = [
 export default function PrimaryNavAcademics() {
   return (
     <div className="mx-auto grid max-w-7xl grid-cols-1 gap-x-8 gap-y-10">
-      <div className="grid grid-cols-4 gap-x-6 sm:gap-x-8 divide-x divide-neutral-dove px-6 py-10 pb-0 lg:px-10">
+      <div className="grid grid-cols-3 xl:grid-cols-4 gap-8 divide-x divide-neutral-dove px-6 py-10 pb-0 lg:px-10">
         {sections.map((section) => (
           <NavSection 
             key={section.header}
@@ -90,8 +90,8 @@ export default function PrimaryNavAcademics() {
             maxItems={50}
           />
         ))}
-        <div className="space-y-6">
-          <div className="bg-neutral-pearl rounded-sm p-6 pe-4">
+        <div className="xl:space-y-6 col-span-3 xl:col-span-1 flex flex-row gap-6 xl:flex-col xl:gap-0">
+          <div className="bg-neutral-pearl rounded-sm p-6 pe-4 flex-1">
             <h3 className="text-base/6 leading-none text-body mb-4 uppercase font-bold flex items-center">
               <FontAwesomeIcon icon={faBuildingColumns} className="mr-2 size-4 relative -top-[2px] opacity-60" />
               Schools
@@ -119,8 +119,7 @@ export default function PrimaryNavAcademics() {
               </li>
             </ul>
           </div>
-
-          <div className="bg-neutral-pearl rounded-sm p-6 pe-4">
+          <div className="bg-neutral-pearl rounded-sm p-6 pe-4 flex-1">
             <h3 className="text-base/6 leading-none text-body mb-4 uppercase font-bold flex items-center">
               <FontAwesomeIcon icon={faCompass} className="mr-2 size-4 relative -top-[2px] opacity-60" />
               Explore Your Options
