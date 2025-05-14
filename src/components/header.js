@@ -11,8 +11,8 @@ export default function Header() {
     <header className="relative z-50">
       <div className="bg-gradient-to-r from-primary-indigo via-primary-cuny-blue to-primary-cuny-blue">
         <div className="relative z-50">
-          <UtilityNav className="hidden xl:block" />
-          {/* py-7 lg:pt-10 lg:pb-8 */}
+          <UtilityNav className="hidden lg:block" />
+          
           <div className="flex flex-row items-center lg:items-end justify-start max-width-wrapper py-3 md:py-7">
             <Logo />
             

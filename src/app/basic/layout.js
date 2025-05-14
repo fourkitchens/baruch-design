@@ -14,7 +14,7 @@ export default function Layout({ children }) {
         <link rel="stylesheet" href="https://use.typekit.net/sbs3zlh.css" />
       </head>
       <body
-        className={`antialiased bg-white`}
+        className={`antialiased bg-background text-foreground`}
       >
         <Header/>
         {children}
