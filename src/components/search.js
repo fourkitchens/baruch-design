@@ -21,7 +21,31 @@ const items = [
   { id: 5, name: 'Search result', category: 'Current Students', url: '#' },
 ]
 
-export default function Search() {
+const SearchButtonLargeScreen = ({ onClick }) => {
+  return (
+    <button className="flex items-center gap-x-1 text-lg font-bold text-white/90 hover:text-white" onClick={onClick}>
+      <MagnifyingGlassIcon
+        className="pointer-events-none size-5 text-white/60"
+        aria-hidden="true"
+        />
+      Search 
+    </button>
+  )
+}
+
+const SearchButtonSmallScreen = ({ onClick }) => {
+  return (
+    <button className="flex items-center gap-x-1 text-4xl px-6 font-sans-condensed uppercase font-bold text-white hover:text-white" onClick={onClick}>
+      Search
+      <MagnifyingGlassIcon
+        className="pointer-events-none size-7 relative -top-[2px] text-primary-sky"
+        aria-hidden="true"
+        />
+    </button>
+  )
+}
+
+export default function Search({mobile = false}) {
   const [query, setQuery] = useState('')
   const [open, setOpen] = useState(false)
 
@@ -38,13 +62,7 @@ export default function Search() {
 
   return (
     <div>
-      <button className="flex items-center gap-x-1 text-lg font-bold text-white/90 hover:text-white" onClick={() => setOpen(true)}>
-        <MagnifyingGlassIcon
-          className="pointer-events-none size-5 text-white/60"
-          aria-hidden="true"
-          />
-        Search 
-      </button>
+      {mobile ? <SearchButtonSmallScreen onClick={() => setOpen(true)} /> : <SearchButtonLargeScreen onClick={() => setOpen(true)} />}
 
       <Dialog
         transition
@@ -122,7 +140,7 @@ export default function Search() {
                 <div className="border-t border-gray-100 px-6 py-14 text-center text-sm sm:px-14">
                   <FaceFrownIcon className="mx-auto size-6 text-body/80" aria-hidden="true" />
                   <p className="mt-4 font-semibold text-body">No results found</p>
-                  <p className="mt-2 text-body/80">We couldn’t find anything with that term. Please try again.</p>
+                  <p className="mt-2 text-body/80">We couldn't find anything with that term. Please try again.</p>
                 </div>
               )}
             </Combobox>
@@ -130,6 +148,5 @@ export default function Search() {
         </div>
       </Dialog>
     </div>
-
   )
 }

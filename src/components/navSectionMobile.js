@@ -11,7 +11,7 @@ const NavSectionMobile = ({ header, items, className, maxItems = 5, image }) => 
           <Image
             src={image}
             alt=""
-            className="w-full h-auto rounded-sm outline-1 -outline-offset-1 outline-black/10 aspect-video object-cover"
+            className="w-full h-auto rounded-sm outline-1 -outline-offset-1 outline-black/10 aspect-video object-cover max-h-[236px]"
           />
         </div>
       )}

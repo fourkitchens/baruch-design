@@ -41,7 +41,8 @@ const MainNavLink = ({link}) => {
               <ChevronDownIcon aria-hidden="true" className={clsx("size-8 transition-all duration-[0.1]", open ? "-rotate-180 text-primary-cuny-blue" : "rotate-0 text-primary-sky")} />
             </DisclosureButton>
           </div>
-          <div className=" ">
+          
+          <div className="">
             <AnimatePresence>
               {open && (
                 <DisclosurePanel static as={Fragment}>
@@ -50,7 +51,7 @@ const MainNavLink = ({link}) => {
                     animate={{ opacity: 1, y: 0 }}
                     exit={{ opacity: 0, y: -24 }}
                     transition={{ duration: 0.2, ease: easeOut }}
-                    className={clsx("origin-top bg-neutral-pearl pt-4 pb-2", open ? "-mt-16 pt-16" : "mt-0 pt-0")}
+                    className={clsx("origin-top bg-neutral-pearl pt-4 pb-2 w-screen mx-[calc(50%-50vw)]", open ? "-mt-16 pt-16" : "mt-0 pt-0")}
                   >
                     {link?.popoverMobile}
                   </motion.div>
@@ -83,15 +84,17 @@ export default function PrimaryNavMobile({className}) {
           <Header setMobileMenuOpen={setMobileMenuOpen} />
 
           <div className="relative z-50 pt-16 pb-8 min-h-[calc(100vmin-80px)] flex flex-col gap-16">
-            <ul className="flex flex-col">
+            <ul className="flex flex-col max-w-3xl mx-auto w-full">
               {mainNavLinks.map((link) => (
                 <MainNavLink link={link} key={link.title} />
               ))}
+              <li className="pt-3">
+                <Search mobile={true} />
+              </li>
             </ul>
 
-            <Search />
 
-            <div className="flex flex-col gap-6 mt-auto px-6">
+            <div className="flex flex-col gap-6 mt-auto max-w-3xl mx-auto w-full px-6">
               <div className="flex justify-start gap-4 py-2">
                 <a href="/apply" className="bg-primary-sky ring-1 ring-primary-sky hover:bg-white hover:ring-white text-primary-indigo px-6 py-2 font-bold rounded-sm transition-all">
                   Apply Now
@@ -101,7 +104,7 @@ export default function PrimaryNavMobile({className}) {
                 </a>
               </div>
 
-              <ul className="grid grid-cols-2 gap-x-6 gap-y-2 max-w-content">
+              <ul className="grid grid-cols-2 gap-x-6 gap-y-2 max-w-max">
                 {utilityNav.map((item) => (
                   <li key={item.title}>
                     <a href={item.url} className={clsx("text-sm font-medium text-white/90 hover:text-white leading-none link link-indigo-bg",

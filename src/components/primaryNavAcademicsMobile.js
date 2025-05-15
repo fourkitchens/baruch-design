@@ -90,7 +90,17 @@ export default function PrimaryNavAcademics() {
       <Swiper
         pagination={true} 
         modules={[Pagination]}
-        slidesPerView={1.25}
+        breakpoints={{
+          320: {
+            slidesPerView: 1.25,
+          },
+          590: {
+            slidesPerView: 1.75,
+          },
+          640: {
+            slidesPerView: 2.5,
+          }
+        }}
         spaceBetween={8}
         className="mySwiper flex items-stretch !overflow-visible"
       >
