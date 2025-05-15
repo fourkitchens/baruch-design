@@ -32,25 +32,25 @@ const Header = ({ setMobileMenuOpen }) => {
 
 const MainNavLink = ({link}) => {
   return (
-    <Disclosure as="li" className="w-full max-w-md">
+    <Disclosure as="li" className="w-full">
       {({ open }) => (
         <>
-          <div className={clsx("px-6 pt-3 pb-2 transition-all duration-[0.2]", open ? "bg-neutral-pearl pb-0" : "")}>
-            <DisclosureButton className={clsx("text-4xl font-bold font-sans-condensed uppercase flex items-center gap-x-1", open ? "text-primary-cuny-blue" : "text-neutral-pearl")}>
+          <div className={clsx("px-6 pt-3 pb-2 transition-all duration-[0.2]", open ? " pb-0" : "")}>
+            <DisclosureButton className={clsx("text-4xl font-bold font-sans-condensed uppercase flex items-center gap-x-1 transition-all duration-[0.1] relative z-30", open ? "text-primary-cuny-blue" : "text-white")}>
               {link.title}
-              <ChevronDownIcon aria-hidden="true" className={clsx("size-8 text-primary-sky transition-all duration-300", open ? "-rotate-180" : "rotate-0")} />
+              <ChevronDownIcon aria-hidden="true" className={clsx("size-8 transition-all duration-[0.1]", open ? "-rotate-180 text-primary-cuny-blue" : "rotate-0 text-primary-sky")} />
             </DisclosureButton>
           </div>
-          <div className="overflow-hidden ">
+          <div className=" ">
             <AnimatePresence>
               {open && (
                 <DisclosurePanel static as={Fragment}>
                   <motion.div
-                    initial={{ opacity: 0, y: -24 }}
+                    initial={{ opacity: 0, y: -10 }}
                     animate={{ opacity: 1, y: 0 }}
                     exit={{ opacity: 0, y: -24 }}
                     transition={{ duration: 0.2, ease: easeOut }}
-                    className="origin-top bg-neutral-pearl pt-4 pb-2"
+                    className={clsx("origin-top bg-neutral-pearl pt-4 pb-2", open ? "-mt-16 pt-16" : "mt-0 pt-0")}
                   >
                     {link?.popoverMobile}
                   </motion.div>
@@ -82,7 +82,7 @@ export default function PrimaryNavMobile({className}) {
         <DialogPanel className="fixed inset-0 bg-primary-indigo overflow-y-auto">
           <Header setMobileMenuOpen={setMobileMenuOpen} />
 
-          <div className="relative z-50 pt-16 pb-8 min-h-[calc(100vh-80px)] flex flex-col gap-16">
+          <div className="relative z-50 pt-16 pb-8 min-h-[calc(100vmin-80px)] flex flex-col gap-16">
             <ul className="flex flex-col">
               {mainNavLinks.map((link) => (
                 <MainNavLink link={link} key={link.title} />
@@ -101,7 +101,7 @@ export default function PrimaryNavMobile({className}) {
                 </a>
               </div>
 
-              <ul className="grid grid-cols-2 gap-1">
+              <ul className="grid grid-cols-2 gap-x-6 gap-y-2 max-w-content">
                 {utilityNav.map((item) => (
                   <li key={item.title}>
                     <a href={item.url} className={clsx("text-sm font-medium text-white/90 hover:text-white leading-none link link-indigo-bg",

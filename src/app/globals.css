@@ -144,6 +144,11 @@ body {
   --hover-color: var(--color-primary-sky);
 }
 
+.link-neutral-pearl-dark-bg {
+  --default-color: var(--color-neutral-pearl-dark);
+  --hover-color: var(--color-primary-sky);
+}
+
 .prose a:not(.not-prose a) {
   @apply no-underline;
   background: 

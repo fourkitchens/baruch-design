@@ -106,6 +106,56 @@ export default function PrimaryNavAcademics() {
               />
           </SwiperSlide>
         ))}
+        <SwiperSlide className="!h-auto !flex">
+          <div className="flex flex-col gap-2">
+            <div className="bg-neutral-pearl-dark ring-1 ring-neutral-dove rounded-sm p-6 pe-4 flex-1">
+              <h3 className="text-base/6 leading-none text-body mb-4 uppercase font-bold flex items-center">
+                <FontAwesomeIcon icon={faBuildingColumns} className="mr-2 size-4 relative -top-[2px] opacity-60" />
+                Schools
+              </h3>
+              <ul className="text-lg">
+                <li className="py-2 leading-tight">
+                  <a href="#" className={clsx("font-medium text-primary-cuny-blue link link-neutral-pearl-dark-bg")}>
+                    Marxe School of International Affairs
+                  </a>
+                </li>
+                <li className="py-2 leading-tight">
+                  <a href="#" className={clsx("font-medium text-primary-cuny-blue link link-neutral-pearl-dark-bg")}>
+                    Weissman School of Arts and Sciences
+                  </a>
+                </li>
+                <li className="py-2 leading-tight">
+                  <a href="/zicklin" className={clsx("font-medium text-primary-cuny-blue link link-neutral-pearl-dark-bg")}>
+                    Zicklin School of Business
+                  </a>
+                </li>
+                <li className="py-2 leading-tight">
+                  <a href="#" className={clsx("font-medium text-primary-cuny-blue link link-neutral-pearl-dark-bg")}>
+                    Baruch Online
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div className="bg-neutral-pearl-dark ring-1 ring-neutral-dove rounded-sm p-6 pe-4 flex-1">
+              <h3 className="text-base/6 leading-none text-body mb-4 uppercase font-bold flex items-center">
+                <FontAwesomeIcon icon={faCompass} className="mr-2 size-4 relative -top-[2px] opacity-60" />
+                Explore Your Options
+              </h3>
+              <ul className="text-lg">
+                <li className="py-2 leading-tight">
+                  <a href="#" className={clsx("font-medium text-primary-cuny-blue link link-neutral-pearl-dark-bg")}>
+                    Programs
+                  </a>
+                </li>
+                {/* <li className="py-2 leading-tight">
+                  <a href="#" className={clsx("font-medium text-primary-cuny-blue link link-neutral-pearl-bg")}>
+                    Courses
+                  </a>
+                </li> */}
+              </ul>
+            </div>
+          </div>
+        </SwiperSlide>
       </Swiper>
     </div>
   )
