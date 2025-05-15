@@ -159,3 +159,11 @@ body {
 .prose a:not(.not-prose a):focus {
   background-size: 0 1px, 100% 1px;
 }
+
+.swiper-wrapper {
+  @apply flex items-stretch;
+}
+
+.swiper-pagination {
+  @apply !relative mt-3;
+}

@@ -48,9 +48,9 @@ const MainNavLink = ({link}) => {
                     animate={{ opacity: 1, y: 0 }}
                     exit={{ opacity: 0, y: -24 }}
                     transition={{ duration: 0.2, ease: easeOut }}
-                    className="origin-top bg-white px-6 py-4"
+                    className="origin-top bg-neutral-pearl pt-4 pb-2"
                   >
-                    Yes! You can purchase a license that you can share with your entire team.
+                    {link?.popoverMobile}
                   </motion.div>
                 </DisclosurePanel>
               )}
@@ -77,10 +77,10 @@ export default function PrimaryNavMobile({className}) {
       </button>
     
       <Dialog open={mobileMenuOpen} onClose={setMobileMenuOpen} className="lg:hidden relative z-50">
-        <DialogPanel className="fixed inset-0 bg-primary-indigo">
+        <DialogPanel className="fixed inset-0 bg-primary-indigo overflow-y-auto">
           <Header setMobileMenuOpen={setMobileMenuOpen} />
 
-          <div className="max-width-wrapper relative z-50 pt-16 pb-8 min-h-[calc(100vmin-80px)] flex flex-col gap-16">
+          <div className="max-width-wrapper relative z-50 pt-16 pb-8 min-h-[calc(100vh-80px)] flex flex-col gap-16">
             <ul className="flex flex-col gap-6">
               {mainNavLinks.map((link) => (
                 <li key={link.title}>

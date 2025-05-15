@@ -1,11 +1,13 @@
 import PrimaryNavAbout from '@/components/primaryNavAbout';
 import PrimaryNavAcademics from '@/components/primaryNavAcademics';
+import PrimaryNavAcademicsMobile from '@/components/primaryNavAcademicsMobile';
 
 const mainNavLinks = [
   {
     title: "Academics",
     url: "#",
     popover: <PrimaryNavAcademics />,
+    popoverMobile: <PrimaryNavAcademicsMobile />,
     sections: [
       {
         header: "Our Leadership",
