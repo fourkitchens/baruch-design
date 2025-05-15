@@ -32,14 +32,16 @@ const Header = ({ setMobileMenuOpen }) => {
 
 const MainNavLink = ({link}) => {
   return (
-    <Disclosure as="div" className="w-full max-w-md">
+    <Disclosure as="li" className="w-full max-w-md">
       {({ open }) => (
         <>
-          <DisclosureButton className="text-white text-4xl font-bold font-sans-condensed uppercase flex items-center gap-x-1">
-            {link.title}
-            <ChevronDownIcon aria-hidden="true" className="size-8 text-primary-sky" />
-          </DisclosureButton>
-          <div className="overflow-hidden -mx-6">
+          <div className={clsx("px-6 pt-3 pb-2 transition-all duration-[0.2]", open ? "bg-neutral-pearl pb-0" : "")}>
+            <DisclosureButton className={clsx("text-4xl font-bold font-sans-condensed uppercase flex items-center gap-x-1", open ? "text-primary-cuny-blue" : "text-neutral-pearl")}>
+              {link.title}
+              <ChevronDownIcon aria-hidden="true" className={clsx("size-8 text-primary-sky transition-all duration-300", open ? "-rotate-180" : "rotate-0")} />
+            </DisclosureButton>
+          </div>
+          <div className="overflow-hidden ">
             <AnimatePresence>
               {open && (
                 <DisclosurePanel static as={Fragment}>
@@ -80,18 +82,16 @@ export default function PrimaryNavMobile({className}) {
         <DialogPanel className="fixed inset-0 bg-primary-indigo overflow-y-auto">
           <Header setMobileMenuOpen={setMobileMenuOpen} />
 
-          <div className="max-width-wrapper relative z-50 pt-16 pb-8 min-h-[calc(100vh-80px)] flex flex-col gap-16">
-            <ul className="flex flex-col gap-6">
+          <div className="relative z-50 pt-16 pb-8 min-h-[calc(100vh-80px)] flex flex-col gap-16">
+            <ul className="flex flex-col">
               {mainNavLinks.map((link) => (
-                <li key={link.title}>
-                  <MainNavLink link={link} />
-                </li>
+                <MainNavLink link={link} key={link.title} />
               ))}
             </ul>
 
             <Search />
 
-            <div className="flex flex-col gap-6 mt-auto">
+            <div className="flex flex-col gap-6 mt-auto px-6">
               <div className="flex justify-start gap-4 py-2">
                 <a href="/apply" className="bg-primary-sky ring-1 ring-primary-sky hover:bg-white hover:ring-white text-primary-indigo px-6 py-2 font-bold rounded-sm transition-all">
                   Apply Now
@@ -110,28 +110,7 @@ export default function PrimaryNavMobile({className}) {
                 ))}
               </ul>
             </div>
-
-            
-
           </div>
-          
-          <Image src={gritImage} alt="grit" className="absolute top-0 left-0 w-full h-full object-cover mix-blend-multiply opacity-20 z-0" />
-          
-          {/* <header className="">
-            <div className="flex flex-row items-center lg:items-end justify-start max-width-wrapper py-3 md:py-7">
-              <Logo />
-            </div>
-
-            <button
-              type="button"
-              onClick={() => setMobileMenuOpen(false)}
-              className="-m-2.5 ml-auto rounded-md p-2.5 text-white"
-            >
-              <span className="sr-only">Close menu</span>
-              <XMarkIcon aria-hidden="true" className="size-9" />
-            </button>
-          </header> */}
-          
         </DialogPanel>
       </Dialog>
     </div>

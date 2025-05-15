@@ -23,7 +23,7 @@ const NavSectionMobile = ({ header, items, className, maxItems = 5, image }) => 
               <li key={item.title} className="py-1">
                 <a
                   href={item.url}
-                  className={clsx("text-base font-medium text-primary-cuny-blue link link-mega-menu leading-none inline-block",
+                  className={clsx("text-base font-medium text-primary-cuny-blue link link-mega-menu leading-tight inline-block",
                   )}
                 >
                   {item.title}
