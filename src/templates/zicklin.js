@@ -34,8 +34,6 @@ export default function Zicklin() {
     <>
       <Header />
       <Hero />
-      <Stats stats={stats} />
-      <SlidingCards />
 
       <ImageSide image={photo} alt="Photo" bg="bg-primary-cuny-blue">
         <h1 className="mt-24 mb-8 text-pretty text-[180px] leading-[150px] uppercase font-semibold font-field-gothic text-white sm:mt-10">
@@ -55,6 +53,9 @@ export default function Zicklin() {
           </ul>
         </div>
       </ImageSide>
+
+      <Stats stats={stats} />
+      <SlidingCards />
       
       <Testimonials />
       <News />
