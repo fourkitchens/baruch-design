@@ -5,6 +5,7 @@ import Search from '@/components/search';
 import Logo from '@/components/logo';
 import gritImage from '@/assets/images/gritty-texture-sand-on-transparent-background-monochrome-noise-halftone-grit-pattern-isolated-illustration-vector.jpg'; 
 import Image from 'next/image';
+import Button from '@/components/button';
 
 export default function Header() {
   return (
@@ -18,12 +19,12 @@ export default function Header() {
             
             <div className="ms-auto flex-row items-center gap-8 hidden lg:flex">
               <div className="flex justify-end gap-4 py-2">
-                <a href="/apply" className="bg-primary-sky ring-1 ring-primary-sky hover:bg-white hover:ring-white text-primary-indigo px-6 py-2 font-bold rounded-sm transition-all">
+                <Button href="/visit" >
                   Apply Now
-                </a>
-                <a href="/visit" className="bg-transparent ring-1 ring-neutral-dove/70 hover:bg-white hover:ring-white hover:text-primary-indigo text-white px-6 py-2 font-bold rounded-sm transition-colors">
+                </Button>
+                <Button href="/visit" type="ghost" >
                   Plan a Visit
-                </a>
+                </Button>
               </div>
             </div>
 

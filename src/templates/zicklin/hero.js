@@ -5,6 +5,7 @@ import Video from '@/components/video';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCirclePlay, faCirclePause } from '@fortawesome/pro-regular-svg-icons'
 import { useRef, useState, useEffect } from 'react';
+import Button from "@/components/button";
 
 export default function Hero() {
   const videoRef = useRef(null);
@@ -59,12 +60,8 @@ export default function Hero() {
         <h1 className="text-3xl font-bold text-shadow-lg/30 mb-2">Zicklin School of Business at Baruch College</h1>
         <h2 className="text-[190px] text-balance leading-[150px] font-semibold uppercase font-field-gothic text-shadow-lg/40">New York Smart.<br/>World-Class Ready.&reg;</h2>
         <div className="flex justify-start gap-4 py-2 mt-6">
-          <a href="/apply" className="bg-secondary-tangerine ring-1 ring-secondary-tangerine text-white px-6 py-2 font-bold rounded-sm transition-all">
-            Apply Now
-          </a>
-          <a href="/visit" className="bg-secondary-tangerine ring-1 ring-secondary-tangerine text-white px-6 py-2 font-bold rounded-sm transition-all">
-            Plan a Visit
-          </a>
+          <Button href="/apply" type="tangerine">Apply Now</Button>
+          <Button href="/apply" type="tangerine">Plan a Visit</Button>
         </div>
       </div>
       <div className="absolute inset-0 -z-10 bg-neutral-slate mix-blend-multiply saturate-50" />

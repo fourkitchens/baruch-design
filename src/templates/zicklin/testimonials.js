@@ -1,5 +1,6 @@
 import Testimonial from "@/components/testimonial";
 import { alumniData } from "@/data/alumni";
+import Button from "@/components/button";
 
 export default function Testimonials() {
   return (
@@ -19,12 +20,12 @@ export default function Testimonials() {
         <h2 className="text-4xl font-semibold text-white text-shadow-lg">Continue Your Journey with Confidence</h2>
         <h3 className="text-xl font-normal text-white/85 text-shadow-lg">Whether you’re exploring new opportunities, aiming for leadership, or making a bold pivot, you’re not doing it alone. Zicklin’s career resources, vibrant community, and global network are here for you—now and always. Let’s keep moving forward, together.</h3>
         <div className="flex justify-center gap-4 py-2 mt-8 text-2xl">
-          <a href="/apply" className="bg-primary-cuny-blue ring-1 ring-primary-cuny-blue text-white px-6 py-2 font-bold rounded-sm transition-all shadow-sm/40">
+          <Button href="/apply" type="cuny-blue" size="lg">
             Apply Now
-          </a>
-          <a href="/visit" className="bg-transparent ring-1 ring-white text-white px-6 py-2 font-bold rounded-sm transition-colors">
-            Plan a Visit
-          </a>
+          </Button>
+          <Button href="/apply" type="ghost" size="lg">
+            Apply Now
+          </Button>
         </div>
       </div>
     </section>

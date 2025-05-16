@@ -11,6 +11,7 @@ import clsx from "clsx";
 import sampleImage from "@/assets/images/students_2265_hor.jpg";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGraduationCap, faBuildingColumns } from '@fortawesome/pro-solid-svg-icons'
+import Button from "@/components/button";
 
 const breadcrumbData = [
   { name: 'Programs', href: '#', current: false },
@@ -159,9 +160,9 @@ const ProgramDetails = () => {
         ))}
       </dl>
       <p className="mt-8 mb-4">
-        <a href="/apply" className="bg-secondary-tangerine text-white ring-1 ring-secondary-tangerine px-4 py-2 font-bold rounded-sm transition-all">
+        <Button href="/apply" type="tangerine">
           Request More Information
-        </a>
+        </Button>
       </p>
     </div>   
   )

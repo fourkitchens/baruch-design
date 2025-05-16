@@ -12,6 +12,7 @@ import Search from '@/components/search';
 import utilityNav from '@/data/utilityNav';
 import clsx from 'clsx';
 import { AnimatePresence, easeOut, motion } from 'framer-motion'
+import Button from '@/components/button';
 
 const Header = ({ setMobileMenuOpen }) => {
   return (
@@ -96,12 +97,12 @@ export default function PrimaryNavMobile({className}) {
 
             <div className="flex flex-col gap-6 mt-auto max-w-3xl mx-auto w-full px-6">
               <div className="flex justify-start gap-4 py-2">
-                <a href="/apply" className="bg-primary-sky ring-1 ring-primary-sky hover:bg-white hover:ring-white text-primary-indigo px-6 py-2 font-bold rounded-sm transition-all">
+                <Button href="/apply">
                   Apply Now
-                </a>
-                <a href="/visit" className="bg-transparent ring-1 ring-neutral-dove/70 hover:bg-white hover:ring-white hover:text-primary-indigo text-white px-6 py-2 font-bold rounded-sm transition-colors">
+                </Button>
+                <Button href="/visit" type="ghost">
                   Plan a Visit
-                </a>
+                </Button>
               </div>
 
               <ul className="grid grid-cols-2 gap-x-6 gap-y-2 max-w-max">

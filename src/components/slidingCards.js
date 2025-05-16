@@ -4,6 +4,7 @@ import clsx from "clsx";
 import undergraduateImage from "@/assets/images/zicklin/Baruch-Zicklin-Spotlights-Student-Portrait/Baruch-Student-Portraits-5.png";
 import graduateImage from "@/assets/images/zicklin/Baruch-Zicklin-Spotlights-Student-Portrait/Baruch-Student-Portraits-4.png";
 import workingProfessionalsImage from "@/assets/images/zicklin/Baruch-Zicklin-Spotlights-Student-Portrait/Baruch-Student-Portraits-1.jpg";
+import Button from "@/components/button";
 
 const audienceData = [
   {
@@ -42,13 +43,12 @@ export default function SlidingCards({data = audienceData}) {
           <div className="relative p-8 z-10 space-y-2 overflow-hidden min-h-[340px] mt-auto">
             <h2 className="text-2xl font-sans-xcondensed font-semibold text-secondary-lemonade uppercase text-shadow-lg/30 text-balance">{item.audience}</h2>
             <h3 className="text-white font-sans-xcondensed font-semibold text-5xl leading-[0.9] uppercase text-shadow-lg/30 text-balance">{item.title}</h3>
-            {/* <div className="-translate-x-[150%] delay-50 group-hover:translate-x-0 transition-all duration-300 space-y-6 hidden group-hover:block"> */}
             <div className="space-y-6">
               <p className="text-white/86 text-lg font-medium text-shadow-lg/30 leading-tight">{item.description}</p>
               <p className="">
-                <a href="#" className="bg-secondary-tangerine text-white px-4 py-2 font-bold rounded-sm transition-colors">
+                <Button href="#" type="tangerine">
                   {item.cta}
-                </a>
+                </Button>
               </p>
             </div>
           </div>
