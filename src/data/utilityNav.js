@@ -1,6 +1,6 @@
 const utilityNav = [
   {
-    title: "Prospective Students",
+    title: "Future Students",
     url: "#",
   },
   {
