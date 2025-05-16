@@ -1,13 +1,14 @@
 'use client'
 
 import { useState, useEffect, useCallback } from 'react'
+import clsx from 'clsx'
 
 const defaultPages = [
   { name: 'Projects', href: '#', current: false },
   { name: 'Project Nero', href: '#', current: true },
 ]
 
-export default function Breadcrumbs({ pages = defaultPages }) {
+export default function Breadcrumbs({ pages = defaultPages, className }) {
   const [isExpanded, setIsExpanded] = useState(false)
   const [userExpanded, setUserExpanded] = useState(false)
 
@@ -31,11 +32,11 @@ export default function Breadcrumbs({ pages = defaultPages }) {
     pages.map((page, idx) => (
       <li key={page.name} className={idx === pages.length - 1 ? 'flex-1' : ''}>
         <div className={idx === pages.length - 1 ? 'flex items-center gap-1 flex-1' : 'flex items-center gap-1'}>
-          <span className="text-neutral-pewter/60">/</span>
+          <span className="text-(--text-color)/60">/</span>
           <a
             href={page.href}
             aria-current={page.current ? 'page' : undefined}
-            className="link link-breadcrumbs hover:text-neutral-charcoal"
+            className="link link-breadcrumbs text-(--link-color) hover:text-(--link-hover-color)"
           >
             {page.name}
           </a>
@@ -49,14 +50,14 @@ export default function Breadcrumbs({ pages = defaultPages }) {
     const lastPage = pages[pages.length - 1]
     return (
       <>
-        <span className="text-neutral-pewter/60">/</span>
+        <span className="text-(--text-color)/60">/</span>
         <li>
           <button
             onClick={() => {
               setIsExpanded(true)
               setUserExpanded(true)
             }}
-            className="link link-breadcrumbs hover:text-neutral-charcoal"
+            className="link link-breadcrumbs text-(--link-color) hover:text-(--link-hover-color)"
             aria-label="Expand breadcrumbs"
           >
             ...
@@ -64,11 +65,11 @@ export default function Breadcrumbs({ pages = defaultPages }) {
         </li>
         <li className="min-w-0 max-w-content flex-1">
           <div className="flex items-center gap-1 min-w-0 max-w-content flex-1">
-            <span className="text-neutral-pewter/60">/</span>
+            <span className="text-(--text-color)/60">/</span>
             <a
               href={lastPage?.href}
               aria-current={lastPage?.current ? 'page' : undefined}
-              className="link link-breadcrumbs hover:text-neutral-charcoal truncate whitespace-nowrap overflow-hidden block"
+              className="link link-breadcrumbs text-(--link-color) hover:text-(--link-hover-color) truncate whitespace-nowrap overflow-hidden block"
             >
               {lastPage?.name}
             </a>
@@ -81,13 +82,23 @@ export default function Breadcrumbs({ pages = defaultPages }) {
   return (
     <nav
       aria-label="Breadcrumb"
-      className="flex text-neutral-pewter text-sm leading-none font-medium w-full max-w-full overflow-hidden"
+      className={clsx(
+        "flex w-full max-w-full overflow-hidden",
+        "[--text-color:var(--color-neutral-pewter)]",
+        "[--link-color:var(--color-neutral-pewter)]",
+        "[--link-hover-color:var(--color-neutral-charcoal)]",
+        "[--link-current-color:var(--color-neutral-charcoal)]",
+        "[--link-current-hover-color:var(--color-neutral-charcoal)]",
+      )}
       style={{ '--show-overflow': isExpanded ? 1 : 0 }}
     >
-      <ol role="list" className="flex flex-row flex-wrap items-center space-x-1 w-full max-w-full overflow-hidden">
+      <ol role="list" className={clsx(
+        "text-(--text-color) text-sm leading-none font-medium flex flex-row flex-wrap items-center space-x-1 w-full max-w-full overflow-hidden",
+        className,
+      )}>
         <li>
           <div>
-            <a href="#" className="link link-breadcrumbs hover:text-neutral-charcoal">
+            <a href="#" className="text-(--link-color) hover:text-(--link-hover-color) link link-breadcrumbs">
               <span>Home</span>
             </a>
           </div>

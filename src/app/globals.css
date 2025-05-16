@@ -134,6 +134,11 @@ body {
   --hover-color: var(--color-primary-sky);
 }
 
+.link-white-bg {
+  --default-color: var(--color-white);
+  --hover-color: var(--color-primary-sky);
+}
+
 .link-midtown-blue-bg {
   --default-color: var(--color-primary-midtown-blue);
   --hover-color: var(--color-primary-sky);
@@ -146,6 +151,11 @@ body {
 
 .link-neutral-pearl-dark-bg {
   --default-color: var(--color-neutral-pearl-dark);
+  --hover-color: var(--color-primary-sky);
+}
+
+.link-neutral-slate-bg {
+  --default-color: var(--color-neutral-slate);
   --hover-color: var(--color-primary-sky);
 }
 
