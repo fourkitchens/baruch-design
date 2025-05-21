@@ -34,7 +34,7 @@ export default function SlidingCards({data = audienceData}) {
   return (
     <section className="relative z-10 flex h-[70vh] group/audiences">
       {data.map((item, index) => ( 
-        <div className="bg-secondary-chartreuse flex-1 transition-all duration-300 cursor-pointer bg-center bg-cover relative group delay-50 pt-32 flex flex-col justify-end">1
+        <div className="bg-secondary-chartreuse flex-1 transition-all duration-300 cursor-pointer bg-center bg-cover relative group delay-50 pt-32 flex flex-col justify-end" key={index}>
           <Image src={item.image} alt="Baruch Students" className="absolute inset-0 z-10 size-full object-cover" />
           <div className={clsx(
             "absolute inset-0 z-10",

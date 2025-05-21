@@ -36,9 +36,9 @@ export default function Zicklin() {
       <Hero />
 
       <ImageSide image={photo} alt="Photo" bg="bg-primary-cuny-blue">
-        <h1 className="mt-24 mb-8 text-pretty text-[180px] leading-[150px] uppercase font-semibold font-field-gothic text-white sm:mt-10">
-          Zicklin {' '}
-          <span className="text-secondary-lemonade">programs</span>
+        <h1 className="mt-24 mb-8 text-pretty uppercase font-semibold font-sans-xcondensed text-8xl text-white sm:mt-10">
+          {/* Zicklin {' '} */}
+          <span>programs</span>
         </h1>
         <p className="text-xl font-normal mb-16">Zicklin offers flexible programs for every stage of your career—undergraduate to executive, online to global. Discover the tools and connections to succeed in business.</p>
         <div>
