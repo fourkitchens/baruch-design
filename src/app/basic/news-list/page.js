@@ -8,6 +8,7 @@ import Image from 'next/image';
 import { Menu, MenuButton, MenuItem, MenuItems } from '@headlessui/react'
 import { ChevronDownIcon, ArrowPathIcon } from '@heroicons/react/20/solid'
 import marketplace from '@/assets/images/marketplace.png';
+import Pagination from '@/components/pagination';
 
 const breadcrumbData = [
   { name: 'News', href: '#', current: false },
@@ -188,6 +189,9 @@ export default function NewsList() {
               {shuffleArray([...posts]).map((post) => (
                 <PostCard key={`${post.id}-4`} post={post} />
               ))}
+            </div>
+            <div className="mx-auto text-center mt-16">
+              <Pagination />
             </div>
           </div>
         </div>
