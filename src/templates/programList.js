@@ -63,6 +63,35 @@ const Schools = () => {
   )
 }
 
+const Departments = () => {
+  return (
+    <Menu as="div" className="relative z-10 inline-block text-left">
+      <div>
+        <MenuButton className="inline-flex w-full justify-center gap-x-1.5 rounded-md bg-white px-3 py-2 font-semibold text-body ring-1 shadow-xs ring-neutral-pewter/50 ring-inset hover:text-primary-cuny-blue">
+          Choose a Department
+          <ChevronDownIcon aria-hidden="true" className="-mr-1 size-5 text-neutral-pewter" />
+        </MenuButton>
+      </div>
+
+      <MenuItems
+        transition
+        className="absolute left-0 z-10 mt-2 w-56 origin-top-right rounded-md bg-white ring-1 shadow-lg ring-neutral-pewter/50 transition focus:outline-hidden data-closed:scale-95 data-closed:transform data-closed:opacity-0 data-enter:duration-100 data-enter:ease-out data-leave:duration-75 data-leave:ease-in"
+      >
+        <div className="py-1">
+          <MenuItem as="div" className="hover:bg-primary-sky/10 px-4 py-2 leading-tight">Accounting</MenuItem>
+          <MenuItem as="div" className="hover:bg-primary-sky/10 px-4 py-2 leading-tight">Business</MenuItem>
+          <MenuItem as="div" className="hover:bg-primary-sky/10 px-4 py-2 leading-tight">Economics</MenuItem>
+          <MenuItem as="div" className="hover:bg-primary-sky/10 px-4 py-2 leading-tight">Finance</MenuItem>
+          <MenuItem as="div" className="hover:bg-primary-sky/10 px-4 py-2 leading-tight">Management</MenuItem>
+          <MenuItem as="div" className="hover:bg-primary-sky/10 px-4 py-2 leading-tight">Marketing</MenuItem>
+          <MenuItem as="div" className="hover:bg-primary-sky/10 px-4 py-2 leading-tight">Operations</MenuItem>
+          <MenuItem as="div" className="hover:bg-primary-sky/10 px-4 py-2 leading-tight">Supply Chain</MenuItem>
+        </div>
+      </MenuItems>
+    </Menu>
+  )
+}
+
 export default function ProgramList() {
   return (
     <>
@@ -79,16 +108,19 @@ export default function ProgramList() {
             <input type="text" placeholder="Search programs" className="w-1/3 rounded-md border-none px-4 py-2 ring-1 shadow-xs ring-neutral-pewter/50" />
           </div>
 
-          <div className="flex items-center gap-4">
+          <div className="flex flex-col items-start gap-2">
             <h2 className="text-lg font-semibold">Filter programs by:</h2>
-            <button className="inline-flex w-min justify-center gap-x-1.5 rounded-md bg-white px-3 py-2 font-semibold text-body ring-1 shadow-xs ring-neutral-pewter/50 ring-inset hover:text-primary-cuny-blue">Undergraduate</button>
-            <button className="inline-flex w-min justify-center gap-x-1.5 rounded-md bg-white px-3 py-2 font-semibold text-body ring-1 shadow-xs ring-neutral-pewter/50 ring-inset hover:text-primary-cuny-blue">Graduate</button>
-            <ProgramType/>
-            <Schools/>
-            <button className="group inline-flex items-center gap-x-2 rounded-md bg-transparent px-3 py-2 font-medium text-body hover:text-primary-cuny-blue">
-              <ArrowPathIcon className="size-5 text-neutral-pewter group-hover:text-primary-cuny-blue" />
-              Reset filters
-            </button>
+            <div className="flex items-start gap-4">
+              <button className="inline-flex w-min justify-center gap-x-1.5 rounded-md bg-white px-3 py-2 font-semibold text-body ring-1 shadow-xs ring-neutral-pewter/50 ring-inset hover:text-primary-cuny-blue">Undergraduate</button>
+              <button className="inline-flex w-min justify-center gap-x-1.5 rounded-md bg-white px-3 py-2 font-semibold text-body ring-1 shadow-xs ring-neutral-pewter/50 ring-inset hover:text-primary-cuny-blue">Graduate</button>
+              <ProgramType/>
+              <Schools/>
+              <Departments/>
+              <button className="group inline-flex items-center gap-x-2 rounded-md bg-transparent px-3 py-2 font-medium text-body hover:text-primary-cuny-blue">
+                <ArrowPathIcon className="size-5 text-neutral-pewter group-hover:text-primary-cuny-blue" />
+                Reset filters
+              </button>
+            </div>
           </div>
         </section>
 
