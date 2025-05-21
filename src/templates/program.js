@@ -4,8 +4,6 @@ import Footer from "@/components/footer";
 import LayoutPage from "@/components/layoutPage";
 import Breadcrumbs from "@/components/breadcrumbs";
 import Image from "next/image";
-import { Disclosure, DisclosureButton, DisclosurePanel } from '@headlessui/react'
-import { MinusSmallIcon, PlusSmallIcon } from '@heroicons/react/24/outline'
 import heroImage from "@/assets/images/599827A7-4B42-4E6A-80AF-69EFB8A09EC3.png"
 import clsx from "clsx";
 import sampleImage from "@/assets/images/students_2265_hor.jpg";
@@ -128,7 +126,7 @@ const ProgramDetails = () => {
     },
     {
       term: "Degree Type:",
-      description: "Major"
+      description: "Major/Minor"
     },
     {
       term: "Degree Outcome:", 
@@ -136,7 +134,7 @@ const ProgramDetails = () => {
     },
     {
       term: "Modality:",
-      description: "In-Person"
+      description: "In-Person, Hybrid, Online"
     }
   ];
   
@@ -198,6 +196,21 @@ export default function Program() {
       
       
       <LayoutPage wide={true}>
+        <div className="bg-neutral-pearl-dark  max-w-2xl px-6 lg:max-w-7xl lg:px-8 w-max flex flex-row gap-20 py-4 rounded mb-16 ring-1 ring-neutral-pewter/50 ml-8">
+            <dl>
+              <dt className="text-sm font-semibold uppercase">Start Term</dt>
+              <dd>Spring or Fall</dd>
+            </dl>
+            <dl>
+              <dt className="text-sm font-semibold uppercase">Credits</dt>
+              <dd>42 (45 with internship)</dd>
+            </dl>
+            <dl>
+              <dt className="text-sm font-semibold uppercase">Duration</dt>
+              <dd>2 Years Average (full-time)</dd>
+            </dl>
+        </div>
+
         <div className="mx-auto max-w-2xl px-6 lg:max-w-7xl lg:px-8">
           <div className="max-w-4xl prose lg:prose-lg">
             <h1>A Foundation in Literature. A Future in Any Field.</h1>
@@ -303,7 +316,27 @@ export default function Program() {
 
             <p>Alumni have pursued advanced degrees and established careers in diverse fields, showcasing the program's adaptability and strength.</p>
 
-            <section className="mt-8 not-prose bg-white border border-neutral-pearl-dark py-8 px-8 rounded-sm space-y-4">
+            <h2>Accreditation</h2>
+            <p>The English major is accredited by the Association of American Colleges and Universities (AACU).</p>
+
+            <section className="">
+              <h2>Ready to embark on a journey of literary exploration and professional development? </h2>
+              <p>Apply to the English major at Baruch College today.</p>
+
+              <div className="mt-4 not-prose flex flex-row gap-4">
+                <Button href="/apply" type="tangerine">
+                  Apply Now
+                </Button>
+                <Button href="/apply" type="tangerine">
+                  Request More Information
+                </Button>
+                <Button href="/apply" type="tangerine">
+                  Attend an Info Session
+                </Button>
+              </div>
+            </section>
+
+            <section className="mt-16 not-prose bg-white border border-neutral-pearl-dark py-8 px-8 rounded-sm space-y-4">
               <h2 className="text-xl font-semibold mb-4 uppercase text-heading">Program Contact</h2>
 
               <p><strong>Department of English</strong><br/>646-312-3910</p>
