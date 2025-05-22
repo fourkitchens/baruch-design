@@ -10,6 +10,8 @@ import sampleImage from "@/assets/images/students_2265_hor.jpg";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGraduationCap, faBuildingColumns } from '@fortawesome/pro-solid-svg-icons'
 import Button from "@/components/button";
+import { Disclosure, DisclosureButton, DisclosurePanel } from '@headlessui/react'
+import { MinusSmallIcon, PlusSmallIcon } from '@heroicons/react/24/outline'
 
 const breadcrumbData = [
   { name: 'Programs', href: '#', current: false },
@@ -86,6 +88,44 @@ const courses = [
   }
 ]
 
+const courses2 = [
+  {
+    title: "ENG 2100: Writing I",
+    description: "Develop fundamental writing skills through composition and analysis. Learn to craft clear, effective prose while exploring various writing styles and techniques.",
+    credits: 3
+  },
+  {
+    title: "ENG 2150: Writing II",
+    description: "Build upon Writing I foundations with advanced composition techniques. Focus on research-based writing and critical analysis of complex texts.",
+    credits: 3
+  },
+  {
+    title: "ENG 3010: Introduction to Literary Studies",
+    description: "Explore the fundamentals of literary analysis and criticism. Study various theoretical approaches to literature and develop critical reading skills.",
+    credits: 3
+  },
+  {
+    title: "ENG 3020: British Literature I",
+    description: "Survey of British literature from its origins through the 18th century. Examine major works, authors, and literary movements that shaped British literary tradition.",
+    credits: 3
+  },
+  {
+    title: "ENG 3030: American Literature I",
+    description: "Study the development of American literature from colonial times through the Civil War. Analyze major works and their cultural and historical contexts.",
+    credits: 3
+  },
+  {
+    title: "ENG 4900: Senior Seminar",
+    description: "Capstone course integrating knowledge and skills from previous coursework. Complete a substantial research project or creative work in your area of interest.",
+    credits: 3
+  },
+  {
+    title: "Additional Upper-Level English Courses",
+    description: "Choose from a variety of advanced English courses to complete your degree requirements. Options may include specialized topics in literature, writing, or cultural studies.",
+    credits: 6
+  }
+]
+
 const Table = () => {
   return (
     <table className="w-full divide-y divide-gray-300">
@@ -135,6 +175,18 @@ const ProgramDetails = () => {
     {
       term: "Modality:",
       description: "In-Person, Hybrid, Online"
+    },
+    {
+      term: "Start Term",
+      description: "Spring or Fall"
+    },
+    {
+      term: "Credits",
+      description: "42 (45 with internship)"
+    },
+    {
+      term: "Duration",
+      description: "2 Years Average (full-time)"
     }
   ];
   
@@ -143,7 +195,7 @@ const ProgramDetails = () => {
       <h2 className="text-xl font-semibold mb-4 uppercase">Program Details</h2>
       <dl className="grid grid-cols-2 gap-4">
         {programDetails.map((detail, index) => (
-          <div key={index}>
+          <div key={index} className={index === 0 ? "col-span-2" : ""}>
             <dt className="block font-bold uppercase text-sm mb-1">
               {detail.term}
             </dt>
@@ -151,7 +203,7 @@ const ProgramDetails = () => {
               {detail.url ? (
                 <a href={detail.url} className="text-primary-cuny-blue text-xl link link-neutral-pearl-bg leading-none">{detail.description}</a>
               ) : (
-                <span className=" text-xl">{detail.description}</span>
+                <span className="text-xl leading-none">{detail.description}</span>
               )}
             </dd>
           </div>
@@ -196,21 +248,6 @@ export default function Program() {
       
       
       <LayoutPage wide={true}>
-        <div className="bg-neutral-pearl-dark  max-w-2xl px-6 lg:max-w-7xl lg:px-8 w-max flex flex-row gap-20 py-4 rounded mb-16 ring-1 ring-neutral-pewter/50 ml-8">
-            <dl>
-              <dt className="text-sm font-semibold uppercase">Start Term</dt>
-              <dd>Spring or Fall</dd>
-            </dl>
-            <dl>
-              <dt className="text-sm font-semibold uppercase">Credits</dt>
-              <dd>42 (45 with internship)</dd>
-            </dl>
-            <dl>
-              <dt className="text-sm font-semibold uppercase">Duration</dt>
-              <dd>2 Years Average (full-time)</dd>
-            </dl>
-        </div>
-
         <div className="mx-auto max-w-2xl px-6 lg:max-w-7xl lg:px-8">
           <div className="max-w-4xl prose lg:prose-lg">
             <h1>A Foundation in Literature. A Future in Any Field.</h1>
@@ -283,26 +320,47 @@ export default function Program() {
             <p>Students must complete introductory courses in English literature and composition before declaring the major.</p>
 
             <h3>Required Courses (Total Credits: 24)</h3>
-            <ul>
-              <li>ENG 2100: Writing I (3 credits)</li>
-              <li>ENG 2150: Writing II (3 credits)</li>
-              <li>ENG 3010: Introduction to Literary Studies (3 credits)</li>
-              <li>ENG 3020: British Literature I (3 credits)</li>
-              <li>ENG 3030: American Literature I (3 credits)</li>
-              <li>ENG 4900: Senior Seminar (3 credits)</li>
-              <li>Two additional upper-level English courses (6 credits)</li>
-            </ul>
+            <dl className="mt-16 divide-y divide-gray-900/10 !space-y-0">
+              {courses2.map((course) => (
+                <Disclosure key={course.title} as="div" className="">
+                  <dt className="!mt-0">
+                    <DisclosureButton className="group flex w-full items-start justify-between text-left text-gray-900 hover:bg-neutral-pearl-dark transition-all py-6 px-2">
+                      <span className="text-lg/7 font-semibold">{course.title}</span>
+                      <span className="ml-6 flex h-7 items-center">
+                        <PlusSmallIcon aria-hidden="true" className="size-6 group-data-open:hidden" />
+                        <MinusSmallIcon aria-hidden="true" className="size-6 group-not-data-open:hidden" />
+                      </span>
+                    </DisclosureButton>
+                  </dt>
+                  <DisclosurePanel as="dd" className="mt-2">
+                    <p>{course.description}</p>
+                  </DisclosurePanel>
+                </Disclosure>
+              ))}
+            </dl>
 
             <h3>Elective Courses (Total Credits: 12)</h3>
             <p>Students select four elective courses, allowing exploration of diverse literary topics and writing styles. Electives enable students to tailor their studies to specific interests, such as contemporary literature, poetry, or digital media.</p>
 
             <p>Example Electives:</p>
-            <ul>
-              <li>ENG 3200: Modern Poetry (3 credits)</li>
-              <li>ENG 3300: Creative Writing Workshop (3 credits)</li>
-              <li>ENG 3400: Literature and Film (3 credits)</li>
-              <li>ENG 3500: Digital Narratives (3 credits)</li>
-            </ul>
+            <dl className="mt-16 divide-y divide-gray-900/10 !space-y-0">
+              {courses2.map((course) => (
+                <Disclosure key={course.title} as="div" className="">
+                  <dt className="!mt-0">
+                    <DisclosureButton className="group flex w-full items-start justify-between text-left text-gray-900 hover:bg-neutral-pearl-dark transition-all py-6 px-2">
+                      <span className="text-lg/7 font-semibold">{course.title}</span>
+                      <span className="ml-6 flex h-7 items-center">
+                        <PlusSmallIcon aria-hidden="true" className="size-6 group-data-open:hidden" />
+                        <MinusSmallIcon aria-hidden="true" className="size-6 group-not-data-open:hidden" />
+                      </span>
+                    </DisclosureButton>
+                  </dt>
+                  <DisclosurePanel as="dd" className="mt-2">
+                    <p>{course.description}</p>
+                  </DisclosurePanel>
+                </Disclosure>
+              ))}
+            </dl>
 
             <h2>Degree Outcomes</h2>
             <p>An English degree equips students with versatile skills applicable to various careers, including:</p>
@@ -319,11 +377,11 @@ export default function Program() {
             <h2>Accreditation</h2>
             <p>The English major is accredited by the Association of American Colleges and Universities (AACU).</p>
 
-            <section className="">
-              <h2>Ready to embark on a journey of literary exploration and professional development? </h2>
-              <p>Apply to the English major at Baruch College today.</p>
+            <section className="bg-primary-cuny-blue text-white not-prose p-8 rounded-sm">
+              <h2 className="text-white text-3xl font-semibold mb-4">Ready to embark on a journey of literary exploration and professional development? </h2>
+              <p className="text-white/85 text-xl">Apply to the English major at Baruch College today.</p>
 
-              <div className="mt-4 not-prose flex flex-row gap-4">
+              <div className="mt-8 not-prose flex flex-row gap-4">
                 <Button href="/apply" type="tangerine">
                   Apply Now
                 </Button>
@@ -336,7 +394,7 @@ export default function Program() {
               </div>
             </section>
 
-            <section className="mt-16 not-prose bg-white border border-neutral-pearl-dark py-8 px-8 rounded-sm space-y-4">
+            <section className="mt-8 not-prose bg-white border border-neutral-pearl-dark py-8 px-8 rounded-sm space-y-4">
               <h2 className="text-xl font-semibold mb-4 uppercase text-heading">Program Contact</h2>
 
               <p><strong>Department of English</strong><br/>646-312-3910</p>
