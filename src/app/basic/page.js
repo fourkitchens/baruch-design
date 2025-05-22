@@ -22,30 +22,11 @@ export default function Basic() {
     <div>
       <HeroBigSideBySide image={news.image} title={news.title} content={news.content} date={news.date} />
       <LayoutPage>
-        {/* <div className="flex flex-col gap-4">
-          <Breadcrumbs />
-          <h1 className="text-5xl font-bold text-heading">Baruch Senior Wins United Nations Association-USA Fellowship</h1>
-          <p className="!mt-3">January 31, 2025</p>
-          <figure>
-            <Image 
-              src={photo} 
-              alt="Photo" 
-              className="w-full h-100 object-cover object-left" 
-            />
-            <figcaption className="mt-2 text-xs text-neutral-slate italic">
-              Adriana Lopez-Tavares secured a fellowship with the United Nations Office for Disarmament Affairs that supports her goal of advancing human rights through international economic development.
-            </figcaption>
-          </figure>
-        </div> */}
         <article className="prose lg:prose-lg max-w-none mx-auto">
           <p className="lead">Baruch College student Adriana Maria Lopez-Tavares (’25) is set to fulfill her dream of advancing human rights by joining the United Nations Secretariat, Office for Disarmament in the spring.</p>
           <p>Lopez-Tavares won a coveted United Nations Association-USA Fellowship (UNA-USA) which provides financial assistance to those from underrepresented communities who receive internships with the United Nations. This Fellowship, a &ldquo;first-of-its-kind&rdquo; scholarship, comes with numerous benefits such as stipends of up to $13,000, mentorships, networking opportunities, and access to expert-led conferences and meetings on international peace and security.</p>
           <figure className="not-prose lg:-mx-16 lg:my-16">
-            <Image 
-              src={photo} 
-              alt="Photo" 
-              className="w-full h-100 object-cover object-left" 
-            />
+            <iframe className="aspect-video w-full " src="https://www.youtube.com/embed/YNrH1--9I80?si=jW0jiWv5tLjeNHnw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             <figcaption className="mt-2 text-sm text-neutral-charcoal italic">
               Adriana Lopez-Tavares secured a fellowship with the United Nations Office for Disarmament Affairs that supports her goal of advancing human rights through international economic development.
             </figcaption>
