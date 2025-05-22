@@ -40,6 +40,7 @@ export default function Home() {
             <ul className="text-lg flex flex-col gap-4 leading-none">
               <li><Link href="/basic/news-list" className="text-white/90 link link-indigo-bg hover:text-white">News list</Link></li>
               <li><Link href="/basic" className="text-white/90 link link-indigo-bg hover:text-white">News article</Link></li>
+              <li><Link href="/basic/news/text-only" className="text-white/90 link link-indigo-bg hover:text-white">News article (text only)</Link></li>
             </ul>
             <h2 className="text-2xl font-bold mt-4">Style Tiles</h2>
             <ul className="text-lg flex flex-col gap-4 leading-none">
