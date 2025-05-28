@@ -26,6 +26,11 @@ export default function Home() {
               <li><Link href="/programs" className="text-white/90 link link-indigo-bg hover:text-white">Program list</Link></li>
               <li><Link href="/program" className="text-white/90 link link-indigo-bg hover:text-white">Program page</Link></li>
             </ul>
+            
+            <h2 className="text-2xl font-bold mt-4">Profile pages</h2>
+            <ul className="text-lg flex flex-col gap-4 leading-none">
+              <li><Link href="/profile" className="text-white/90 link link-indigo-bg hover:text-white">Profile page</Link></li>
+            </ul>
           </div>
 
           <div className="flex flex-col gap-6">
