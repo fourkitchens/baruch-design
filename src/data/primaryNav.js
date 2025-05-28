@@ -78,12 +78,12 @@ const mainNavLinks = [
     ]
   },
   {
-    title: "Admissions & Aid",
+    title: "Admissions and Aid",
     url: "#",
     popover: <PrimaryNavAbout />
   },
   {
-    title: "Student Life",
+    title: "Campus Life",
     url: "#",
     popover: <PrimaryNavAbout />
   },

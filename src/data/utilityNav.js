@@ -8,7 +8,7 @@ const utilityNav = [
     url: "#",
   },
   {
-    title: "Faculty & Staff",
+    title: "Faculty and Staff",
     url: "#",
   },
   {
