@@ -1,6 +1,6 @@
 export default function Button({ children, className, type = '', size = '', href = '' }) {
 
-  const defaultStyle = 'inline-block font-bold rounded-sm transition-all px-6 py-2';
+  const defaultStyle = 'inline-block max-w-max font-bold rounded-sm transition-all px-6 py-2';
 
   const buttonStyle = type === 'sky' ? 'bg-primary-sky ring-1 ring-primary-sky hover:bg-white hover:ring-white text-primary-indigo' 
     : type === 'ghost' ? 'bg-transparent ring-1 ring-neutral-dove/70 hover:bg-white hover:ring-white hover:text-primary-indigo text-white'
