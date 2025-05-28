@@ -1,7 +1,7 @@
 import Profile from "@/templates/profile.js";
 
 export default {
-  title: 'Templates/Profiles/Profile', 
+  title: 'Templates/Profiles/Single Profile', 
   component: Profile,
   decorators: [
     (Story) => (
@@ -13,5 +13,5 @@ export default {
 };
 
 export const BasicPageProfile = {
-  name: 'Profile',
+  name: 'Single Profile',
 };
