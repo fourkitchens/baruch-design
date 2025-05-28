@@ -30,6 +30,8 @@ export default function Home() {
             <h2 className="text-2xl font-bold mt-4">Profile pages</h2>
             <ul className="text-lg flex flex-col gap-4 leading-none">
               <li><Link href="/profile" className="text-white/90 link link-indigo-bg hover:text-white">Profile page</Link></li>
+              <li><Link href="/profile-list" className="text-white/90 link link-indigo-bg hover:text-white">Profile list</Link></li>
+              <li><Link href="/profile-list-results" className="text-white/90 link link-indigo-bg hover:text-white">Profile list results</Link></li>
             </ul>
           </div>
 
