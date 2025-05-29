@@ -20,10 +20,6 @@ export default function Hero() {
           <span className="text-[400px] leading-[300px] font-bold font-field-gothic uppercase text-shadow-lg/30 mb-2 text-balance block">Zicklin</span>
           <span className="text-2xl font-bold font-condensed uppercase text-shadow-lg/30 mb-2 text-balance block text-secondary-lemonade tracking-widest">School of Business</span>
         </h1>
-        {/* <h1 className="text-8xl font-bold font-sans-xcondensed uppercase text-shadow-lg/30 mb-2 text-balance">
-          <span className="text-secondary-lemonade text-9xl block">Zicklin</span> School of Business
-        </h1>
-        <h2 className="mt-6 text-3xl font-bold font-sans-condensed uppercase text-shadow-lg/30">New York Smart.<br/>World-Class Ready.&reg;</h2> */}
       </div>
       <div className="absolute inset-0 -z-10 bg-neutral-slate mix-blend-multiply saturate-50" />
     </div>
