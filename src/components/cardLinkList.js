@@ -16,7 +16,7 @@ export default function CardLinkList({header, image, content, footer}) {
           </div>
         ))}
       </div>
-      { footer && <div className="px-4 py-4 sm:px-6">
+      { footer && <div className="px-4 py-4 sm:px-6 text-sm">
         {footer}
       </div> }
     </div>
