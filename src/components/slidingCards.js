@@ -30,7 +30,7 @@ const audienceData = [
   },
 ];
 
-export default function SlidingCards({data = audienceData}) {
+export default function SlidingCards({data = audienceData, schoolColor = "secondary-lemonade"}) {
   return (
     <section className="relative z-10 flex h-[70vh] group/audiences">
       {data.map((item, index) => ( 
@@ -41,7 +41,7 @@ export default function SlidingCards({data = audienceData}) {
             "bg-gradient-to-b from-primary-sky to-primary-indigo mix-blend-multiply opacity-100",
           )} />
           <div className="relative p-8 z-10 space-y-2 overflow-hidden min-h-[340px] mt-auto">
-            <h2 className="text-2xl font-sans-xcondensed font-semibold text-secondary-lemonade uppercase text-shadow-lg/30 text-balance">{item.audience}</h2>
+            <h2 className={`text-2xl font-sans-xcondensed font-semibold text-${schoolColor} uppercase text-shadow-lg/30 text-balance`}>{item.audience}</h2>
             <h3 className="text-white font-sans-xcondensed font-semibold text-5xl leading-[0.9] uppercase text-shadow-lg/30 text-balance">{item.title}</h3>
             <div className="space-y-6">
               <p className="text-white/86 text-lg font-medium text-shadow-lg/30 leading-tight">{item.description}</p>

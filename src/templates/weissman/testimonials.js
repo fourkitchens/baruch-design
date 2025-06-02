@@ -1,33 +1,29 @@
-import Testimonial from "@/components/testimonial";
-import { alumniData } from "@/data/alumni";
-import Button from "@/components/button";
+
+import TestimonialCard from "@/components/testimonialCard";
+import { testimonials } from "@/templates/weissman/testimonialsData";
 
 export default function Testimonials() {
   return (
-    <section className="py-24 space-y-16 bg-neutral-slate">
-      <div className="max-w-4xl mx-auto text-center space-y-4">
-        <h2 className="text-pretty text-[180px] leading-[150px] uppercase font-semibold font-field-gothic text-white text-shadow-lg">
-          Your Future, Accelerated
-        </h2>
-        <h3 className="text-2xl font-normal text-white/85 text-shadow-lg">Let Zicklin help you leverage your experience, expand your network, and take the next bold step in your career journey.</h3>
-      </div>
-      <div className="flex flex-col gap-8 max-w-6xl mx-auto">
-        {alumniData.map((alumni, i) => (
-          <Testimonial key={alumni.id} {...alumni} imageSide={i % 2 === 1 ? "right" : "left"} />
-        ))}
-      </div>
-      <div className="max-w-4xl mx-auto text-center space-y-4">
-        <h2 className="text-4xl font-semibold text-white text-shadow-lg">Continue Your Journey with Confidence</h2>
-        <h3 className="text-xl font-normal text-white/85 text-shadow-lg">Whether you’re exploring new opportunities, aiming for leadership, or making a bold pivot, you’re not doing it alone. Zicklin’s career resources, vibrant community, and global network are here for you—now and always. Let’s keep moving forward, together.</h3>
-        <div className="flex justify-center gap-4 py-2 mt-8 text-2xl">
-          <Button href="/apply" type="cuny-blue" size="lg">
-            Apply Now
-          </Button>
-          <Button href="/apply" type="ghost" size="lg">
-            Apply Now
-          </Button>
+    <div className="bg-secondary-thistle py-24 sm:py-32">
+      <div className="max-width-wrapper">
+
+        <div className="max-w-4xl mx-auto text-center space-y-4">
+          <h2 className="text-center text-[180px] leading-[130px] uppercase font-semibold font-field-gothic text-neutral-charcoal mb-4">
+            <span className="text-[100px] leading-[80px] text-neutral-charcoal">Voices of Weissman</span><br/>
+            <span className="text-neutral-charcoal">Stories That Inspire</span>
+          </h2>
         </div>
-      </div>
-    </section>
+
+        <div className="mx-auto mt-16 flow-root max-w-2xl sm:mt-20 lg:mx-0 lg:max-w-none">
+            <div className="-mt-8 sm:-mx-4 sm:columns-2 sm:text-[0] lg:columns-3">
+              {[...testimonials, ...testimonials].map((testimonial, index) => (
+                <div key={`${testimonial.author.name}-${index}`} className="pt-8 sm:inline-block sm:w-full sm:px-4">
+                  <TestimonialCard testimonial={testimonial} />
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+    </div>
   );
 }

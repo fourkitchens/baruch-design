@@ -4,14 +4,6 @@ import sonamGanapathy from "@/assets/images/zicklin/A89C6DD4-E232-40CC-967A-005F
 import johnGomes from "@/assets/images/zicklin/F0B5971F-01A2-47E8-BAB2-15B12B55143F.png";
 
 export const alumniData = [
-  // {
-  //   id: 0,
-  //   name: "CAMERON FREED, EMBA '23",
-  //   title: "Regional Vice President of Account Growth, North and South America, Dynamic Yield by Mastercard",
-  //   image: cameronFreed,
-  //   quote: "The word I would use to describe Zicklin students would be motivated. Everyone in my program wanted to be there. They were investing their own time, their own money, and really what they were investing was themselves. The program really gave me a different way to think about the business world.",
-  //   videoUrl: "https://youtu.be/-7hhCt3twn0"
-  // },
   {
     id: 1,
     name: "LARA ABRASH, MBA '94",

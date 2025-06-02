@@ -2,7 +2,7 @@ import Header from "@/components/header";
 import Hero from "@/templates/weissman/hero";
 import SlidingCards from "@/components/slidingCards";
 import ImageSide from "@/components/imageSide";
-import photo from "@/assets/images/zicklin/64306BCB-BBC9-45AD-990A-40BE70ED5835.png";
+import photo from "@/assets/images/weissman/0D4B5705-D3D6-42CB-B8E4-8AB14DC543E9.png";
 import Testimonials from "@/templates/weissman/testimonials";
 import Footer from "@/components/footer";
 import News from "@/templates/weissman/news";
@@ -67,22 +67,25 @@ export default function Weissman() {
           {/* Zicklin {' '} */}
           <span>programs</span>
         </h1>
-        <p className="text-xl font-normal mb-16">Zicklin offers flexible programs for every stage of your career—undergraduate to executive, online to global. Discover the tools and connections to succeed in business.</p>
+        <p className="text-xl font-normal mb-16">
+          The Weissman School of Arts and Sciences at Baruch College offers a diverse array of undergraduate and graduate programs in the arts, humanities, and sciences, fostering critical thinking, communication, and global awareness to prepare students for various professional paths and civic engagement.
+        </p>
         <div>
           <ul className="flex flex-col gap-6 text-3xl font-semibold">
-            <li><a href="#" className="link link-midtown-blue-bg">Undergraduate /BBA</a></li>
-            <li><a href="#" className="link link-midtown-blue-bg">MBA</a></li>
-            <li><a href="#" className="link link-midtown-blue-bg">Master of Science</a></li>
-            <li><a href="#" className="link link-midtown-blue-bg">Executive Degrees</a></li>
-            <li><a href="#" className="link link-midtown-blue-bg">PhD in Business</a></li>
-            <li><a href="#" className="link link-midtown-blue-bg">Online Degrees</a></li>
-            <li><a href="#" className="link link-midtown-blue-bg">Global Zicklin</a></li>
+            <li><a href="#" className="link link-midtown-blue-bg">Arts and Humanities</a></li>
+            <li><a href="#" className="link link-midtown-blue-bg">Mathematics and Sciences</a></li>
+            <li><a href="#" className="link link-midtown-blue-bg">Social Sciences</a></li>
+            <li><a href="#" className="link link-midtown-blue-bg">Interdisciplinary Studies</a></li>
+            <li><a href="#" className="link link-midtown-blue-bg">Ad-Hoc Major Options</a></li>
+            <li><a href="#" className="link link-midtown-blue-bg">Graduate Programs</a></li>
+
+            
           </ul>
         </div>
       </ImageSide>
 
       <Stats stats={stats} />
-      <SlidingCards data={audienceData} />
+      <SlidingCards data={audienceData} schoolColor="secondary-thistle" />
       
       <Testimonials />
       <News />
