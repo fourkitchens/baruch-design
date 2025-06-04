@@ -2,7 +2,7 @@
 
 import clsx from "clsx";
 import Button from "@/components/button";
-import bgImage from '@/assets/images/zicklin/Page-Top-big-image5-3000x2000px.jpg'
+import bgImage from '@/assets/images/weissman/restselect-raw-bySirin-2625.jpg'
 import Image from "next/image";
 
 export default function Hero() {

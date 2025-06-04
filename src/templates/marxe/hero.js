@@ -1,7 +1,7 @@
 "use client";
 
 import clsx from "clsx";
-import bgImage from '@/assets/images/zicklin/Page-Top-big-image5-3000x2000px.jpg'
+import bgImage from '@/assets/images/marxe/IMG_5176.jpg'
 import Image from "next/image";
 
 export default function Hero() {
