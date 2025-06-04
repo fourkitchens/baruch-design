@@ -33,7 +33,7 @@ import Button from "@/components/button";
 
 export default function Testimonials() {
   return (
-    <section className="py-24 space-y-16 bg-secondary-grape">
+    <section className="py-24 space-y-16 bg-neutral-slate">
       <div className="max-w-4xl mx-auto text-center space-y-4">
         <h2 className="text-pretty text-[180px] leading-[150px] uppercase font-semibold font-field-gothic text-white text-shadow-lg">
           Your Journey, Transformed
