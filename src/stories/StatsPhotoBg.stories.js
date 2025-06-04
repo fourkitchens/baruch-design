@@ -2,25 +2,25 @@ import StatsPhotoBg from "@/components/statsPhotoBg";
 import image from "@/assets/images/Baruch-students_NVC.jpg";
 
 const stats = [
-  { 
-    id: 1, 
-    header: '#1 Public College', 
-    subhead: 'in New York State', 
-    attribution: 'U.S. News & World Report (Best Colleges-North Ranking)' 
+  {
+    id: 1,
+    header: '92%',
+    subhead: 'MPA Graduate Employment Rate (2023–24)',
+    attribution: 'Marxe Graduate Outcomes Report'
   },
-  { 
-    id: 3, 
-    header: 'Top 25', 
-    subhead: 'Public College in the U.S.', 
-    attribution: 'Forbes Magazine' 
+  {
+    id: 2,
+    header: '100%',
+    subhead: 'Executive MPA Graduate Employment Rate (2022–23)',
+    attribution: 'Marxe Graduate Outcomes Report'
   },
-  { 
-    id: 2, 
-    header: '#1 in the Nation', 
-    subhead: '', 
-    attribution: 'The Wall Street Journal (U.S. Colleges Offering the Best Value)' 
+  {
+    id: 3,
+    header: '#34',
+    subhead: 'National Ranking for MPA Programs',
+    attribution: 'U.S. News & World Report'
   },
-]
+];
 
 export default {
   title: 'Components/Stats/Photo Background',

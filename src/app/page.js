@@ -40,6 +40,7 @@ export default function Home() {
           <div className="flex flex-col gap-6">
             <h2 className="text-2xl font-bold">Basic page</h2>
             <ul className="text-lg flex flex-col gap-4 leading-none">
+              <li><Link href="/basic" className="text-white/90 link link-indigo-bg hover:text-white">Basic page</Link></li>
               <li><Link href="/basic/cabinet" className="text-white/90 link link-indigo-bg hover:text-white">Cabinet</Link></li>
               <li><Link href="/basic/provost" className="text-white/90 link link-indigo-bg hover:text-white">Accreditation</Link></li>
               <li><Link href="/basic/everything" className="text-white/90 link link-indigo-bg hover:text-white">Everything</Link></li>

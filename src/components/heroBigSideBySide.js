@@ -14,7 +14,7 @@ export default function HeroBigSideBySide({ image, title, content, date }) {
           "xl:col-span-6",
         )}>
           {date && <p className="text-white text-base font-medium mb-2">{date}</p>}
-          <h1 className="text-pretty text-[56px] lg:text-[86px] leading-none uppercase font-normal tracking-tight font-league-gothic text-white">
+          <h1 className="text-pretty text-7xl font-bold leading-none uppercase tracking-tight font-sans-condensed text-white">
             {title}
           </h1>
           <p className="mt-4 lg:mt-8 text-pretty text-base lg:text-lg font-medium text-white sm:text-xl/8">
