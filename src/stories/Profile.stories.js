@@ -10,6 +10,11 @@ export default {
       </>
     ),
   ],
+  parameters: {
+    clickup: {
+      url: 'https://app.clickup.com/t/36718269/BARUCH-61',
+    }
+  }
 };
 
 export const BasicPageProfile = {

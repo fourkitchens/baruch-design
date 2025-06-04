@@ -5,6 +5,9 @@ export default {
   component: Marxe,
   parameters: {
     layout: 'fullscreen',
+    clickup: {
+      url: 'https://app.clickup.com/t/36718269/BARUCH-114',
+    }
   },
   decorators: [
     (Story) => (

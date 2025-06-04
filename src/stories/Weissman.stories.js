@@ -5,6 +5,9 @@ export default {
   component: Weissman,
   parameters: {
     layout: 'fullscreen',
+    clickup: {
+      url: 'https://app.clickup.com/t/36718269/BARUCH-113',
+    }
   },
   decorators: [
     (Story) => (

@@ -10,6 +10,11 @@ export default {
       </div>
     ),
   ],
+  parameters: {
+    clickup: {
+      url: 'https://app.clickup.com/t/36718269/BARUCH-50',
+    }
+  }
 };
 
 export const Home = {
