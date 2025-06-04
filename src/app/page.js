@@ -18,9 +18,9 @@ export default function Home() {
             <h2 className="text-2xl font-bold">Landing pages</h2>
             <ul className="text-lg flex flex-col gap-4 leading-none">
               <li><Link href="/home" className="text-white/90 link link-indigo-bg hover:text-white">Home</Link></li>
-              <li><Link href="/zicklin" className="text-white/90 link link-indigo-bg hover:text-white">Zicklin</Link></li>
               <li><Link href="/marxe" className="text-white/90 link link-indigo-bg hover:text-white">Marxe</Link></li>
               <li><Link href="/weissman" className="text-white/90 link link-indigo-bg hover:text-white">Weissman</Link></li>
+              <li><Link href="/zicklin" className="text-white/90 link link-indigo-bg hover:text-white">Zicklin</Link></li>
             </ul>
 
             <h2 className="text-2xl font-bold mt-4">Program pages</h2>
