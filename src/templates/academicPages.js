@@ -10,10 +10,52 @@ import CardLinkList from '../components/cardLinkList';
 import clsx from 'clsx';
 import heroImage from "@/assets/images/academics/a82b1571-0d46-4875-9da6-658d25d9980d.png"
 import AccordionGroup from "@/components/accordionGroup";
-
+import Behar from "@/assets/images/profiles/behar.jpg"
+import Milch from "@/assets/images/profiles/milch.jpg"
+import SchwartzAnne from "@/assets/images/profiles/Schwartz-Anne.jpg"
+import SlavinDennis from "@/assets/images/profiles/Slavin-Dennis.png"
+import Wollman from "@/assets/images/profiles/Wollman.jpg"
+import ProfileCard from "@/components/profileCard";
+import news1 from '@/assets/images/news1.gif';
+import news2 from '@/assets/images/news2.gif';
+import news3 from '@/assets/images/UNA-USA-Fellow_.gif';
+import PostCard from '@/components/postCard';
 
 const breadcrumbData = [
   { name: 'Academic Departments', href: '#', current: false },
+]
+
+const posts = [
+  {
+    id: 1,
+    title: "Baruch and SUNY Broome Launch Seamless Transfer Program for Business Students",
+    href: '#',
+    description:
+      "A new 2+2 agreement guarantees SUNY Broome business students admission to Baruch's Zicklin School of Business if they meet academic requirements.",
+    imageUrl: news1,
+    date: 'Mar 16, 2020',
+    datetime: '2025-03-16',
+  },
+  {
+    id: 2,
+    title: "Baruch Team Shines with Second Place Win at National Deloitte Challenge",
+    href: '#',
+    description:
+      "A standout team from Baruch's Zicklin School of Business claimed second place in Deloitte's national FanTAXtic competition—marking an impressive debut on the national stage.",
+    imageUrl: news2,
+    date: 'Mar 16, 2020',
+    datetime: '2025-03-16',
+  },
+  {
+    id: 3,
+    title: "Baruch Senior Awarded Prestigious UN Fellowship to Advance Global Change",
+    href: '#',
+    description:
+      "Baruch senior Adriana Lopez-Tavares was awarded the prestigious UNA-USA Fellowship, taking her passion for human rights and economic development to the United Nations Office for Disarmament Affairs.",
+    imageUrl: news3,
+    date: 'Mar 16, 2020',
+    datetime: '2025-03-16',
+  },
 ]
 
 const quickLinks = {
@@ -23,6 +65,9 @@ const quickLinks = {
     { title: 'Our Commitment to Students and the Profession', link: '#our-commitment-to-students-and-the-profession' },
     { title: 'Program Highlights', link: '#program-highlights' },
     { title: 'Explore our programs', link: '#explore-our-programs' },
+    { title: 'Meet Our Faculty', link: '#faculty' },
+    { title: 'News', link: '#news' },
+    { title: 'Contact', link: '#contact' },
   ],
   footer: 'Last updated: March 2024'
 }
@@ -65,6 +110,50 @@ const programsData = [
         <p><a href="http://zicklin.baruch.cuny.edu/academic-programs/doctoral/areas-of-study/accountancy/">PhD in Accountancy</a></p>
         <p>Designed to teach future accounting researchers and educators conceptual and empirical developments and applications, plus an in-depth study of the different fields in accounting.</p>
       </div>
+  },
+]
+
+const profileData = [
+  {
+    name: "Anne Swartz",
+    title: "Professor",
+    school: "Weissman School of Arts and Sciences",
+    department: "Fine & Performing Arts",
+    image: SchwartzAnne,
+  },
+  {
+    name: "Katherine Behar",
+    title: "Professor",
+    school: "Weissman School of Arts and Sciences",
+    department: "Fine & Performing Arts",
+    image: Behar,
+  },
+  {
+    name: "David Milch",
+    title: "Distinguished Lecturer",
+    school: "Weissman School of Arts and Sciences",
+    department: "Fine & Performing Arts",
+    image: Milch,
+  },
+  {
+    name: "Dennis Slavin",
+    title: "Distinguished Lecturer",
+    school: "Weissman School of Arts and Sciences",
+    department: "Fine & Performing Arts",
+      image: SlavinDennis,
+  },
+  {
+    name: "Elizabeth Wollman",
+    title: "Professor",
+    school: "Weissman School of Arts and Sciences",
+    department: "Fine & Performing Arts",
+    image: Wollman,
+  },
+  {
+    name: "Susan Tenneriello",
+    title: "Associate Professor",
+    school: "Weissman School of Arts and Sciences",
+    department: "Fine & Performing Arts",
   },
 ]
 
@@ -124,11 +213,30 @@ export default function AcademicPages() {
             <h2 id="explore-our-programs">Explore our programs</h2>
             <AccordionGroup data={programsData} />
 
+            <h2 id="faculty">Meet Our Faculty</h2>
+            <p>Our faculty members are thought leaders and practitioners who bring real-world expertise into the classroom.</p>
+            <div className="grid grid-cols-3 gap-x-8 gap-y-16 mb-32">
+              {profileData.map((profile) => (
+                <ProfileCard key={profile.name} profile={profile} />
+              ))}
+            </div>
+
+            <h2 className="mt-32" id="news">News</h2>
+            <div className="not-prose grid grid-cols-3 gap-x-8 gap-y-16">
+              {posts.map((post) => (
+                <PostCard key={post.id} post={post} compact={true} showDescription={false} />
+              ))}
+            </div>
+
+            <section className="mt-16 not-prose bg-white border border-neutral-pearl-dark py-8 px-8 rounded-sm space-y-4" id="contact">
+              <h2 className="text-xl font-semibold mb-4 uppercase text-heading">Stan Ross Department of Accountancy</h2>
+              <p>One Bernard Baruch Way (Box B12-225)<br/>New York, NY 10010-5585</p>
+              <p><strong>Phone:</strong> (646) 312-3090<br/><strong>Email:</strong> <a href="mailto:accountancy@baruch.cuny.edu" className="link">accountancy@baruch.cuny.edu</a></p>
+            </section>
           </div>
 
-          <div className="col-span-1 min-h-[1000vh]">
+          <div className="col-span-1">
             <CardLinkList header={quickLinks.header} image={quickLinks.image} content={quickLinks.content} footer={quickLinks.footer} className="sticky top-4" />
-            
           </div>
         </div>
 
