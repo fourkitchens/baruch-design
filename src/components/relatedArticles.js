@@ -3,13 +3,13 @@ import news2 from '@/assets/images/news2.gif';
 import news3 from '@/assets/images/UNA-USA-Fellow_.gif';
 import Image from 'next/image';
 
-const posts = [
+const defaultPosts = [
   {
     id: 1,
     title: 'Baruch and SUNY Broome Launch Seamless Transfer Program for Business Students',
     href: '#',
     description:
-      'A new 2+2 agreement guarantees SUNY Broome business students admission to Baruch’s Zicklin School of Business if they meet academic requirements.',
+      'A new 2+2 agreement guarantees SUNY Broome business students admission to Baruch\'s Zicklin School of Business if they meet academic requirements.',
     imageUrl: news1,
     date: 'Mar 16, 2020',
     datetime: '2025-03-16',
@@ -19,7 +19,7 @@ const posts = [
     title: 'Baruch Team Shines with Second Place Win at National Deloitte Challenge',
     href: '#',
     description:
-      'A standout team from Baruch’s Zicklin School of Business claimed second place in Deloitte’s national FanTAXtic competition—marking an impressive debut on the national stage.',
+      'A standout team from Baruch\'s Zicklin School of Business claimed second place in Deloitte\'s national FanTAXtic competition—marking an impressive debut on the national stage.',
     imageUrl: news2,
     date: 'Mar 16, 2020',
     datetime: '2025-03-16',
@@ -36,7 +36,7 @@ const posts = [
   },
 ]
 
-export default function RelatedArticles() {
+export default function RelatedArticles({ posts = defaultPosts }) {
   return (
     <div className="py-24 bg-neutral-pearl-dark">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
