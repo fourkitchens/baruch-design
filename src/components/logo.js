@@ -8,7 +8,7 @@ export default function Logo() {
     <>
       <Link href="/">
         <BaruchLogoHorizontal className="w-[200px] h-auto md:w-[300px] text-white lg:hidden" />
-        <BaruchLogo className="w-[200px] h-auto lg:w-[200px] text-white hidden lg:block" />
+        <BaruchLogo className="w-[200px] h-auto lg:w-[300px] text-white hidden lg:block" />
       </Link>
     </>
   );
