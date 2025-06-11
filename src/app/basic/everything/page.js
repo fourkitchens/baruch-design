@@ -7,7 +7,7 @@ import CardLinkList from "@/components/cardLinkList";
 import cardListImage from '@/assets/images/admissions-trim.jpg';
 import cardListImage2 from '@/assets/images/students_2265_hor.jpg';
 import RelatedArticles from "@/components/relatedArticles";
-import Gallery from "@/components/gallery";
+import Slideshow from "@/components/slideshow";
 import Blockquote from "@/components/blockquote";
 
 const news = {
@@ -143,7 +143,7 @@ export default function Everything() {
           </div>
           <h2>Fellowship Advising Support for Baruch Students&nbsp;</h2>
           <p>Baruch College&rsquo;s Fellowship Advising Office supports students interested in applying for nationally competitive scholarships to study abroad, get professional development, and receive graduate study assistance.</p>
-          <Gallery />
+          <Slideshow />
           <p><a href="https://blogs.baruch.cuny.edu/fellowships/" target="_blank" rel="noopener">Learn more</a> about how the office mentors and advises all Baruch students through the application process for various fellowships and scholarships such as Fulbright awards, Schwarzman Scholarships, Jeannette K. Watson Fellowships, Gilman International Scholarships, Freeman-ASIA scholarships, and more.</p>
         </article>
       </LayoutPage>
