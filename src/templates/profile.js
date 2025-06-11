@@ -136,9 +136,12 @@ export default function Profile() {
             <h1 className="text-5xl font-bold">Anne Swartz</h1>
             <p className="text-4xl opacity-80 font-semibold">Professor</p>
             <p className="text-2xl mt-4">Weissman School of Arts and Sciences</p>
-            <div className="mt-8 space-y-4 text-xl grid grid-cols-2 gap-6">
+            <div className="mt-8 space-y-4 text-xl grid grid-cols-2 gap-x-6 gap-y-2">
               <p><strong className="opacity-80 uppercase text-base">Department:</strong><br/><a href="#" className="link link-midtown-blue-bg">Fine & Performing Arts</a></p>
               <p><strong className="opacity-80 uppercase text-base">Email:</strong><br/><a href="#" className="link link-midtown-blue-bg">anne.swartz@baruch.cuny.edu</a></p>
+              <p><strong className="opacity-80 uppercase text-base">Subject Matter Expertise:</strong><br/><a href="#" className="link link-midtown-blue-bg">International Business</a><br/><a href="#" className="link link-midtown-blue-bg">Market Research</a><br/><a href="#" className="link link-midtown-blue-bg">Marketing</a></p>
+              <p><strong className="opacity-80 uppercase text-base">Areas of Expertise:</strong><br/>Marketing Research, Consumer Brand
+              Choice, Brand Switching and Purchase Behavior, Consumer Response to Promotions, Emotions and Music</p>
               <Button>View CV</Button>
             </div>
           </div>
