@@ -7,61 +7,11 @@ import Button from "@/components/button";
 import headshot from "@/assets/images/profiles/Schwartz-Anne.jpg"
 import { Tab, TabGroup, TabList, TabPanel, TabPanels } from '@headlessui/react'
 import clsx from "clsx";
+import Table from "../components/table";
+import { teachingColumns, teachingData } from '../data/teaching';
 
 const breadcrumbData = [
   { name: 'Faculty Profiles', href: '#', current: false },
-]
-
-const teachingData = [
-  {"Semester": "Fall 2024", "Course Prefix": "MSC", "Course Number": "3004", "Course Name": "Music of the Romantic Period"},
-  {"Semester": "Spring 2024", "Course Prefix": "MSC", "Course Number": "3016", "Course Name": "Music of the Twentieth Century"},
-  {"Semester": "Fall 2023", "Course Prefix": "MSC", "Course Number": "3004", "Course Name": "Music of the Romantic Period"},
-  {"Semester": "Spring 2023", "Course Prefix": "MSC", "Course Number": "3016", "Course Name": "Music of the Twentieth Century"},
-  {"Semester": "Fall 2022", "Course Prefix": "MSC", "Course Number": "3004", "Course Name": "Music of the Romantic Period"},
-  {"Semester": "Spring 2022", "Course Prefix": "MSC", "Course Number": "3016", "Course Name": "Music of the Twentieth Century"},
-  {"Semester": "Fall 2021", "Course Prefix": "MSC", "Course Number": "3004", "Course Name": "Music of the Romantic Period"},
-  {"Semester": "Spring 2021", "Course Prefix": "MSC", "Course Number": "3016", "Course Name": "Music of the Twentieth Century"},
-  {"Semester": "Fall 2020", "Course Prefix": "MSC", "Course Number": "3004", "Course Name": "Music of the Romantic Period"},
-  {"Semester": "Spring 2020", "Course Prefix": "MSC", "Course Number": "3016", "Course Name": "Music of the Twentieth Century"},
-  {"Semester": "Spring 2020", "Course Prefix": "MSC", "Course Number": "1003", "Course Name": "Music in Civilization"},
-  {"Semester": "Fall 2009", "Course Prefix": "MSC", "Course Number": "1003", "Course Name": "Music in Civilization"},
-  {"Semester": "Fall 2009", "Course Prefix": "MSC", "Course Number": "3004", "Course Name": "Music of the Romantic Period"},
-  {"Semester": "Spring 2009", "Course Prefix": "MSC", "Course Number": "1003", "Course Name": "Music in Civilization"},
-  {"Semester": "Spring 2009", "Course Prefix": "MSC", "Course Number": "3016", "Course Name": "Music of the Twentieth Century"},
-  {"Semester": "Fall 2008", "Course Prefix": "MSC", "Course Number": "3004", "Course Name": "Music of the Romantic Period"},
-  {"Semester": "Fall 2008", "Course Prefix": "MSC", "Course Number": "1003", "Course Name": "Music in Civilization"},
-  {"Semester": "Spring 2008", "Course Prefix": "MSC", "Course Number": "1005", "Course Name": "Principles of Music"},
-  {"Semester": "Spring 2008", "Course Prefix": "MSC", "Course Number": "3016", "Course Name": "Music of the Twentieth Century"},
-  {"Semester": "Spring 2008", "Course Prefix": "MSC", "Course Number": "1005", "Course Name": "Principles of Music"},
-  {"Semester": "Fall 2007", "Course Prefix": "MSC", "Course Number": "3004", "Course Name": "Music of the Romantic Period"},
-  {"Semester": "Fall 2007", "Course Prefix": "MSC", "Course Number": "1005", "Course Name": "Principles of Music"},
-  {"Semester": "Spring 2007", "Course Prefix": "MSC", "Course Number": "1005", "Course Name": "Principles of Music"},
-  {"Semester": "Spring 2007", "Course Prefix": "MSC", "Course Number": "1005", "Course Name": "Principles of Music"},
-  {"Semester": "Spring 2007", "Course Prefix": "MSC", "Course Number": "3016", "Course Name": "Music of the Twentieth Century"},
-  {"Semester": "Fall 2006", "Course Prefix": "MSC", "Course Number": "3004", "Course Name": "Music of the Romantic Period"},
-  {"Semester": "Fall 2006", "Course Prefix": "MSC", "Course Number": "1005", "Course Name": "Principles of Music"},
-  {"Semester": "Spring 2006", "Course Prefix": "MSC", "Course Number": "3016", "Course Name": "Music of the Twentieth Century"},
-  {"Semester": "Spring 2006", "Course Prefix": "MSC", "Course Number": "1005", "Course Name": "Principles of Music"},
-  {"Semester": "Spring 2006", "Course Prefix": "MSC", "Course Number": "1005", "Course Name": "Principles of Music"},
-  {"Semester": "Fall 2005", "Course Prefix": "MSC", "Course Number": "3004", "Course Name": "Music of the Romantic Period"},
-  {"Semester": "Fall 2005", "Course Prefix": "MSC", "Course Number": "1005", "Course Name": "Principles of Music"},
-  {"Semester": "Spring 2005", "Course Prefix": "MSC", "Course Number": "1005", "Course Name": "Principles of Music"},
-  {"Semester": "Spring 2005", "Course Prefix": "MSC", "Course Number": "3016", "Course Name": "Music of the Twentieth Century"},
-  {"Semester": "Spring 2005", "Course Prefix": "MSC", "Course Number": "5000", "Course Name": "Independent Study Music I"},
-  {"Semester": "Fall 2004", "Course Prefix": "MSC", "Course Number": "3004", "Course Name": "Music of the Romantic Period"},
-  {"Semester": "Fall 2004", "Course Prefix": "MSC", "Course Number": "1005", "Course Name": "Principles of Music"},
-  {"Semester": "Spring 2004", "Course Prefix": "MSC", "Course Number": "1005", "Course Name": "Principles of Music"},
-  {"Semester": "Spring 2004", "Course Prefix": "MSC", "Course Number": "3016", "Course Name": "Music of the Twentieth Century"},
-  {"Semester": "Fall 2003", "Course Prefix": "MSC", "Course Number": "1005", "Course Name": "Principles of Music"},
-  {"Semester": "Fall 2003", "Course Prefix": "MSC", "Course Number": "3004", "Course Name": "Music of the Romantic Period"},
-  {"Semester": "Spring 2003", "Course Prefix": "MSC", "Course Number": "1005", "Course Name": "Principles of Music"},
-  {"Semester": "Spring 2003", "Course Prefix": "MSC", "Course Number": "3016", "Course Name": "Music of the Twentieth Century"},
-  {"Semester": "Fall 2002", "Course Prefix": "IDC", "Course Number": "1001H", "Course Name": "Honors-The Arts in New York"},
-  {"Semester": "Fall 2002", "Course Prefix": "MSC", "Course Number": "3004", "Course Name": "Music of the Romantic Period"},
-  {"Semester": "Spring 2002", "Course Prefix": "MSC", "Course Number": "3016", "Course Name": "Music of the Twentieth Century"},
-  {"Semester": "Fall 2001", "Course Prefix": "MSC", "Course Number": "3004", "Course Name": "Music of the Romantic Period"},
-  {"Semester": "Fall 2001", "Course Prefix": "IDC", "Course Number": "1001H", "Course Name": "Honors-The Arts in New York"},
-  {"Semester": "Fall 2001", "Course Prefix": "IDC", "Course Number": "1001H", "Course Name": "Honors-The Arts in New York"}
 ]
 
 const TabStyled = ({ children }) => {
@@ -85,39 +35,6 @@ const TabPanelStyled = ({ children }) => {
         {children}
       </div>
     </TabPanel>
-  )
-}
-
-const TeachingTable = () => {
-  return (
-    <table className="w-full divide-y divide-gray-300">
-      <thead>
-        <tr>
-          <th scope="col" className="py-3.5 pr-3 pl-4 text-left text-base font-semibold text-gray-900 sm:pl-3">
-            Semester
-          </th>
-          <th scope="col" className="px-3 py-3.5 text-left text-base font-semibold text-gray-900">
-            Course Code
-          </th>
-          <th scope="col" className="px-3 py-3.5 text-left text-base font-semibold text-gray-900">
-            Course Name
-          </th>
-        </tr>
-      </thead>
-      <tbody className="bg-bg-light">
-        {teachingData.map((course, index) => (
-          <tr key={index} className="even:bg-neutral-pearl-dark">
-            <td className="py-4 pr-3 pl-4 text-base font-medium text-gray-900 sm:pl-3">
-              {course.Semester}
-            </td>
-            <td className="px-3 py-4 text-base text-gray-900">
-              {course["Course Prefix"]} {course["Course Number"]}
-            </td>
-            <td className="px-3 py-4 text-base text-gray-900">{course["Course Name"]}</td>
-          </tr>
-        ))}
-      </tbody>
-    </table>
   )
 }
 
@@ -174,7 +91,9 @@ export default function Profile() {
             </TabPanelStyled>
             <TabPanelStyled>
               <h2>Teaching</h2>
-              <TeachingTable/>
+              <div className="not-prose">
+                <Table columns={teachingColumns} data={teachingData} />
+              </div>
             </TabPanelStyled>
             <TabPanelStyled>Content 3</TabPanelStyled>
             <TabPanelStyled>Content 4</TabPanelStyled>

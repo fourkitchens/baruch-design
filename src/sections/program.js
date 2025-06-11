@@ -1,5 +1,6 @@
 import { Disclosure, DisclosureButton, DisclosurePanel } from '@headlessui/react'
 import { MinusSmallIcon, PlusSmallIcon } from '@heroicons/react/24/outline'
+import Table from "@/components/table";
 
 const faqs = [
   {
@@ -16,6 +17,21 @@ const faqs = [
     question: "The Hagedorn Internship",
     answer:
       "I don't know, but the flag is a big plus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.",
+  },
+]
+
+const coursesColumns = [
+  {
+    key: "code",
+    header: "Course Code",
+  },
+  {
+    key: "title",
+    header: "Course Title",
+  },
+  {
+    key: "credits",
+    header: "Credits",
   },
 ]
 
@@ -71,38 +87,6 @@ const courses = [
     credits: 3
   }
 ]
-
-const Table = () => {
-  return (
-    <table className="w-full divide-y divide-gray-300">
-      <thead>
-        <tr>
-          <th scope="col" className="py-3.5 pr-3 pl-4 text-left text-base font-semibold text-gray-900 sm:pl-3">
-            Course Code
-          </th>
-          <th scope="col" className="px-3 py-3.5 text-left text-base font-semibold text-gray-900">
-            Course Title
-          </th>
-          <th scope="col" className="px-3 py-3.5 text-left text-base font-semibold text-gray-900">
-            Credits
-          </th>
-        </tr>
-      </thead>
-      <tbody className="bg-bg-light">
-        {courses.map((course) => (
-          <tr key={course.code} className="even:bg-neutral-pearl-dark">
-            <td className="py-4 pr-3 pl-4 text-base font-medium text-gray-900 sm:pl-3">
-              {course.code}
-            </td>
-            <td className="px-3 py-4 text-base text-gray-900">{course.title}</td>
-            <td className="px-3 py-4 text-base text-gray-900">{course.credits}</td>
-          </tr>
-        ))}
-      </tbody>
-    </table>
-  )
-}
-
 
 export default function Program() {
   return (
@@ -180,7 +164,7 @@ export default function Program() {
                     </DisclosureButton>
                   </dt>
                   <DisclosurePanel as="dd" className="mt-2">
-                    <Table />
+                    <Table columns={coursesColumns} data={courses} />
                   </DisclosurePanel>
                 </Disclosure>
               ))}

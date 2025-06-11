@@ -17,77 +17,6 @@ const breadcrumbData = [
   { name: 'Programs', href: '#', current: false },
 ]
 
-const faqs = [
-  {
-    question: "Undergraduate Admissions Information and Major Declaration",
-    answer:
-      "I don't know, but the flag is a big plus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.",
-  },
-  {
-    question: "Public Affairs Learning Goals",
-    answer:
-      "I don't know, but the flag is a big plus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.",
-  },
-  {
-    question: "The Hagedorn Internship",
-    answer:
-      "I don't know, but the flag is a big plus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.",
-  },
-]
-
-const courses = [
-  {
-    code: "ACC 2101",
-    title: "Principles of Accounting",
-    credits: 3
-  },
-  {
-    code: "ACC 3202",
-    title: "Accounting Information Systems",
-    credits: 3
-  },
-  {
-    code: "BPL 5100",
-    title: "Business Policy",
-    credits: 3
-  },
-  {
-    code: "BUS 2000 (formerly BUS 1011)",
-    title: "Business Fundamentals: The Contemporary Business Landscape",
-    credits: 3
-  },
-  {
-    code: "CIS 2200",
-    title: "Introduction to Information Systems and Technology",
-    credits: 3
-  },
-  {
-    code: "FIN 3000",
-    title: "Principles of Finance",
-    credits: 3
-  },
-  {
-    code: "LAW 1101",
-    title: "Fundamentals of Business Law",
-    credits: 3
-  },
-  {
-    code: "MKT 3000",
-    title: "Marketing Foundations",
-    credits: 3
-  },
-  {
-    code: "MGT 3120",
-    title: "Fundamentals of Management",
-    credits: 3
-  },
-  {
-    code: "OPM 3000",
-    title: "Service Operations Management",
-    credits: 3
-  }
-]
-
 const courses2 = [
   {
     title: "ENG 2100: Writing I",
@@ -125,37 +54,6 @@ const courses2 = [
     credits: 6
   }
 ]
-
-const Table = () => {
-  return (
-    <table className="w-full divide-y divide-gray-300">
-      <thead>
-        <tr>
-          <th scope="col" className="py-3.5 pr-3 pl-4 text-left text-base font-semibold text-gray-900 sm:pl-3">
-            Course Code
-          </th>
-          <th scope="col" className="px-3 py-3.5 text-left text-base font-semibold text-gray-900">
-            Course Title
-          </th>
-          <th scope="col" className="px-3 py-3.5 text-left text-base font-semibold text-gray-900">
-            Credits
-          </th>
-        </tr>
-      </thead>
-      <tbody className="bg-bg-light">
-        {courses.map((course) => (
-          <tr key={course.code} className="even:bg-neutral-pearl-dark">
-            <td className="py-4 pr-3 pl-4 text-base font-medium text-gray-900 sm:pl-3">
-              {course.code}
-            </td>
-            <td className="px-3 py-4 text-base text-gray-900">{course.title}</td>
-            <td className="px-3 py-4 text-base text-gray-900">{course.credits}</td>
-          </tr>
-        ))}
-      </tbody>
-    </table>
-  )
-}
 
 const ProgramDetails = () => {
   const programDetails = [
