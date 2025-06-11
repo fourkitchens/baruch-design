@@ -67,40 +67,40 @@ const ExpandedResults = () => (
 
       <section className="space-y-2">
         <h3 className="text-lg font-semibold">Book Chapters</h3>
-        <p>(2013) <span>Emotional dimensions within the family business – Toward a conceptualization.</span></p>
-        <p>(2013) <span>Extensions of the Sustainable Family business Theory (SFBT): Operationalization and Application.</span></p>
-        <p>(2008) <span>"Impact of the Family business on Family business Sustainability." Culturally-Sensitive Models of Family business in Anglo Culture: A Compendium Using the GLOBE Paradigm.</span></p>
+        <p>(2013) <span>Emotional dimensions within the family <span className="bg-secondary-taxi font-medium px-1"><span className="bg-secondary-taxi font-medium px-1">business</span></span> – Toward a conceptualization.</span></p>
+        <p>(2013) <span>Extensions of the Sustainable Family <span className="bg-secondary-taxi font-medium px-1">business</span> Theory (SFBT): Operationalization and Application.</span></p>
+        <p>(2008) <span>"Impact of the Family <span className="bg-secondary-taxi font-medium px-1">business</span> on Family <span className="bg-secondary-taxi font-medium px-1">business</span> Sustainability." Culturally-Sensitive Models of Family <span className="bg-secondary-taxi font-medium px-1">business</span> in Anglo Culture: A Compendium Using the GLOBE Paradigm.</span></p>
       </section>
 
       <section className="space-y-2">
         <h3 className="text-lg font-semibold">Journal Articles</h3>
-        <p>(2013) <span>Exploring the Emotional Nexus in Cogent Family business Archetypes.</span></p>
-        <p>(2012) <span>Strategy, Ownership, Governance, and Socio-Psychological Perspectives on Family businesses From Around the World.</span></p>
-        <p>(2011) <span>The Importance of the Family System in Family business.</span></p>
+        <p>(2013) <span>Exploring the Emotional Nexus in Cogent Family <span className="bg-secondary-taxi font-medium px-1">business</span> Archetypes.</span></p>
+        <p>(2012) <span>Strategy, Ownership, Governance, and Socio-Psychological Perspectives on Family <span className="bg-secondary-taxi font-medium px-1">business</span>es From Around the World.</span></p>
+        <p>(2011) <span>The Importance of the Family System in Family <span className="bg-secondary-taxi font-medium px-1">business</span>.</span></p>
       </section>
 
       <section className="space-y-2">
         <h3 className="text-lg font-semibold">Other Scholarly Works</h3>
-        <p>(1993) <span>The impact of paid and unpaid workers on the economic output measures of home-based businesses.</span></p>
+        <p>(1993) <span>The impact of paid and unpaid workers on the economic output measures of home-based <span className="bg-secondary-taxi font-medium px-1">business</span>es.</span></p>
       </section>
 
       <section className="space-y-2">
         <h3 className="text-lg font-semibold">Presentations</h3>
-        <p>(2016-03-29) <span>Family Entrepreneurship: The Interconnections Between the Family System and business System.</span></p>
-        <p>(2016-03-21) <span>Family Entrepreneurship: The Interconnections Between the Family System and business System.</span></p>
-        <p>(2015-08-10) <span>The Role of Family businesses in Global Cities.</span></p>
+        <p>(2016-03-29) <span>Family Entrepreneurship: The Interconnections Between the Family System and <span className="bg-secondary-taxi font-medium px-1">business</span> System.</span></p>
+        <p>(2016-03-21) <span>Family Entrepreneurship: The Interconnections Between the Family System and <span className="bg-secondary-taxi font-medium px-1">business</span> System.</span></p>
+        <p>(2015-08-10) <span>The Role of Family <span className="bg-secondary-taxi font-medium px-1">business</span>es in Global Cities.</span></p>
       </section>
 
       <section className="space-y-2">
         <h3 className="text-lg font-semibold">Research Currently in Progess</h3>
-        <p> <span>A Review of Models and Theories of the Family Firm: The Nature and Importance of the business and the Family Domemsions (Planned submission to Family business Review).</span></p>
-        <p> <span>Emotional dimensions within the family business – Toward a conceptualization and extension (Planned submission to Family business Review).</span></p>
-        <p> <span>Expansion of the Cluster Model: The Family System's Entrepreneurial Effects over Generations (Planned submission to Family business Review).</span></p>
+        <p> <span>A Review of Models and Theories of the Family Firm: The Nature and Importance of the <span className="bg-secondary-taxi font-medium px-1">business</span> and the Family Domemsions (Planned submission to Family <span className="bg-secondary-taxi font-medium px-1">business</span> Review).</span></p>
+        <p> <span>Emotional dimensions within the family <span className="bg-secondary-taxi font-medium px-1">business</span> – Toward a conceptualization and extension (Planned submission to Family <span className="bg-secondary-taxi font-medium px-1">business</span> Review).</span></p>
+        <p> <span>Expansion of the Cluster Model: The Family System's Entrepreneurial Effects over Generations (Planned submission to Family <span className="bg-secondary-taxi font-medium px-1">business</span> Review).</span></p>
       </section>
 
       <section className="space-y-2">
         <h3 className="text-lg font-semibold">Reviews</h3>
-        <p>(2002-01-01) <span>The daughter also rises: How women overcome obstacles and advance in the family-owned business.</span></p>
+        <p>(2002-01-01) <span>The daughter also rises: How women overcome obstacles and advance in the family-owned <span className="bg-secondary-taxi font-medium px-1">business</span>.</span></p>
       </section>
     </div>
   </>

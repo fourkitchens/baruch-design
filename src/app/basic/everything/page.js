@@ -8,6 +8,7 @@ import cardListImage from '@/assets/images/admissions-trim.jpg';
 import cardListImage2 from '@/assets/images/students_2265_hor.jpg';
 import RelatedArticles from "@/components/relatedArticles";
 import Gallery from "@/components/gallery";
+import Blockquote from "@/components/blockquote";
 
 const news = {
   title: "Baruch Senior Wins United Nations Association-USA Fellowship",
@@ -131,7 +132,7 @@ export default function Everything() {
           <h2>Career Focus on Human Rights</h2>
           <p>For Lopez-Tavares, the mission of the United Nations Office for Disarmament Affairs—which provides support to disarmament issues, preventive measures, and regional disarmament efforts—align with her deep interest in human rights.</p>
           <p>&ldquo;Disarmament is a critical aspect of human rights that helps end violence and allows communities to grow and thrive,&rdquo; Lopez-Tavares explained. &ldquo;I am so grateful for the opportunity to explore this field through the initiatives my office pursues.&rdquo;</p>
-          <blockquote>&ldquo;The field of human rights attracts me because I want to serve others and contribute to community development.&rdquo;</blockquote>
+          <Blockquote>&ldquo;The field of human rights attracts me because I want to serve others and contribute to community development.&rdquo;</Blockquote>
           <p>Lopez-Tavares credits her background for inspiring her to pursue solutions to economic disparities and supporting marginalized communities.</p>
           <p>&ldquo;My family is from a small village in the Dominican Republic, and we immigrated to Brooklyn, New York when I was a child,&rdquo; she stated. &ldquo;My background has fueled my interest in addressing poverty, empowering low-income communities, and advancing human rights through international economic development.&rdquo;</p>
           <p>&ldquo;The field of human rights attracts me because I want to serve others and contribute to community development.&rdquo;</p>
