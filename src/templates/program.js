@@ -12,6 +12,7 @@ import { faGraduationCap, faBuildingColumns } from '@fortawesome/pro-solid-svg-i
 import Button from "@/components/button";
 import { Disclosure, DisclosureButton, DisclosurePanel } from '@headlessui/react'
 import { MinusSmallIcon, PlusSmallIcon } from '@heroicons/react/24/outline'
+import HeroBigSideBySide from "@/components/heroBigSideBySide";
 
 const breadcrumbData = [
   { name: 'Programs', href: '#', current: false },
@@ -120,31 +121,17 @@ export default function Program() {
   return (
     <>
       <Header />
-      <div className="relative bg-neutral-slate text-white">
-        <div className="mx-auto max-w-7xl lg:grid lg:grid-cols-12 lg:gap-x-8 lg:px-8">
-          <div className={clsx(
-            "mx-auto max-w-2xl",
-            "py-8 px-6",
-            "md:py-16",
-            "lg:col-span-7 lg:pb-32 lg:pt-10 lg:px-0 lg:max-w-lg lg:mx-0 lg:mt-24",
-            "xl:col-span-6",
-          )}>
-            <Breadcrumbs pages={breadcrumbData} className="[--text-color:var(--color-white)] [--link-color:var(--color-white)] [--link-hover-color:var(--color-white)] [--link-current-color:var(--color-white)] [--link-current-hover-color:var(--color-white)]" />
+      <HeroBigSideBySide
+        image={heroImage}
+        title="English Major"
+        content="The English BA at Baruch College immerses students in literature, language, and writing—building skills in communication and cultural insight for diverse careers."
+        backgroundColor="bg-neutral-slate"
+        titleClassName="text-white text-6xl mb-6 font-bold text-balance mt-4"
+        contentClassName="text-white/85 text-2xl"
+        breadcrumbs={<Breadcrumbs pages={breadcrumbData} className="[--text-color:var(--color-white)] [--link-color:var(--color-white)] [--link-hover-color:var(--color-white)] [--link-current-color:var(--color-white)] [--link-current-hover-color:var(--color-white)]" />}
+        additionalContent={<ProgramDetails />}
+      />
 
-            <h1 className="text-white text-6xl mb-6 font-bold text-balance mt-4">English Major</h1>
-            <p className="text-white/85 text-2xl">The English BA at Baruch College immerses students in literature, language, and writing—building skills in communication and cultural insight for diverse careers.
-            </p>
-            <ProgramDetails />
-            
-          </div>
-          
-          <div className="relative lg:col-span-5 lg:-mr-8 xl:absolute xl:inset-0 xl:left-1/2 xl:mr-0">
-            <Image src={heroImage} alt="Photo" className="aspect-[3/2] w-full bg-gray-50 object-cover lg:absolute lg:inset-0 lg:aspect-auto lg:h-full" />
-          </div>
-        </div>
-      </div>
-      
-      
       <LayoutPage wide={true}>
         <div className="mx-auto max-w-2xl px-6 lg:max-w-7xl lg:px-8">
           <div className="max-w-4xl prose lg:prose-lg">
