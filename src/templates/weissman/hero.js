@@ -1,7 +1,7 @@
 "use client";
 
 import SchoolHero from '@/components/school-hero';
-import weissmanBg from '@/assets/images/weissman/restselect-raw-bySirin-2625 copy.jpg';
+import weissmanBg from '@/assets/images/weissman/image002.jpeg';
 
 export default function Hero() {
   return (
