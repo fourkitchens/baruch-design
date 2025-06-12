@@ -2,7 +2,7 @@ import Image from 'next/image';
 
 export default function CardLinkList({header, image, content, footer, className}) {
   return (
-    <div className={`divide-y divide-neutral-pewter/30 overflow-hidden rounded-lg bg-white shadow-sm not-prose my-8 ${className}`}>
+    <div className={`divide-y divide-neutral-pewter/30 overflow-hidden rounded-lg bg-white shadow-sm not-prose ${className}`}>
       { image && <div className="">
         <Image src={image} alt={header} className="w-full aspect-video object-cover" />
       </div> }
