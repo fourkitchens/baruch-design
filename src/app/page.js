@@ -51,6 +51,7 @@ export default function Home() {
               <li><Link href="/basic/provost" className="text-white/90 link link-indigo-bg hover:text-white">Accreditation</Link></li>
               <li><Link href="/basic/everything" className="text-white/90 link link-indigo-bg hover:text-white">Everything</Link></li>
               <li><Link href="/basic/current-students" className="text-white/90 link link-indigo-bg hover:text-white">Current students</Link></li>
+              <li><Link href="/basic/current-students-2" className="text-white/90 link link-indigo-bg hover:text-white">Current students 2</Link></li>
             </ul>
             
             <h2 className="text-2xl font-bold mt-4">News pages</h2>
